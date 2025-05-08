@@ -5,6 +5,10 @@ output: html_document
 
 ## Prepare reference sequences
 
+Samples:
+
+![https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/samples.png]()
+
 1.
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/1.fastqc/WV2JYX_1_01_SL5_DMSO_37C_15min_Mg_fastqc.png" width="80%">
 
