@@ -88,12 +88,12 @@ GAGC
 - Sample-15:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/1.fastqc/WV2JYX_15_15_Ctrl_C15_0.1mM_80C_5min_Mn_fastqc.png" width="80%">
 
-- Conclusion: within ~400bp, the reads quality are generally good.
+- **Conclusion**: within ~400bp, the reads quality are generally good.
 
 ## Reads mapping
 
 - **Reads mapping with ** [```3.bam.sh```](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.7/3.bam.sh)  
-- Note: [Minimap2](https://doi.org/10.1093/bioinformatics/bty191) was the aligning tool used here ([GitHub](https://github.com/lh3/minimap2)).It's fast and suited for Nanopore reads (doesn't require R1 and R2 as input). There might be better tools out there.
+- **Note**: [Minimap2](https://doi.org/10.1093/bioinformatics/bty191) was the aligning tool used here ([GitHub](https://github.com/lh3/minimap2)).It's fast and suited for Nanopore reads (doesn't require R1 and R2 as input). There might be better tools out there.
 
 ## Analyzing and visualization
 
