@@ -1,26 +1,5 @@
 [
   {
-    "objectID": "part-1.html",
-    "href": "part-1.html",
-    "title": "Part-1: html rendered from .Rmd files",
-    "section": "",
-    "text": "This example was created from a .Rmd file using Quarto."
-  },
-  {
-    "objectID": "part-1.html#population-structure",
-    "href": "part-1.html#population-structure",
-    "title": "Part-1: html rendered from .Rmd files",
-    "section": "Population structure",
-    "text": "Population structure\nCalculate principal components using chromosome 22. Plot PC1 vs PC2 using different color for each population. Keep only CEU, YRI, ASW, and CHB before plotting.\n\nsystem(glue::glue(\"/bin/plink/plink --bfile ./hapmap3_ch22 --pca --out ./pca\"))\npcplink = read.table(glue::glue(\"./pca.eigenvec\"),header=F, as.is=T)\nnames(pcplink) = c(\"FID\",\"IID\",paste0(\"PC\", c(1:(ncol(pcplink)-2))))\npcplink = popinfo %&gt;% inner_join(pcplink, by=c(\"FID\"=\"FID\", \"IID\"=\"IID\"))\npcplink %&gt;% \n  filter(population ==\"CEU\"|population==\"YRI\"|population==\"ASW\"|population==\"CHB\") %&gt;%\n  ggplot(aes(PC1,PC2,col=population)) + \n  geom_point(size=3,alpha=.7) + \n  theme_bw(base_size = 15)"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "chemProbing",
-    "section": "",
-    "text": "To-do:\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
-  },
-  {
     "objectID": "misc.html",
     "href": "misc.html",
     "title": "Misc",
@@ -33,5 +12,33 @@
     "title": "Misc",
     "section": "",
     "text": "This website is created using Hang’s template.\nThe Premium PCR Sequencing service was provided by plasmidsaurus."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "chemProbing",
+    "section": "",
+    "text": "To-do:\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "2025.5.7.html#fastqc",
+    "href": "2025.5.7.html#fastqc",
+    "title": "2025.5.7: C12 C15 pilot testing",
+    "section": "FastQC",
+    "text": "FastQC"
+  },
+  {
+    "objectID": "2025.5.7.html#reads-mapping",
+    "href": "2025.5.7.html#reads-mapping",
+    "title": "2025.5.7: C12 C15 pilot testing",
+    "section": "Reads mapping",
+    "text": "Reads mapping"
+  },
+  {
+    "objectID": "2025.5.7.html#calculating-mutation-rate",
+    "href": "2025.5.7.html#calculating-mutation-rate",
+    "title": "2025.5.7: C12 C15 pilot testing",
+    "section": "Calculating mutation rate",
+    "text": "Calculating mutation rate"
   }
 ]

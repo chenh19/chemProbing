@@ -1,0 +1,12 @@
+---
+title: "2025.5.7: C12 C15 pilot testing"
+output: html_document
+---
+
+## Prepare reference sequences
+
+## FastQC
+
+## Reads mapping
+
+## Calculating mutation rate

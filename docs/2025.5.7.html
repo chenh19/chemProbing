@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Part-1: html rendered from .Rmd files – chemProbing</title>
+<title>2025.5.7: C12 C15 pilot testing – chemProbing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -132,8 +98,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-analyses">    
         <li>
-    <a class="dropdown-item" href="./part-1.html">
- <span class="dropdown-text">Part-1: html from .Rmd</span></a>
+    <a class="dropdown-item" href="./2025.5.7.html">
+ <span class="dropdown-text">2025.5.7: C12 C15 pilot testing</span></a>
   </li>  
     </ul>
   </li>
@@ -164,7 +130,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#population-structure" id="toc-population-structure" class="nav-link active" data-scroll-target="#population-structure">Population structure</a></li>
+  <li><a href="#prepare-reference-sequences" id="toc-prepare-reference-sequences" class="nav-link active" data-scroll-target="#prepare-reference-sequences">Prepare reference sequences</a></li>
+  <li><a href="#fastqc" id="toc-fastqc" class="nav-link" data-scroll-target="#fastqc">FastQC</a></li>
+  <li><a href="#reads-mapping" id="toc-reads-mapping" class="nav-link" data-scroll-target="#reads-mapping">Reads mapping</a></li>
+  <li><a href="#calculating-mutation-rate" id="toc-calculating-mutation-rate" class="nav-link" data-scroll-target="#calculating-mutation-rate">Calculating mutation rate</a></li>
   </ul>
 </nav>
     </div>
@@ -173,7 +142,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Part-1: <code>html</code> rendered from <code>.Rmd</code> files</h1>
+<h1 class="title">2025.5.7: C12 C15 pilot testing</h1>
 </div>
 
 
@@ -190,26 +159,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This example was created from a <code>.Rmd</code> file using <a href="https://quarto.org/"><strong>Quarto</strong></a>.</p>
-<section id="population-structure" class="level2">
-<h2 class="anchored" data-anchor-id="population-structure">Population structure</h2>
-<p>Calculate principal components using chromosome 22. Plot PC1 vs PC2 using different color for each population. Keep only CEU, YRI, ASW, and CHB before plotting.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">system</span>(glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"/bin/plink/plink --bfile ./hapmap3_ch22 --pca --out ./pca"</span>))</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>pcplink <span class="ot">=</span> <span class="fu">read.table</span>(glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"./pca.eigenvec"</span>),<span class="at">header=</span>F, <span class="at">as.is=</span>T)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(pcplink) <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"FID"</span>,<span class="st">"IID"</span>,<span class="fu">paste0</span>(<span class="st">"PC"</span>, <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span>(<span class="fu">ncol</span>(pcplink)<span class="sc">-</span><span class="dv">2</span>))))</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>pcplink <span class="ot">=</span> popinfo <span class="sc">%&gt;%</span> <span class="fu">inner_join</span>(pcplink, <span class="at">by=</span><span class="fu">c</span>(<span class="st">"FID"</span><span class="ot">=</span><span class="st">"FID"</span>, <span class="st">"IID"</span><span class="ot">=</span><span class="st">"IID"</span>))</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>pcplink <span class="sc">%&gt;%</span> </span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(population <span class="sc">==</span><span class="st">"CEU"</span><span class="sc">|</span>population<span class="sc">==</span><span class="st">"YRI"</span><span class="sc">|</span>population<span class="sc">==</span><span class="st">"ASW"</span><span class="sc">|</span>population<span class="sc">==</span><span class="st">"CHB"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(PC1,PC2,<span class="at">col=</span>population)) <span class="sc">+</span> </span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size=</span><span class="dv">3</span>,<span class="at">alpha=</span>.<span class="dv">7</span>) <span class="sc">+</span> </span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>(<span class="at">base_size =</span> <span class="dv">15</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/part-3/5-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
-</figure>
-</div>
+<section id="prepare-reference-sequences" class="level2">
+<h2 class="anchored" data-anchor-id="prepare-reference-sequences">Prepare reference sequences</h2>
+</section>
+<section id="fastqc" class="level2">
+<h2 class="anchored" data-anchor-id="fastqc">FastQC</h2>
+</section>
+<section id="reads-mapping" class="level2">
+<h2 class="anchored" data-anchor-id="reads-mapping">Reads mapping</h2>
+</section>
+<section id="calculating-mutation-rate" class="level2">
+<h2 class="anchored" data-anchor-id="calculating-mutation-rate">Calculating mutation rate</h2>
 
 
 </section>

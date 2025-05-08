@@ -15,8 +15,8 @@ website:
         href: index.html
       - text: "Analyses"
         menu:
-        - text: "Part-1: html from .Rmd"
-          href: part-1.html
+        - text: "2025.5.7: C12 C15 pilot testing"
+          href: 2025.5.7.html
       - text: "Misc."
         href: misc.html
     right:
