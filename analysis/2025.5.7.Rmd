@@ -99,94 +99,94 @@ GAGC
 
 ### Absolute mutation rate
 
-Sample-1:  
+- Sample-1:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/2.absolute_mut/1-01-SL5-DMSO-37C-15min-Mg_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
 
-Sample-2:  
+- Sample-2:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/2.absolute_mut/2-02-SL5-DMSO-37C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
 
-Sample-3:  
+- Sample-3:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/2.absolute_mut/3-03-SL5-C12-5mM-37C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
 
-Sample-4:  
+- Sample-4:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/2.absolute_mut/4-04-SL5-C15-5mM-37C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
 
-Sample-5:  
+- Sample-5:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/2.absolute_mut/5-05-SL5-C12-0.5mM-37C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
 
-Sample-6:  
+- Sample-6:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/2.absolute_mut/6-06-SL5-C15-0.5mM-37C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
 
-Sample-7:  
+- Sample-7:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/2.absolute_mut/7-07-SL5-DMSO-80C-15min-Mg_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
 
-Sample-8:  
+- Sample-8:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/2.absolute_mut/8-08-SL5-DMSO-80C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
 
-Sample-9:  
+- Sample-9:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/2.absolute_mut/9-09-SL5-C12-5mM-80C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
 
-Sample-10:  
+- Sample-10:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/2.absolute_mut/10-10-SL5-C15-5mM-80C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
 
-Sample-11:  
+- Sample-11:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/2.absolute_mut/11-11-SL5-C12-0.5mM-80C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
 
-Sample-12:  
+- Sample-12:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/2.absolute_mut/12-12-SL5-C15-0.5mM-80C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
 
-Sample-13:  
+- Sample-13:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/2.absolute_mut/13-13-Ctrl-DMSO-80C-5min-Mn_SMN2-Exon7-Amplicon.jpg" width="100%">
 
-Sample-14:  
+- Sample-14:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/2.absolute_mut/14-14-Ctrl-C12-0.1mM-80C-5min-Mn_SMN2-Exon7-Amplicon.jpg" width="100%">
 
-Sample-15:  
+- Sample-15:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/2.absolute_mut/15-15-Ctrl-C15-0.1mM-80C-5min-Mn_SMN2-Exon7-Amplicon.jpg" width="100%">
 
 ### Relative mutation rate
 
-Sample-1:  
+- Sample-1:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/3.relative_mut/1-01-SL5-DMSO-37C-15min-Mg_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
 
-Sample-2:  
+- Sample-2:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/3.relative_mut/2-02-SL5-DMSO-37C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
 
-Sample-3:  
+- Sample-3:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/3.relative_mut/3-03-SL5-C12-5mM-37C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
 
-Sample-4:  
+- Sample-4:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/3.relative_mut/4-04-SL5-C15-5mM-37C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
 
-Sample-5:  
+- Sample-5:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/3.relative_mut/5-05-SL5-C12-0.5mM-37C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
 
-Sample-6:  
+- Sample-6:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/3.relative_mut/6-06-SL5-C15-0.5mM-37C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
 
-Sample-7:  
+- Sample-7:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/3.relative_mut/7-07-SL5-DMSO-80C-15min-Mg_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
 
-Sample-8:  
+- Sample-8:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/3.relative_mut/8-08-SL5-DMSO-80C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
 
-Sample-9:  
+- Sample-9:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/3.relative_mut/9-09-SL5-C12-5mM-80C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
 
-Sample-10:  
+- Sample-10:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/3.relative_mut/10-10-SL5-C15-5mM-80C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
 
-Sample-11:  
+- Sample-11:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/3.relative_mut/11-11-SL5-C12-0.5mM-80C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
 
-Sample-12:  
+- Sample-12:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/3.relative_mut/12-12-SL5-C15-0.5mM-80C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
 
-Sample-13:  
+- Sample-13:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/3.relative_mut/13-13-Ctrl-DMSO-80C-5min-Mn_SMN2-Exon7-Amplicon.jpg" width="100%">
 
-Sample-14:  
+- Sample-14:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/3.relative_mut/14-14-Ctrl-C12-0.1mM-80C-5min-Mn_SMN2-Exon7-Amplicon.jpg" width="100%">
 
-Sample-15:  
+- Sample-15:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/3.relative_mut/15-15-Ctrl-C15-0.1mM-80C-5min-Mn_SMN2-Exon7-Amplicon.jpg" width="100%">

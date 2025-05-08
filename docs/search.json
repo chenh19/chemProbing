@@ -60,6 +60,6 @@
     "href": "2025.5.7.html#analyzing-and-visualization",
     "title": "2025.5.7: C12/C15 mutational profiling pilot testing",
     "section": "Analyzing and visualization",
-    "text": "Analyzing and visualization\n\nPileup with  4.mpileup.sh\n\nParse with  5.parse.R\n\nPlot with  6.plot.R\n\n\nAbsolute mutation rate\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\n\n\nRelative mutation rate\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\nSample-13:\n\nSample-14:\n\nSample-15:"
+    "text": "Analyzing and visualization\n\nPileup with  4.mpileup.sh\n\nParse with  5.parse.R\n\nPlot with  6.plot.R\n\n\nAbsolute mutation rate\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\n\n\n\nRelative mutation rate\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\nSample-13:\n\nSample-14:\n\nSample-15:"
   }
 ]
