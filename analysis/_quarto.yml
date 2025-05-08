@@ -8,7 +8,7 @@ project:
   output-dir: ../docs
 
 website:
-  title: "Project"
+  title: "chemProbing"
   navbar:
     left:
       - text: "Home"
@@ -17,16 +17,12 @@ website:
         menu:
         - text: "Part-1: html from .Rmd"
           href: part-1.html
-        - text: "Part-2: html from .qmd"
-          href: part-2.html
-        - text: "Part-3: html from .ipynb"
-          href: part-3.html
       - text: "Misc."
         href: misc.html
     right:
       - text: Source code
         icon: github
-        href: https://github.com/chenh19/Quarto
+        href: https://github.com/chenh19/chemProbing
 
 format:
   html:

@@ -1,5 +1,4 @@
-# Quarto template
-*Current version: v1.0.0*
+# chemProbing
 
 ## Introduction
-This is a website template created with [Quarto](https://quarto.org/). You may follow the [tutorial](https://chenh19.github.io/Quarto/misc) to create your own websites.
+This is [Hang's computational analysis notes on chemical probing](https://chenh19.github.io/chemProbing/).
