@@ -88,7 +88,7 @@ GAGC
 - Sample-15:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/1.fastqc/WV2JYX_15_15_Ctrl_C15_0.1mM_80C_5min_Mn_fastqc.png" width="80%">
 
-- **Conclusion**: within ~400bp, the reads quality are generally good.
+- **Conclusion**: within ~400bp, the reads quality is generally good.
 
 ## Reads mapping
 

@@ -46,7 +46,7 @@
     "href": "2025.5.7.html#fastqc-for-reads",
     "title": "2025.5.7: C12/C15 mutational profiling pilot testing",
     "section": "FastQC for reads",
-    "text": "FastQC for reads\n\nFastQC with  2.fastqc.sh\n\nNote: I started with FastQ files (raw reads) because Plasmidsaurus didn’t have the refseq and their assembly could be wrong.\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\nConclusion: within ~400bp, the reads quality are generally good."
+    "text": "FastQC for reads\n\nFastQC with  2.fastqc.sh\n\nNote: I started with FastQ files (raw reads) because Plasmidsaurus didn’t have the refseq and their assembly could be wrong.\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\nConclusion: within ~400bp, the reads quality is generally good."
   },
   {
     "objectID": "2025.5.7.html#reads-mapping",
