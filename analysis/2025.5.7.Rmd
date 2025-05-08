@@ -5,8 +5,54 @@ output: html_document
 
 ## Prepare reference sequences
 
+1.
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/1.fastqc/WV2JYX_1_01_SL5_DMSO_37C_15min_Mg_fastqc.png" width="80%">
+
+2.
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/1.fastqc/WV2JYX_2_02_SL5_DMSO_37C_15min_Mn_fastqc.png" width="80%">
+
+3.
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/1.fastqc/WV2JYX_3_03_SL5_C12_5mM_37C_15min_Mn_fastqc.png" width="80%">
+
+4.
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/1.fastqc/WV2JYX_4_04_SL5_C15_5mM_37C_15min_Mn_fastqc.png" width="80%">
+
+5.
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/1.fastqc/WV2JYX_5_05_SL5_C12_0.5mM_37C_15min_Mn_fastqc.png" width="80%">
+
+6.
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/1.fastqc/WV2JYX_6_06_SL5_C15_0.5mM_37C_15min_Mn_fastqc.png" width="80%">
+
+7.
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/1.fastqc/WV2JYX_7_07_SL5_DMSO_80C_15min_Mg_fastqc.png" width="80%">
+
+8.
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/1.fastqc/WV2JYX_8_08_SL5_DMSO_80C_15min_Mn_fastqc.png" width="80%">
+
+9.
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/1.fastqc/WV2JYX_9_09_SL5_C12_5mM_80C_15min_Mn_fastqc.png" width="80%">
+
+10.
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/1.fastqc/WV2JYX_10_10_SL5_C15_5mM_80C_15min_Mn_fastqc.png" width="80%">
+
+11.
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/1.fastqc/WV2JYX_11_11_SL5_C12_0.5mM_80C_15min_Mn_fastqc.png" width="80%">
+
+12.
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/1.fastqc/WV2JYX_12_12_SL5_C15_0.5mM_80C_15min_Mn_fastqc.png" width="80%">
+
+13.
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/1.fastqc/WV2JYX_13_13_Ctrl_DMSO_80C_5min_Mn_fastqc.png" width="80%">
+
+14.
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/1.fastqc/WV2JYX_14_14_Ctrl_C12_0.1mM_80C_5min_Mn_fastqc.png" width="80%">
+
+15.
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/1.fastqc/WV2JYX_15_15_Ctrl_C15_0.1mM_80C_5min_Mn_fastqc.png" width="80%">
+
+
 ## FastQC
 
 ## Reads mapping
 
-## Calculating mutation rate
+## Visualization
