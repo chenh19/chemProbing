@@ -1,0 +1,24 @@
+---
+title: "Part-1: ```html``` rendered from ```.Rmd``` files"
+output: html_document
+---
+
+This example was created from a ```.Rmd``` file using [**Quarto**](https://quarto.org/).
+
+## Population structure
+
+Calculate principal components using chromosome 22. Plot PC1 vs PC2 using different color for each population. Keep only CEU, YRI, ASW, and CHB before plotting.
+
+```{r,eval=FALSE}
+system(glue::glue("/bin/plink/plink --bfile ./hapmap3_ch22 --pca --out ./pca"))
+pcplink = read.table(glue::glue("./pca.eigenvec"),header=F, as.is=T)
+names(pcplink) = c("FID","IID",paste0("PC", c(1:(ncol(pcplink)-2))))
+pcplink = popinfo %>% inner_join(pcplink, by=c("FID"="FID", "IID"="IID"))
+pcplink %>% 
+  filter(population =="CEU"|population=="YRI"|population=="ASW"|population=="CHB") %>%
+  ggplot(aes(PC1,PC2,col=population)) + 
+  geom_point(size=3,alpha=.7) + 
+  theme_bw(base_size = 15)
+```
+
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/part-3/5-1.png){fig-align="center" width="80%"}
