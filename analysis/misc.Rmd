@@ -6,4 +6,3 @@ output: html_document
 ## Note
 
 - This website is created using [Hang's template](https://chenh19.github.io/Quarto/misc.html).
-- The **Premium PCR Sequencing** service was provided by [plasmidsaurus](https://plasmidsaurus.com/premium_PCR_sequencing).

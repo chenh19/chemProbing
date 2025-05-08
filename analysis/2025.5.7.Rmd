@@ -12,6 +12,7 @@ RNA covalent modifiers:
 
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/RNA_CM.png" width="50%">
 
+- The **Premium PCR Sequencing** service was provided by [plasmidsaurus](https://plasmidsaurus.com/premium_PCR_sequencing).  
 
 ## Reference sequences
 
