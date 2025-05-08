@@ -14,6 +14,8 @@ RNA covalent modifiers:
 
 - The **Premium PCR Sequencing** service was provided by [plasmidsaurus](https://plasmidsaurus.com/premium_PCR_sequencing).  
 
+- For experimental details, click [here](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.7/2025.5.1-6 Pilot testing for C12 C15 reactivity in cells 2025-05-01 - 2025-05-06 (etr_LUtlq0wY).pdf).
+
 ## Reference sequences
 
 - [Amplicon-1.fa](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.7/Amplicon-1.fa)  
