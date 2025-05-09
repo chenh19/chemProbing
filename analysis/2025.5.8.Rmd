@@ -127,3 +127,8 @@ gagc
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.8/3.relative_mut/RM15-2-S45-L001_RM.jpg" width="100%">
 
 - For combined PDF figures, click [here](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.8/relative_combined.pdf).
+
+### Base summary
+
+- All samples:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.8/4.base_summary/base_summary.jpg" width="55%">
