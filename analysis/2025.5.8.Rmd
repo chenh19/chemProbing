@@ -10,7 +10,7 @@ output: html_document
 
 ## Reference sequences
 
-- [RM.fa]()  
+- [RM.fa](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.8/RM.fa)  
 ```{r,eval=FALSE}
 >RM
 aacttcctttattttccttacagGGTTTTAGACAAAATCAAAAAGAAGGAAGGTGCTCACATTCCTTAAATTAAGGAGTA
