@@ -1,0 +1,45 @@
+# create folder
+if (dir.exists("./3.analysis/5.parse/")==FALSE){
+  dir.create("./3.analysis/5.parse/")
+}
+
+# define input files
+pileup_files <- list.files(path='./3.analysis/4.mpileup', pattern='*.mpileup', full.names = TRUE)
+
+for (pileup_file in pileup_files) {
+  
+  ## initialize
+  mut_profile <- c("Region,Position,Ref_base,Mut_percentage")
+  
+  ## read in the file
+  pileup_data <- readLines(pileup_file)
+  filename <- paste0("./3.analysis/5.parse/", gsub("./3.analysis/4.mpileup/","",pileup_file), ".csv")
+  
+  ## read each line
+  for (line in pileup_data) {
+    
+    ### read base info
+    fields <- strsplit(line, "\t")[[1]]
+    chr <- fields[1]
+    pos <- as.integer(fields[2])
+    ref_base <- fields[3]
+    depth <- as.numeric(fields[4])
+    read_bases <- fields[5]
+    
+    ### calculate mutation rate
+    match <- 0
+    for (base in strsplit(read_bases, "")[[1]]) {
+      if (base == ".") {
+        match <- match + 1
+      }
+      if (base == ",") {
+        match <- match + 1
+      }
+    }
+    mut_percentage <- (depth - match) / depth * 100
+    mut_profile <- c(mut_profile, paste(chr, pos, ref_base, round(mut_percentage, 4), sep = ","))
+  }
+  
+  writeLines(mut_profile, filename)
+}
+rm(list = ls())

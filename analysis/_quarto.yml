@@ -17,6 +17,8 @@ website:
         menu:
         - text: "2025.5.7: C12 C15 pilot testing"
           href: 2025.5.7.html
+        - text: "2025.5.8: re-analysis of previous data"
+          href: 2025.5.8.html
       - text: "Misc."
         href: misc.html
     right:

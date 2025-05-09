@@ -14,13 +14,6 @@
     "text": "This website is created using Hang’s template."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "chemProbing",
-    "section": "",
-    "text": "To-do:\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
-  },
-  {
     "objectID": "2025.5.7.html",
     "href": "2025.5.7.html",
     "title": "2025.5.7: C12/C15 mutational profiling pilot testing",
@@ -59,6 +52,41 @@
     "objectID": "2025.5.7.html#analyzing-and-visualization",
     "href": "2025.5.7.html#analyzing-and-visualization",
     "title": "2025.5.7: C12/C15 mutational profiling pilot testing",
+    "section": "Analyzing and visualization",
+    "text": "Analyzing and visualization\n\nPileup with  4.mpileup.sh\n\nParse with  5.parse.R\n\nAbout Pileup Format, here is a detailed explanation. In short, column 4 denotes the depth at specific postion, and . and , in column 5 indicate matched reads.\n\nFor parsed mutation rate spreadsheets, click here.\nPlot with  6.plot.R\n\n\nAbsolute mutation rate\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\nFor combined PDF figures, click here.\n\n\n\nRelative mutation rate\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\nFor combined PDF figures, click here."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "chemProbing",
+    "section": "",
+    "text": "To-do:\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "2025.5.8.html#reference-sequences",
+    "href": "2025.5.8.html#reference-sequences",
+    "title": "2025.5.8: Re-analysis of Zhichao’s previous data",
+    "section": "Reference sequences",
+    "text": "Reference sequences\n\nRM.fa\n\n\n&gt;SARS-CoV2-5UTR-Amplicon  (378 bp)\naggtttataccttcccaggtaacaaaccaaccaactttcgatctcttgtagatctgttctctaaacgaactttaaaatct\ngtgtggctgtcactcggctgcgtgcttagtgcactcacgcagtataattaataactaattactgtcgttgacaggacacg\nagtaactcgtctatcttctgcaggctgcttacggtttcgtccgtgttgcagccgatcatcagcacatctaggtttcgtcc\ngggtgtgaccgaaaggtaagatggagagccttgtccctggtttcaacgagggagtcaaagttctgtttgccctgatctgc\natcgctgtggccgaggccaagcccaccgagaacaacgaagacttcaacatcgtggccg\n\n\nCombine reference sequences with  1.refseq.sh"
+  },
+  {
+    "objectID": "2025.5.8.html#fastqc-for-reads",
+    "href": "2025.5.8.html#fastqc-for-reads",
+    "title": "2025.5.8: Re-analysis of Zhichao’s previous data",
+    "section": "FastQC for reads",
+    "text": "FastQC for reads\n\nFastQC with  2.fastqc.sh\n\nNote: I started with FastQ files (raw reads) because Plasmidsaurus didn’t have the refseq and their assembly could be wrong.\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\nConclusion: within ~400bp, the reads quality is generally good."
+  },
+  {
+    "objectID": "2025.5.8.html#reads-mapping",
+    "href": "2025.5.8.html#reads-mapping",
+    "title": "2025.5.8: Re-analysis of Zhichao’s previous data",
+    "section": "Reads mapping",
+    "text": "Reads mapping\n\nReads mapping with  3.bam.sh\n\nNote: Minimap2 was the aligning tool used here (GitHub).It’s fast and suited for Nanopore reads (doesn’t require R1 and R2 as input). There might be better tools out there."
+  },
+  {
+    "objectID": "2025.5.8.html#analyzing-and-visualization",
+    "href": "2025.5.8.html#analyzing-and-visualization",
+    "title": "2025.5.8: Re-analysis of Zhichao’s previous data",
     "section": "Analyzing and visualization",
     "text": "Analyzing and visualization\n\nPileup with  4.mpileup.sh\n\nParse with  5.parse.R\n\nAbout Pileup Format, here is a detailed explanation. In short, column 4 denotes the depth at specific postion, and . and , in column 5 indicate matched reads.\n\nFor parsed mutation rate spreadsheets, click here.\nPlot with  6.plot.R\n\n\nAbsolute mutation rate\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\nFor combined PDF figures, click here.\n\n\n\nRelative mutation rate\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\nFor combined PDF figures, click here."
   }
