@@ -4,7 +4,7 @@
     "href": "misc.html",
     "title": "Misc",
     "section": "",
-    "text": "This website is created using Hang’s template.\n\nFrequently used code\n\nInit:\n\n\nmkdir ./chemProbing/\ncd ./chemProbing/\ngit init\ngit remote add origin git@github.com:chenh19/chemProbing.git\n\n\nPull:\n\n\ngit pull git@github.com:chenh19/chemProbing.git\n\n\nRender:\n\n\nquarto render analysis\n\n\nPush:\n\n\ngit add --all && git commit -a -m \"update\" && git push -u origin main"
+    "text": "This website is created using Hang’s template.\n\nFrequently used code\n\nInitialize:\n\n\n[ -d ./chemProbing/ ] && rm -rf ./chemProbing/\nmkdir ./chemProbing/ && cd ./chemProbing/\ngit init && git remote add origin git@github.com:chenh19/chemProbing.git\n\n\nPull:\n\n\ngit pull git@github.com:chenh19/chemProbing.git\n\n\nRender:\n\n\nquarto render analysis\n\n\nPush:\n\n\ngit add --all && git commit -a -m \"update\" && git push -u origin main"
   },
   {
     "objectID": "2025.5.7.html",

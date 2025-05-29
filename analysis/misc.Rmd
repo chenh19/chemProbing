@@ -8,12 +8,11 @@ This website is created using [Hang's template](https://chenh19.github.io/Quarto
 
 ### Frequently used code
 
-- Init:
+- Initialize:
 ```{bash,eval=FALSE}
-mkdir ./chemProbing/
-cd ./chemProbing/
-git init
-git remote add origin git@github.com:chenh19/chemProbing.git
+[ -d ./chemProbing/ ] && rm -rf ./chemProbing/
+mkdir ./chemProbing/ && cd ./chemProbing/
+git init && git remote add origin git@github.com:chenh19/chemProbing.git
 ```
 
 - Pull:
