@@ -3,9 +3,10 @@ title: "Misc"
 output: html_document
 ---
 
-## Note
+This website is created using [Hang's template](https://chenh19.github.io/Quarto/misc.html).
 
-- This website is created using [Hang's template](https://chenh19.github.io/Quarto/misc.html).
+
+### Frequently used code
 
 - Pull:  
 ```{bash,eval=FALSE}
