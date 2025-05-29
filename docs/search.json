@@ -4,14 +4,14 @@
     "href": "misc.html",
     "title": "Misc",
     "section": "",
-    "text": "This website is created using Hang’s template."
+    "text": "This website is created using Hang’s template.\nPull:\n\n\nmkdir ./chemProbing/\ncd ./chemProbing/\ngit init\ngit remote add origin git@github.com:chenh19/chemProbing.git\ngit pull git@github.com:chenh19/chemProbing.git\n\n\nPush:\n\n\ncd ./chemProbing/\nquarto render analysis\ngit add --all && git commit -a -m \"update\" && git push -u origin main"
   },
   {
     "objectID": "misc.html#note",
     "href": "misc.html#note",
     "title": "Misc",
     "section": "",
-    "text": "This website is created using Hang’s template."
+    "text": "This website is created using Hang’s template.\nPull:\n\n\nmkdir ./chemProbing/\ncd ./chemProbing/\ngit init\ngit remote add origin git@github.com:chenh19/chemProbing.git\ngit pull git@github.com:chenh19/chemProbing.git\n\n\nPush:\n\n\ncd ./chemProbing/\nquarto render analysis\ngit add --all && git commit -a -m \"update\" && git push -u origin main"
   },
   {
     "objectID": "2025.5.7.html",
@@ -116,7 +116,7 @@
     "href": "2025.5.27.html#analyzing-and-visualization",
     "title": "2025.5.27: Plasmidsaurus data re-analysis",
     "section": "Analyzing and visualization",
-    "text": "Analyzing and visualization\n\nPileup with  6.mpileup.sh\n\nParse with  7.parse.R\n\nFor parsed mutation rate spreadsheets, click here.\nPlot with  8.plot.R\n\n\nAbsolute mutation rate\n\n\nAbsolute mutation rate:\n\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\n\nRelative mutation rate\n\n\nRelative mutation rate:\n\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\n\nBase Summary\n\nWithout reads trimming:\n\nWith reads trimming:\n\nConclusion: Nanopore sequencing can capture the mutational profile that is seen in previous experiment, but Nanopore is inherently noisy and require careful QC, thus not recommended for future mutational profiling."
+    "text": "Analyzing and visualization\n\nPileup with  6.mpileup.sh\n\nParse with  7.parse.R\n\nFor parsed mutation rate spreadsheets, click here.\nPlot with  8.plot.R\n\n\nAbsolute mutation rate\n\n\nAbsolute mutation rate:\n\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\n\nRelative mutation rate\n\n\nRelative mutation rate:\n\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\n\nBase Summary\n\nWithout reads trimming:\n\nWith reads trimming:\n\nConclusion: Nanopore sequencing can capture the mutational profile that is seen in previous experiment, but Nanopore is inherently noisy and requires careful QC, thus not recommended for future mutational profiling."
   },
   {
     "objectID": "2025.5.8.html",

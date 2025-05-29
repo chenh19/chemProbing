@@ -6,3 +6,19 @@ output: html_document
 ## Note
 
 - This website is created using [Hang's template](https://chenh19.github.io/Quarto/misc.html).
+
+- Pull:  
+```{bash,eval=FALSE}
+mkdir ./chemProbing/
+cd ./chemProbing/
+git init
+git remote add origin git@github.com:chenh19/chemProbing.git
+git pull git@github.com:chenh19/chemProbing.git
+```
+
+- Push:  
+```{bash,eval=FALSE}
+cd ./chemProbing/
+quarto render analysis
+git add --all && git commit -a -m "update" && git push -u origin main
+```

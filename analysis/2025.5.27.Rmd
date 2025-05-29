@@ -243,4 +243,4 @@ agg
 - With reads trimming:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/5.base_summary/base_summary (with reads trimming).jpg" width="80%">
 
-- **Conclusion**: Nanopore sequencing can capture the mutational profile that is seen in [previous experiment](https://chenh19.github.io/chemProbing/2025.5.8.html#base-summary), but Nanopore is inherently noisy and require careful QC, thus not recommended for future mutational profiling.
+- **Conclusion**: Nanopore sequencing can capture the mutational profile that is seen in [previous experiment](https://chenh19.github.io/chemProbing/2025.5.8.html#base-summary), but Nanopore is inherently noisy and requires careful QC, thus not recommended for future mutational profiling.
