@@ -8,18 +8,25 @@ This website is created using [Hang's template](https://chenh19.github.io/Quarto
 
 ### Frequently used code
 
-- Pull:  
+- Init:  
 ```{bash,eval=FALSE}
 mkdir ./chemProbing/
 cd ./chemProbing/
 git init
 git remote add origin git@github.com:chenh19/chemProbing.git
+```
+
+- Pull:  
+```{bash,eval=FALSE}
 git pull git@github.com:chenh19/chemProbing.git
+```
+
+- Render:  
+```{bash,eval=FALSE}
+quarto render analysis
 ```
 
 - Push:  
 ```{bash,eval=FALSE}
-cd ./chemProbing/
-quarto render analysis
 git add --all && git commit -a -m "update" && git push -u origin main
 ```
