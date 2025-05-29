@@ -123,13 +123,13 @@ gagc
 ### Relative mutation rate
 
 - RM12-1:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.8/3.relative_mut/RM12-1-S4-L001_RM.jpg" width="100%">
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.8/3.relative_mut/RM12-1-S4-L001_RM_re.jpg" width="100%">
 
 - RM12-2:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.8/3.relative_mut/RM12-2-S1-L001_RM.jpg" width="100%">
 
 - RM15-1:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.8/3.relative_mut/RM15-1-S8-L001_RM.jpg" width="100%">
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.8/3.relative_mut/RM15-1-S8-L001_RM_re.jpg" width="100%">
 
 - RM15-2:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.8/3.relative_mut/RM15-2-S45-L001_RM.jpg" width="100%">
