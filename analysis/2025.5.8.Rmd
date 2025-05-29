@@ -8,6 +8,14 @@ output: html_document
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.8/RNA_CM.png" width="50%">
 
 
+Note: this batch is on fully unfolded purified RNA.  
+
+```{r,eval=FALSE}
+Solvent: 90% foramide, 5mM EDTA (pH 8.0)
+Incubate at 80C for 2 min
+Move from 80C onto ice
+```
+
 ## Reference sequences
 
 - [RM.fa](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.8/RM.fa)  
