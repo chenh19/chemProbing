@@ -1,3 +1,27 @@
 # chemProbing
 
 This is Hang's computational analysis notes on chemical probing. This website is created using [Hang's template](https://chenh19.github.io/Quarto/misc.html).
+
+### Frequently used code
+
+- Initialize:
+```{bash,eval=FALSE}
+[ -d ./chemProbing/ ] && rm -rf ./chemProbing/
+mkdir ./chemProbing/ && cd ./chemProbing/
+git init && git remote add origin git@github.com:chenh19/chemProbing.git
+```
+
+- Pull:
+```{bash,eval=FALSE}
+git pull git@github.com:chenh19/chemProbing.git
+```
+
+- Render:
+```{bash,eval=FALSE}
+quarto render analysis
+```
+
+- Push:
+```{bash,eval=FALSE}
+git add --all && git commit -a -m "update" && git push -u origin main
+```
