@@ -46,8 +46,11 @@ GAGC
 - **FastQC with ** [```2.fastqc.sh```](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.7/2.fastqc.sh)  
 - **Note:** I started with FastQ files (raw reads) because Plasmidsaurus didn't have the refseq and their assembly could be wrong.  
 
-- Sample-1:  
+- Sample-1 (representative FastQC per base quality plot):  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/1.fastqc/WV2JYX_1_01_SL5_DMSO_37C_15min_Mg_fastqc.png" width="80%">
+
+<details>
+<summary>View all samples</summary>
 
 - Sample-2:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/1.fastqc/WV2JYX_2_02_SL5_DMSO_37C_15min_Mn_fastqc.png" width="80%">
@@ -91,6 +94,8 @@ GAGC
 - Sample-15:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/1.fastqc/WV2JYX_15_15_Ctrl_C15_0.1mM_80C_5min_Mn_fastqc.png" width="80%">
 
+</details>
+
 - **Conclusion**: within ~400bp, the reads quality is generally good.
 
 ## Reads mapping
@@ -107,6 +112,9 @@ GAGC
 - **Plot with ** [```6.plot.R```](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.7/6.plot.R)  
 
 ### Absolute mutation rate
+
+<details>
+<summary>Absolute mutation rate:</summary>
 
 - Sample-1:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/2.absolute_mut/1-01-SL5-DMSO-37C-15min-Mg_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
@@ -153,9 +161,14 @@ GAGC
 - Sample-15:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/2.absolute_mut/15-15-Ctrl-C15-0.1mM-80C-5min-Mn_SMN2-Exon7-Amplicon.jpg" width="100%">
 
+</details>
+
 - For combined PDF figures, click [here](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.7/absolute_combined.pdf).
 
 ### Relative mutation rate
+
+<details>
+<summary>Relative mutation rate:</summary>
 
 - Sample-1:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/3.relative_mut/1-01-SL5-DMSO-37C-15min-Mg_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
@@ -203,6 +216,8 @@ GAGC
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/3.relative_mut/15-15-Ctrl-C15-0.1mM-80C-5min-Mn_SMN2-Exon7-Amplicon.jpg" width="100%">
 
 - For combined PDF figures, click [here](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.7/relative_combined.pdf).
+
+</details>
 
 ### Base Summary
 

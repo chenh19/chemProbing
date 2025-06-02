@@ -36,8 +36,11 @@ gagc
 - **FastQC with ** [```2.fastqc.sh```](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.8/2.fastqc.sh)  
 - **Note:** This batch is paired-end short-read sequencing data.  
 
-- DMSO_S33_R1:  
+- DMSO_S33_R1 (representative FastQC per base quality plot):  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.8/1.fastqc/DMSO_R1_S33_fastqc.png" width="80%">
+
+<details>
+<summary>View all samples</summary>
 
 - DMSO_S33_R2:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.8/1.fastqc/DMSO_R2_S33_fastqc.png" width="80%">
@@ -78,6 +81,8 @@ gagc
 - RM15-2_R2:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.8/1.fastqc/RM15-2_S45_L001_R2_001_fastqc.png" width="80%">
 
+</details>
+
 - **Conclusion**: within 250bp, the reads quality is generally good.
 
 
@@ -96,6 +101,9 @@ gagc
 - **Plot with ** [```6.plot.R```](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.8/6.plot.R)  
 
 ### Absolute mutation rate
+
+<details>
+<summary>Absolute mutation rate:</summary>
 
 - DMSO_S33:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.8/2.absolute_mut/DMSO-S33_RM.jpg" width="100%">
@@ -120,7 +128,12 @@ gagc
 
 - For combined PDF figures, click [here](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.8/absolute_combined.pdf).
 
+</details>
+
 ### Relative mutation rate
+
+<details>
+<summary>Relative mutation rate:</summary>
 
 - RM12-1:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.8/3.relative_mut/RM12-1-S4-L001_RM_re.jpg" width="100%">
@@ -135,6 +148,8 @@ gagc
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.8/3.relative_mut/RM15-2-S45-L001_RM.jpg" width="100%">
 
 - For combined PDF figures, click [here](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.8/relative_combined.pdf).
+
+</details>
 
 ### Base summary
 

@@ -32,7 +32,7 @@
     "href": "2025.5.7.html#fastqc-for-reads",
     "title": "2025.5.7: C12/C15 mutational profiling pilot testing",
     "section": "FastQC for reads",
-    "text": "FastQC for reads\n\nFastQC with  2.fastqc.sh\n\nNote: I started with FastQ files (raw reads) because Plasmidsaurus didn’t have the refseq and their assembly could be wrong.\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\nConclusion: within ~400bp, the reads quality is generally good."
+    "text": "FastQC for reads\n\nFastQC with  2.fastqc.sh\n\nNote: I started with FastQ files (raw reads) because Plasmidsaurus didn’t have the refseq and their assembly could be wrong.\nSample-1 (representative FastQC per base quality plot):\n\n\n\n\nView all samples\n\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\n\n\n\nConclusion: within ~400bp, the reads quality is generally good."
   },
   {
     "objectID": "2025.5.7.html#reads-mapping",
@@ -46,7 +46,7 @@
     "href": "2025.5.7.html#analyzing-and-visualization",
     "title": "2025.5.7: C12/C15 mutational profiling pilot testing",
     "section": "Analyzing and visualization",
-    "text": "Analyzing and visualization\n\nPileup with  4.mpileup.sh\n\nParse with  5.parse.R\n\nAbout Pileup Format, here is a detailed explanation. In short, column 4 denotes the depth at specific postion, and . and , in column 5 indicate matched reads.\n\nFor parsed mutation rate spreadsheets, click here.\nPlot with  6.plot.R\n\n\nAbsolute mutation rate\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\nFor combined PDF figures, click here.\n\n\n\nRelative mutation rate\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\nFor combined PDF figures, click here.\n\n\n\nBase Summary\n\n37 degrees samples:\n\n80 degrees samples:\n\nZhichao’s cDNA ctrl:"
+    "text": "Analyzing and visualization\n\nPileup with  4.mpileup.sh\n\nParse with  5.parse.R\n\nAbout Pileup Format, here is a detailed explanation. In short, column 4 denotes the depth at specific postion, and . and , in column 5 indicate matched reads.\n\nFor parsed mutation rate spreadsheets, click here.\nPlot with  6.plot.R\n\n\nAbsolute mutation rate\n\n\nAbsolute mutation rate:\n\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\n\n\n\nFor combined PDF figures, click here.\n\n\n\nRelative mutation rate\n\n\nRelative mutation rate:\n\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\nFor combined PDF figures, click here.\n\n\n\n\nBase Summary\n\n37 degrees samples:\n\n80 degrees samples:\n\nZhichao’s cDNA ctrl:"
   },
   {
     "objectID": "index.html",
@@ -137,7 +137,7 @@
     "href": "2025.5.8.html#fastqc-for-reads",
     "title": "2025.5.8: Re-analysis of Zhichao’s previous data",
     "section": "FastQC for reads",
-    "text": "FastQC for reads\n\nFastQC with  2.fastqc.sh\n\nNote: This batch is paired-end short-read sequencing data.\nDMSO_S33_R1:\n\nDMSO_S33_R2:\n\nDMSO_S49_R1:\n\nDMSO_S49_R2:\n\nDMSO_S57_R1:\n\nDMSO_S57_R2:\n\nRM12-1_R1:\n\nRM12-1_R2:\n\nRM12-2_R1:\n\nRM12-2_R2:\n\nRM15-1_R1:\n\nRM15-1_R2:\n\nRM15-2_R1:\n\nRM15-2_R2:\n\nConclusion: within 250bp, the reads quality is generally good."
+    "text": "FastQC for reads\n\nFastQC with  2.fastqc.sh\n\nNote: This batch is paired-end short-read sequencing data.\nDMSO_S33_R1 (representative FastQC per base quality plot):\n\n\n\n\nView all samples\n\n\nDMSO_S33_R2:\n\nDMSO_S49_R1:\n\nDMSO_S49_R2:\n\nDMSO_S57_R1:\n\nDMSO_S57_R2:\n\nRM12-1_R1:\n\nRM12-1_R2:\n\nRM12-2_R1:\n\nRM12-2_R2:\n\nRM15-1_R1:\n\nRM15-1_R2:\n\nRM15-2_R1:\n\nRM15-2_R2:\n\n\n\n\nConclusion: within 250bp, the reads quality is generally good."
   },
   {
     "objectID": "2025.5.8.html#reads-mapping",
@@ -151,6 +151,6 @@
     "href": "2025.5.8.html#analyzing-and-visualization",
     "title": "2025.5.8: Re-analysis of Zhichao’s previous data",
     "section": "Analyzing and visualization",
-    "text": "Analyzing and visualization\n\nPileup with  4.mpileup.sh\n\nParse with  5.parse.R\n\nAbout Pileup Format, here is a detailed explanation. In short, column 4 denotes the depth at specific postion, and . and , in column 5 indicate matched reads.\n\nFor parsed mutation rate spreadsheets, click here.\nPlot with  6.plot.R\n\n\nAbsolute mutation rate\n\nDMSO_S33:\n\nDMSO_S49:\n\nDMSO_S57:\n\nRM12-1:\n\nRM12-2:\n\nRM15-1:\n\nRM15-2:\n\nFor combined PDF figures, click here.\n\n\n\nRelative mutation rate\n\nRM12-1:\n\nRM12-2:\n\nRM15-1:\n\nRM15-2:\n\nFor combined PDF figures, click here.\n\n\n\nBase summary\n\nAll samples:"
+    "text": "Analyzing and visualization\n\nPileup with  4.mpileup.sh\n\nParse with  5.parse.R\n\nAbout Pileup Format, here is a detailed explanation. In short, column 4 denotes the depth at specific postion, and . and , in column 5 indicate matched reads.\n\nFor parsed mutation rate spreadsheets, click here.\nPlot with  6.plot.R\n\n\nAbsolute mutation rate\n\n\nAbsolute mutation rate:\n\n\nDMSO_S33:\n\nDMSO_S49:\n\nDMSO_S57:\n\nRM12-1:\n\nRM12-2:\n\nRM15-1:\n\nRM15-2:\n\nFor combined PDF figures, click here.\n\n\n\n\nRelative mutation rate\n\n\nRelative mutation rate:\n\n\nRM12-1:\n\nRM12-2:\n\nRM15-1:\n\nRM15-2:\n\nFor combined PDF figures, click here.\n\n\n\n\nBase summary\n\nAll samples:"
   }
 ]
