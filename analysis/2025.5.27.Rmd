@@ -7,7 +7,6 @@ output: html_document
 ## Samples
 
 - Re-analysis of [2025.5.7 dataset](https://chenh19.github.io/chemProbing/2025.5.7.html) with reads trimming.
-- Only focusing on Hang's samples (#1-12, SL5 Amplicon).
 - **Q**: why not including reads trimming in the first analysis? **Argument**: because we are trying to do mutational profiling and want to preserve as much as mutation information if possible. The overall mutation rate is low, and if we apply too stringent QC standards, we may lose signals.
 
 
@@ -21,6 +20,18 @@ taataactaattactgtcgttgacaggacacgagtaactcgtctatcttctgcaggctgcttacggtttcgtccgtgttg
 cagccgatcatcagcacatctaggtttcgtccgggtgtgaccgaaaggtaagatggagagccttgtccctggtttcaacg
 agg
 ```
+
+- [Amplicon-3-trimmed.fa](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.27/Amplicon-3-trimmed.fa)  
+```{r,eval=FALSE}
+>SARS-CoV2-5UTR-Amplicon-short-trimmed  (243 bp)
+tagatctgttctctaaacgaactttaaaatctgtgtggctgtcactcggctgcgtgcttagtgcactcacgcagtataat
+taataactaattactgtcgttgacaggacacgagtaactcgtctatcttctgcaggctgcttacggtttcgtccgtgttg
+cagccgatcatcagcacatctaggtttcgtccgggtgtgaccgaaaggtaagatggagagccttgtccctggtttcaacg
+agg
+```
+
+
+
 
 - **Prrepare reference sequences with ** [```1.refseq.sh```](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.27/1.refseq.sh)
 

@@ -60,21 +60,21 @@
     "href": "2025.5.27.html",
     "title": "2025.5.27: Plasmidsaurus data re-analysis",
     "section": "",
-    "text": "Re-analysis of 2025.5.7 dataset with reads trimming.\nOnly focusing on Hang’s samples (#1-12, SL5 Amplicon).\nQ: why not including reads trimming in the first analysis? Argument: because we are trying to do mutational profiling and want to preserve as much as mutation information if possible. The overall mutation rate is low, and if we apply too stringent QC standards, we may lose signals."
+    "text": "Re-analysis of 2025.5.7 dataset with reads trimming.\nQ: why not including reads trimming in the first analysis? Argument: because we are trying to do mutational profiling and want to preserve as much as mutation information if possible. The overall mutation rate is low, and if we apply too stringent QC standards, we may lose signals."
   },
   {
     "objectID": "2025.5.27.html#samples",
     "href": "2025.5.27.html#samples",
     "title": "2025.5.27: Plasmidsaurus data re-analysis",
     "section": "",
-    "text": "Re-analysis of 2025.5.7 dataset with reads trimming.\nOnly focusing on Hang’s samples (#1-12, SL5 Amplicon).\nQ: why not including reads trimming in the first analysis? Argument: because we are trying to do mutational profiling and want to preserve as much as mutation information if possible. The overall mutation rate is low, and if we apply too stringent QC standards, we may lose signals."
+    "text": "Re-analysis of 2025.5.7 dataset with reads trimming.\nQ: why not including reads trimming in the first analysis? Argument: because we are trying to do mutational profiling and want to preserve as much as mutation information if possible. The overall mutation rate is low, and if we apply too stringent QC standards, we may lose signals."
   },
   {
     "objectID": "2025.5.27.html#reference-sequences",
     "href": "2025.5.27.html#reference-sequences",
     "title": "2025.5.27: Plasmidsaurus data re-analysis",
     "section": "Reference sequences",
-    "text": "Reference sequences\n\nAmplicon-3-trimmed.fa\n\n\n&gt;SARS-CoV2-5UTR-Amplicon-short-trimmed  (243 bp)\ntagatctgttctctaaacgaactttaaaatctgtgtggctgtcactcggctgcgtgcttagtgcactcacgcagtataat\ntaataactaattactgtcgttgacaggacacgagtaactcgtctatcttctgcaggctgcttacggtttcgtccgtgttg\ncagccgatcatcagcacatctaggtttcgtccgggtgtgaccgaaaggtaagatggagagccttgtccctggtttcaacg\nagg\n\n\nPrrepare reference sequences with  1.refseq.sh"
+    "text": "Reference sequences\n\nAmplicon-3-trimmed.fa\n\n\n&gt;SARS-CoV2-5UTR-Amplicon-short-trimmed  (243 bp)\ntagatctgttctctaaacgaactttaaaatctgtgtggctgtcactcggctgcgtgcttagtgcactcacgcagtataat\ntaataactaattactgtcgttgacaggacacgagtaactcgtctatcttctgcaggctgcttacggtttcgtccgtgttg\ncagccgatcatcagcacatctaggtttcgtccgggtgtgaccgaaaggtaagatggagagccttgtccctggtttcaacg\nagg\n\n\nAmplicon-3-trimmed.fa\n\n\n&gt;SARS-CoV2-5UTR-Amplicon-short-trimmed  (243 bp)\ntagatctgttctctaaacgaactttaaaatctgtgtggctgtcactcggctgcgtgcttagtgcactcacgcagtataat\ntaataactaattactgtcgttgacaggacacgagtaactcgtctatcttctgcaggctgcttacggtttcgtccgtgttg\ncagccgatcatcagcacatctaggtttcgtccgggtgtgaccgaaaggtaagatggagagccttgtccctggtttcaacg\nagg\n\n\nPrrepare reference sequences with  1.refseq.sh"
   },
   {
     "objectID": "2025.5.27.html#fastqc-for-reads",
