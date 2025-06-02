@@ -215,9 +215,9 @@ GAGC
 - Sample-15:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.7/3.relative_mut/15-15-Ctrl-C15-0.1mM-80C-5min-Mn_SMN2-Exon7-Amplicon.jpg" width="100%">
 
-- For combined PDF figures, click [here](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.7/relative_combined.pdf).
-
 </details>
+
+- For combined PDF figures, click [here](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.7/relative_combined.pdf).
 
 ### Base Summary
 
