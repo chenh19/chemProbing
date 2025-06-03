@@ -49,67 +49,60 @@
     "text": "Analyzing and visualization\n\nPileup with  4.mpileup.sh\n\nParse with  5.parse.R\n\nAbout Pileup Format, here is a detailed explanation. In short, column 4 denotes the depth at specific postion, and . and , in column 5 indicate matched reads.\n\nFor parsed mutation rate spreadsheets, click here.\nPlot with  6.plot.R\n\n\nAbsolute mutation rate\n\n\nAbsolute mutation rate:\n\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\n\n\n\nFor combined PDF figures, click here.\n\n\n\nRelative mutation rate\n\n\nRelative mutation rate:\n\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\n\n\n\nFor combined PDF figures, click here.\n\n\n\nBase Summary\n\n37 degrees samples:\n\n80 degrees samples:\n\nZhichao’s cDNA ctrl:"
   },
   {
-    "objectID": "2025.5.27-b.html",
-    "href": "2025.5.27-b.html",
-    "title": "2025.5.27-b: Plasmidsaurus data re-analysis (part-2)",
+    "objectID": "2025.5.27-c.html",
+    "href": "2025.5.27-c.html",
+    "title": "2025.5.27-c: Plasmidsaurus data re-analysis (part-3)",
     "section": "",
-    "text": "Re-analysis of 2025.5.7 dataset with reads trimming.\nThis batch of analysis uses the trimmed SARS-CoV2-5UTR-Amplicon instead of the full length, so that it can allow comparison with the later AVITI data."
+    "text": "Re-analysis of 2025.5.7 dataset with reads trimming.\nControls using Zhichao’s cDNA."
   },
   {
-    "objectID": "2025.5.27-b.html#samples",
-    "href": "2025.5.27-b.html#samples",
-    "title": "2025.5.27-b: Plasmidsaurus data re-analysis (part-2)",
+    "objectID": "2025.5.27-c.html#samples",
+    "href": "2025.5.27-c.html#samples",
+    "title": "2025.5.27-c: Plasmidsaurus data re-analysis (part-3)",
     "section": "",
-    "text": "Re-analysis of 2025.5.7 dataset with reads trimming.\nThis batch of analysis uses the trimmed SARS-CoV2-5UTR-Amplicon instead of the full length, so that it can allow comparison with the later AVITI data."
+    "text": "Re-analysis of 2025.5.7 dataset with reads trimming.\nControls using Zhichao’s cDNA."
   },
   {
-    "objectID": "2025.5.27-b.html#reference-sequences",
-    "href": "2025.5.27-b.html#reference-sequences",
-    "title": "2025.5.27-b: Plasmidsaurus data re-analysis (part-2)",
+    "objectID": "2025.5.27-c.html#reference-sequences",
+    "href": "2025.5.27-c.html#reference-sequences",
+    "title": "2025.5.27-c: Plasmidsaurus data re-analysis (part-3)",
     "section": "Reference sequences",
-    "text": "Reference sequences\n\nAmplicon-3-trimmed.fa\n\n\n&gt;SARS-CoV2-5UTR-Amplicon-short-trimmed  (243 bp)\ntagatctgttctctaaacgaactttaaaatctgtgtggctgtcactcggctgcgtgcttagtgcactcacgcagtataat\ntaataactaattactgtcgttgacaggacacgagtaactcgtctatcttctgcaggctgcttacggtttcgtccgtgttg\ncagccgatcatcagcacatctaggtttcgtccgggtgtgaccgaaaggtaagatggagagccttgtccctggtttcaacg\nagg\n\n\nPrrepare reference sequences with  1.refseq.sh"
+    "text": "Reference sequences\n\nAmplicon-2.fa\n\n\n&gt;SMN2-Exon7-Amplicon  (324 bp)\nAACTTCCTTTATTTTCCTTACAGGGTTTTAGACAAAATCAAAAAGAAGGAAGGTGCTCACATTCCTTAAATTAAGGAGTA\nAGTCTGCCAGCATTATGAAAGTGAATCTTACTTTTGTAAAACTTTATGGTTTGTGGAAAACAAATGTTTTTGAACATTTA\nAAAAGTTCAGATGTTAGAAAGTTGAAAGGTTAATGTAAAACAATCAATATTAAAGAATTTTGATGCCAAAACTATTAGAT\nAAAAGGTTAATCTACATCCCTACTAGAATTCTCATACTTAACTGGTTGGTTGTGTGGAAGAAACATACTTTCACAATAAA\nGAGC\n\n\nPrrepare reference sequences with  1.refseq.sh"
   },
   {
-    "objectID": "2025.5.27-b.html#fastqc-for-reads",
-    "href": "2025.5.27-b.html#fastqc-for-reads",
-    "title": "2025.5.27-b: Plasmidsaurus data re-analysis (part-2)",
+    "objectID": "2025.5.27-c.html#fastqc-for-reads",
+    "href": "2025.5.27-c.html#fastqc-for-reads",
+    "title": "2025.5.27-c: Plasmidsaurus data re-analysis (part-3)",
     "section": "FastQC for reads",
-    "text": "FastQC for reads\n\nFastQC with  2.fastqc.sh\nSample-1 (representative FastQC per base quality plot before reads trimming):\n\n\n\n\nView all samples before reads trimming:\n\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\nConclusion: within ~400bp, the reads quality is generally good, but the variation is big."
+    "text": "FastQC for reads\n\nFastQC with  2.fastqc.sh\nSample-13 (representative FastQC per base quality plot before reads trimming):\n\n\n\n\nView all samples before reads trimming:\n\n\nSample-14:\n\nSample-15:\n\n\n\n\nConclusion: within ~400bp, the reads quality is generally good, but the variation is big."
   },
   {
-    "objectID": "2025.5.27-b.html#reads-trimming",
-    "href": "2025.5.27-b.html#reads-trimming",
-    "title": "2025.5.27-b: Plasmidsaurus data re-analysis (part-2)",
+    "objectID": "2025.5.27-c.html#reads-trimming",
+    "href": "2025.5.27-c.html#reads-trimming",
+    "title": "2025.5.27-c: Plasmidsaurus data re-analysis (part-3)",
     "section": "Reads trimming",
     "text": "Reads trimming\n\nReads trimming with  3.trim.sh\nKey filtering standards:\n\n\n1.Keeping the first 400bp and discard the tail\n2.Trimming the tail with average Q-score &lt; 20 (4 bases moving window size)\n3.Discarding reads with more than 20% of Q-score &lt; 20 bases\n4.Discarding reads less than 200bp\n\n\nConclusion: after trimming, the quality of the overall reads quality is improved and variation is reduced."
   },
   {
-    "objectID": "2025.5.27-b.html#fastqc-for-reads-after-trimming",
-    "href": "2025.5.27-b.html#fastqc-for-reads-after-trimming",
-    "title": "2025.5.27-b: Plasmidsaurus data re-analysis (part-2)",
+    "objectID": "2025.5.27-c.html#fastqc-for-reads-after-trimming",
+    "href": "2025.5.27-c.html#fastqc-for-reads-after-trimming",
+    "title": "2025.5.27-c: Plasmidsaurus data re-analysis (part-3)",
     "section": "FastQC for reads after trimming",
-    "text": "FastQC for reads after trimming\n\nRe-FastQC with  4.refastqc.sh\nSample-1 (representative FastQC per base quality plot after reads trimming): \n\n\n\nView all samples before after trimming:\n\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:"
+    "text": "FastQC for reads after trimming\n\nRe-FastQC with  4.refastqc.sh\nSample-13 (representative FastQC per base quality plot after reads trimming): \n\n\n\nView all samples before after trimming:\n\n\nSample-14:\n\nSample-15:"
   },
   {
-    "objectID": "2025.5.27-b.html#reads-mapping",
-    "href": "2025.5.27-b.html#reads-mapping",
-    "title": "2025.5.27-b: Plasmidsaurus data re-analysis (part-2)",
+    "objectID": "2025.5.27-c.html#reads-mapping",
+    "href": "2025.5.27-c.html#reads-mapping",
+    "title": "2025.5.27-c: Plasmidsaurus data re-analysis (part-3)",
     "section": "Reads mapping",
     "text": "Reads mapping\n\nReads mapping with  5.bam.sh\n\nNote: Minimap2 was the aligning tool used here (GitHub).It’s fast and suited for Nanopore reads (doesn’t require R1 and R2 as input)."
   },
   {
-    "objectID": "2025.5.27-b.html#analyzing-and-visualization",
-    "href": "2025.5.27-b.html#analyzing-and-visualization",
-    "title": "2025.5.27-b: Plasmidsaurus data re-analysis (part-2)",
+    "objectID": "2025.5.27-c.html#analyzing-and-visualization",
+    "href": "2025.5.27-c.html#analyzing-and-visualization",
+    "title": "2025.5.27-c: Plasmidsaurus data re-analysis (part-3)",
     "section": "Analyzing and visualization",
-    "text": "Analyzing and visualization\n\nPileup with  6.mpileup.sh\n\nParse with  7.parse.R\n\nFor parsed mutation rate spreadsheets, click here.\nPlot with  8.plot.R\n\n\nAbsolute mutation rate (after reads trimming)\n\n\nAbsolute mutation rate:\n\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\n\nRelative mutation rate (after reads trimming)\n\n\nRelative mutation rate:\n\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\n\nBase Summary\n\nAll samples:\n\n\n\nConclusion: The base summary is similar to the analysis using full length Amplicon as the refseq."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "chemProbing",
-    "section": "",
-    "text": "To-do:\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Analyzing and visualization\n\nPileup with  6.mpileup.sh\n\nParse with  7.parse.R\n\nFor parsed mutation rate spreadsheets, click here.\nPlot with  8.plot.R\n\n\nAbsolute mutation rate (after reads trimming)\n\n\nAbsolute mutation rate:\n\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\n\n\n\n\nRelative mutation rate (after reads trimming)\n\n\nRelative mutation rate:\n\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\n\n\n\n\nBase Summary\n\nAll samples:\n\n\n\nConclusion: The trend of mutations is consistent, but maybe there is a degradation in the old samples."
   },
   {
     "objectID": "2025.5.27-a.html",
@@ -168,60 +161,123 @@
     "text": "Analyzing and visualization\n\nPileup with  6.mpileup.sh\n\nParse with  7.parse.R\n\nFor parsed mutation rate spreadsheets, click here.\nPlot with  8.plot.R\n\n\nAbsolute mutation rate (after reads trimming)\n\n\nAbsolute mutation rate:\n\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\n\nRelative mutation rate (after reads trimming)\n\n\nRelative mutation rate:\n\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\n\nBase Summary\n\nAll samples:\n\n\n\nConclusion: Nanopore sequencing can capture the mutational profile that is seen in previous experiment, but Nanopore is inherently noisy and requires careful QC, thus not recommended for future mutational profiling."
   },
   {
-    "objectID": "2025.5.27-c.html",
-    "href": "2025.5.27-c.html",
-    "title": "2025.5.27-c: Plasmidsaurus data re-analysis (part-3)",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "chemProbing",
     "section": "",
-    "text": "Re-analysis of 2025.5.7 dataset with reads trimming.\nControls using Zhichao’s cDNA."
+    "text": "To-do:\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
-    "objectID": "2025.5.27-c.html#samples",
-    "href": "2025.5.27-c.html#samples",
-    "title": "2025.5.27-c: Plasmidsaurus data re-analysis (part-3)",
+    "objectID": "2025.5.27-b.html",
+    "href": "2025.5.27-b.html",
+    "title": "2025.5.27-b: Plasmidsaurus data re-analysis (part-2)",
     "section": "",
-    "text": "Re-analysis of 2025.5.7 dataset with reads trimming.\nControls using Zhichao’s cDNA."
+    "text": "Re-analysis of 2025.5.7 dataset with reads trimming.\nThis batch of analysis uses the trimmed SARS-CoV2-5UTR-Amplicon instead of the full length, so that it can allow comparison with the later AVITI data."
   },
   {
-    "objectID": "2025.5.27-c.html#reference-sequences",
-    "href": "2025.5.27-c.html#reference-sequences",
-    "title": "2025.5.27-c: Plasmidsaurus data re-analysis (part-3)",
+    "objectID": "2025.5.27-b.html#samples",
+    "href": "2025.5.27-b.html#samples",
+    "title": "2025.5.27-b: Plasmidsaurus data re-analysis (part-2)",
+    "section": "",
+    "text": "Re-analysis of 2025.5.7 dataset with reads trimming.\nThis batch of analysis uses the trimmed SARS-CoV2-5UTR-Amplicon instead of the full length, so that it can allow comparison with the later AVITI data."
+  },
+  {
+    "objectID": "2025.5.27-b.html#reference-sequences",
+    "href": "2025.5.27-b.html#reference-sequences",
+    "title": "2025.5.27-b: Plasmidsaurus data re-analysis (part-2)",
     "section": "Reference sequences",
-    "text": "Reference sequences\n\nAmplicon-2.fa\n\n\n&gt;SMN2-Exon7-Amplicon  (324 bp)\nAACTTCCTTTATTTTCCTTACAGGGTTTTAGACAAAATCAAAAAGAAGGAAGGTGCTCACATTCCTTAAATTAAGGAGTA\nAGTCTGCCAGCATTATGAAAGTGAATCTTACTTTTGTAAAACTTTATGGTTTGTGGAAAACAAATGTTTTTGAACATTTA\nAAAAGTTCAGATGTTAGAAAGTTGAAAGGTTAATGTAAAACAATCAATATTAAAGAATTTTGATGCCAAAACTATTAGAT\nAAAAGGTTAATCTACATCCCTACTAGAATTCTCATACTTAACTGGTTGGTTGTGTGGAAGAAACATACTTTCACAATAAA\nGAGC\n\n\nPrrepare reference sequences with  1.refseq.sh"
+    "text": "Reference sequences\n\nAmplicon-3-trimmed.fa\n\n\n&gt;SARS-CoV2-5UTR-Amplicon-short-trimmed  (243 bp)\ntagatctgttctctaaacgaactttaaaatctgtgtggctgtcactcggctgcgtgcttagtgcactcacgcagtataat\ntaataactaattactgtcgttgacaggacacgagtaactcgtctatcttctgcaggctgcttacggtttcgtccgtgttg\ncagccgatcatcagcacatctaggtttcgtccgggtgtgaccgaaaggtaagatggagagccttgtccctggtttcaacg\nagg\n\n\nPrrepare reference sequences with  1.refseq.sh"
   },
   {
-    "objectID": "2025.5.27-c.html#fastqc-for-reads",
-    "href": "2025.5.27-c.html#fastqc-for-reads",
-    "title": "2025.5.27-c: Plasmidsaurus data re-analysis (part-3)",
+    "objectID": "2025.5.27-b.html#fastqc-for-reads",
+    "href": "2025.5.27-b.html#fastqc-for-reads",
+    "title": "2025.5.27-b: Plasmidsaurus data re-analysis (part-2)",
     "section": "FastQC for reads",
-    "text": "FastQC for reads\n\nFastQC with  2.fastqc.sh\nSample-13 (representative FastQC per base quality plot before reads trimming):\n\n\n\n\nView all samples before reads trimming:\n\n\nSample-14:\n\nSample-15:\n\n\n\n\nConclusion: within ~400bp, the reads quality is generally good, but the variation is big."
+    "text": "FastQC for reads\n\nFastQC with  2.fastqc.sh\nSample-1 (representative FastQC per base quality plot before reads trimming):\n\n\n\n\nView all samples before reads trimming:\n\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\nConclusion: within ~400bp, the reads quality is generally good, but the variation is big."
   },
   {
-    "objectID": "2025.5.27-c.html#reads-trimming",
-    "href": "2025.5.27-c.html#reads-trimming",
-    "title": "2025.5.27-c: Plasmidsaurus data re-analysis (part-3)",
+    "objectID": "2025.5.27-b.html#reads-trimming",
+    "href": "2025.5.27-b.html#reads-trimming",
+    "title": "2025.5.27-b: Plasmidsaurus data re-analysis (part-2)",
     "section": "Reads trimming",
     "text": "Reads trimming\n\nReads trimming with  3.trim.sh\nKey filtering standards:\n\n\n1.Keeping the first 400bp and discard the tail\n2.Trimming the tail with average Q-score &lt; 20 (4 bases moving window size)\n3.Discarding reads with more than 20% of Q-score &lt; 20 bases\n4.Discarding reads less than 200bp\n\n\nConclusion: after trimming, the quality of the overall reads quality is improved and variation is reduced."
   },
   {
-    "objectID": "2025.5.27-c.html#fastqc-for-reads-after-trimming",
-    "href": "2025.5.27-c.html#fastqc-for-reads-after-trimming",
-    "title": "2025.5.27-c: Plasmidsaurus data re-analysis (part-3)",
+    "objectID": "2025.5.27-b.html#fastqc-for-reads-after-trimming",
+    "href": "2025.5.27-b.html#fastqc-for-reads-after-trimming",
+    "title": "2025.5.27-b: Plasmidsaurus data re-analysis (part-2)",
     "section": "FastQC for reads after trimming",
-    "text": "FastQC for reads after trimming\n\nRe-FastQC with  4.refastqc.sh\nSample-13 (representative FastQC per base quality plot after reads trimming): \n\n\n\nView all samples before after trimming:\n\n\nSample-14:\n\nSample-15:"
+    "text": "FastQC for reads after trimming\n\nRe-FastQC with  4.refastqc.sh\nSample-1 (representative FastQC per base quality plot after reads trimming): \n\n\n\nView all samples before after trimming:\n\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:"
   },
   {
-    "objectID": "2025.5.27-c.html#reads-mapping",
-    "href": "2025.5.27-c.html#reads-mapping",
-    "title": "2025.5.27-c: Plasmidsaurus data re-analysis (part-3)",
+    "objectID": "2025.5.27-b.html#reads-mapping",
+    "href": "2025.5.27-b.html#reads-mapping",
+    "title": "2025.5.27-b: Plasmidsaurus data re-analysis (part-2)",
     "section": "Reads mapping",
     "text": "Reads mapping\n\nReads mapping with  5.bam.sh\n\nNote: Minimap2 was the aligning tool used here (GitHub).It’s fast and suited for Nanopore reads (doesn’t require R1 and R2 as input)."
   },
   {
-    "objectID": "2025.5.27-c.html#analyzing-and-visualization",
-    "href": "2025.5.27-c.html#analyzing-and-visualization",
-    "title": "2025.5.27-c: Plasmidsaurus data re-analysis (part-3)",
+    "objectID": "2025.5.27-b.html#analyzing-and-visualization",
+    "href": "2025.5.27-b.html#analyzing-and-visualization",
+    "title": "2025.5.27-b: Plasmidsaurus data re-analysis (part-2)",
     "section": "Analyzing and visualization",
-    "text": "Analyzing and visualization\n\nPileup with  6.mpileup.sh\n\nParse with  7.parse.R\n\nFor parsed mutation rate spreadsheets, click here.\nPlot with  8.plot.R\n\n\nAbsolute mutation rate (after reads trimming)\n\n\nAbsolute mutation rate:\n\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\n\n\n\n\nRelative mutation rate (after reads trimming)\n\n\nRelative mutation rate:\n\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\n\n\n\n\nBase Summary\n\nAll samples:\n\n\n\nConclusion: The trend of mutations is consistent, but maybe there is a degradation in the old samples."
+    "text": "Analyzing and visualization\n\nPileup with  6.mpileup.sh\n\nParse with  7.parse.R\n\nFor parsed mutation rate spreadsheets, click here.\nPlot with  8.plot.R\n\n\nAbsolute mutation rate (after reads trimming)\n\n\nAbsolute mutation rate:\n\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\n\nRelative mutation rate (after reads trimming)\n\n\nRelative mutation rate:\n\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\n\nBase Summary\n\nAll samples:\n\n\n\nConclusion: The base summary is similar to the analysis using full length Amplicon as the refseq."
+  },
+  {
+    "objectID": "2025.5.28-a.html",
+    "href": "2025.5.28-a.html",
+    "title": "2025.5.28-a: Azenta Amplicon-EZ (part-1)",
+    "section": "",
+    "text": "RNA covalent modifiers:\n\n\nThe Amplicon-EZ service was provided by Azenta.\nFor experimental details, click here."
+  },
+  {
+    "objectID": "2025.5.28-a.html#samples",
+    "href": "2025.5.28-a.html#samples",
+    "title": "2025.5.28-a: Azenta Amplicon-EZ (part-1)",
+    "section": "",
+    "text": "RNA covalent modifiers:\n\n\nThe Amplicon-EZ service was provided by Azenta.\nFor experimental details, click here."
+  },
+  {
+    "objectID": "2025.5.28-a.html#reference-sequences",
+    "href": "2025.5.28-a.html#reference-sequences",
+    "title": "2025.5.28-a: Azenta Amplicon-EZ (part-1)",
+    "section": "Reference sequences",
+    "text": "Reference sequences\n\nAmplicon-1.fa\n\n\n&gt;SARS-CoV2-5UTR-Amplicon  (378 bp)\naggtttataccttcccaggtaacaaaccaaccaactttcgatctcttgtagatctgttctctaaacgaactttaaaatct\ngtgtggctgtcactcggctgcgtgcttagtgcactcacgcagtataattaataactaattactgtcgttgacaggacacg\nagtaactcgtctatcttctgcaggctgcttacggtttcgtccgtgttgcagccgatcatcagcacatctaggtttcgtcc\ngggtgtgaccgaaaggtaagatggagagccttgtccctggtttcaacgagggagtcaaagttctgtttgccctgatctgc\natcgctgtggccgaggccaagcccaccgagaacaacgaagacttcaacatcgtggccg\n\n\nPrrepare reference sequences with  1.refseq.sh"
+  },
+  {
+    "objectID": "2025.5.28-a.html#fastqc-for-reads",
+    "href": "2025.5.28-a.html#fastqc-for-reads",
+    "title": "2025.5.28-a: Azenta Amplicon-EZ (part-1)",
+    "section": "FastQC for reads",
+    "text": "FastQC for reads\n\nFastQC with  2.fastqc.sh\nSample-7_R1 (representative FastQC per base quality plot before reads trimming):\n\nSample-7_R2 (representative FastQC per base quality plot before reads trimming):\n\n\n\n\nView all samples before reads trimming:\n\n\nSample-8_R1:\n\nSample-8_R2:\n\nSample-9_R1:\n\nSample-9_R2:\n\nSample-10_R1:\n\nSample-10_R2:\n\nSample-11_R1:\n\nSample-11_R2:\n\nSample-12_R1:\n\nSample-12_R2:\n\n\n\n\nConclusion: within ~400bp, the reads quality is generally good, but the variation is big."
+  },
+  {
+    "objectID": "2025.5.28-a.html#reads-trimming",
+    "href": "2025.5.28-a.html#reads-trimming",
+    "title": "2025.5.28-a: Azenta Amplicon-EZ (part-1)",
+    "section": "Reads trimming",
+    "text": "Reads trimming\n\nReads trimming with  3.trim.sh\nKey filtering standards:\n\n\n1.Keeping the first 400bp and discard the tail\n2.Trimming the tail with average Q-score &lt; 20 (4 bases moving window size)\n3.Discarding reads with more than 20% of Q-score &lt; 20 bases\n4.Discarding reads less than 200bp\n\n\nConclusion: after trimming, the quality of the overall reads quality is improved and variation is reduced."
+  },
+  {
+    "objectID": "2025.5.28-a.html#fastqc-for-reads-after-trimming",
+    "href": "2025.5.28-a.html#fastqc-for-reads-after-trimming",
+    "title": "2025.5.28-a: Azenta Amplicon-EZ (part-1)",
+    "section": "FastQC for reads after trimming",
+    "text": "FastQC for reads after trimming\n\nRe-FastQC with  4.refastqc.sh\nSample-1 (representative FastQC per base quality plot after reads trimming): \n\n\n\nView all samples before after trimming:\n\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:"
+  },
+  {
+    "objectID": "2025.5.28-a.html#reads-mapping",
+    "href": "2025.5.28-a.html#reads-mapping",
+    "title": "2025.5.28-a: Azenta Amplicon-EZ (part-1)",
+    "section": "Reads mapping",
+    "text": "Reads mapping\n\nReads mapping with  5.bam.sh"
+  },
+  {
+    "objectID": "2025.5.28-a.html#analyzing-and-visualization",
+    "href": "2025.5.28-a.html#analyzing-and-visualization",
+    "title": "2025.5.28-a: Azenta Amplicon-EZ (part-1)",
+    "section": "Analyzing and visualization",
+    "text": "Analyzing and visualization\n\nPileup with  6.mpileup.sh\n\nParse with  7.parse.R\n\nFor parsed mutation rate spreadsheets, click here.\nPlot with  8.plot.R\n\n\nAbsolute mutation rate (after reads trimming)\n\n\nAbsolute mutation rate:\n\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\n\nRelative mutation rate (after reads trimming)\n\n\nRelative mutation rate:\n\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\n\nBase Summary\n\nAll samples:\n\n\n\nConclusion: Nanopore sequencing can capture the mutational profile that is seen in previous experiment, but Nanopore is inherently noisy and requires careful QC, thus not recommended for future mutational profiling."
   },
   {
     "objectID": "2025.5.8.html",

@@ -1,0 +1,243 @@
+---
+title: "2025.5.28-a: Azenta Amplicon-EZ (part-1)"
+output: html_document
+---
+
+
+## Samples
+
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/Samples.png" width="100%">
+  
+RNA covalent modifiers:  
+
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/RNA_CM.png" width="50%">
+
+- The **Amplicon-EZ** service was provided by [Azenta](https://www.genewiz.com/public/services/next-generation-sequencing/amplicon-sequencing-services/amplicon-ez).  
+
+- For experimental details, click [here](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/2025.5.12 80C samples re-seq with Azenta Amplicon-EZ.pdf).
+
+
+## Reference sequences
+
+- [Amplicon-1.fa](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/Amplicon-1.fa)  
+```{r,eval=FALSE}
+>SARS-CoV2-5UTR-Amplicon  (378 bp)
+aggtttataccttcccaggtaacaaaccaaccaactttcgatctcttgtagatctgttctctaaacgaactttaaaatct
+gtgtggctgtcactcggctgcgtgcttagtgcactcacgcagtataattaataactaattactgtcgttgacaggacacg
+agtaactcgtctatcttctgcaggctgcttacggtttcgtccgtgttgcagccgatcatcagcacatctaggtttcgtcc
+gggtgtgaccgaaaggtaagatggagagccttgtccctggtttcaacgagggagtcaaagttctgtttgccctgatctgc
+atcgctgtggccgaggccaagcccaccgagaacaacgaagacttcaacatcgtggccg
+```
+
+- **Prrepare reference sequences with ** [```1.refseq.sh```](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/1.refseq.sh)
+
+
+## FastQC for reads
+
+- **FastQC with ** [```2.fastqc.sh```](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/2.fastqc.sh)  
+
+- Sample-7_R1 (representative FastQC per base quality plot before reads trimming):  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/1.fastqc/07-SL5-DMSO-80C-15min-Mg_R1_001_fastqc_per_base_quality.png" width="80%">
+- Sample-7_R2 (representative FastQC per base quality plot before reads trimming):  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/1.fastqc/07-SL5-DMSO-80C-15min-Mg_R2_001_fastqc_per_base_quality.png" width="80%">
+
+<details>
+<summary>View all samples before reads trimming:</summary>
+
+- Sample-8_R1:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/1.fastqc/08-SL5-DMSO-80C-15min-Mn_R1_001_fastqc_per_base_quality.png" width="80%">
+- Sample-8_R2:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/1.fastqc/08-SL5-DMSO-80C-15min-Mn_R2_001_fastqc_per_base_quality.png" width="80%">
+
+- Sample-9_R1:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/1.fastqc/09-SL5-C12-5mM-80C-15min-Mn_R1_001_fastqc_per_base_quality.png" width="80%">
+- Sample-9_R2:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/1.fastqc/09-SL5-C12-5mM-80C-15min-Mn_R2_001_fastqc_per_base_quality.png" width="80%">
+
+- Sample-10_R1:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/1.fastqc/10-SL5-C15-5mM-80C-15min-Mn_R1_001_fastqc_per_base_quality.png" width="80%">
+- Sample-10_R2:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/1.fastqc/10-SL5-C15-5mM-80C-15min-Mn_R2_001_fastqc_per_base_quality.png" width="80%">
+
+- Sample-11_R1:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/1.fastqc/11-SL5-C12-500uM-80C-15min-Mn_R1_001_fastqc_per_base_quality.png" width="80%">
+- Sample-11_R2:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/1.fastqc/11-SL5-C12-500uM-80C-15min-Mn_R2_001_fastqc_per_base_quality.png" width="80%">
+
+- Sample-12_R1:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/1.fastqc/12-SL5-C15-500uM-80C-15min-Mn_R1_001_fastqc_per_base_quality.png" width="80%">
+- Sample-12_R2:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/1.fastqc/12-SL5-C15-500uM-80C-15min-Mn_R2_001_fastqc_per_base_quality.png" width="80%">
+
+</details>
+
+- **Conclusion**: within ~400bp, the reads quality is generally good, but the variation is big.
+
+
+## Reads trimming
+
+- **Reads trimming with ** [```3.trim.sh```](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/3.trim.sh)  
+
+- Key filtering standards:  
+```{r,eval=FALSE}
+1.Keeping the first 400bp and discard the tail
+2.Trimming the tail with average Q-score < 20 (4 bases moving window size)
+3.Discarding reads with more than 20% of Q-score < 20 bases
+4.Discarding reads less than 200bp
+```
+
+- **Conclusion**: after trimming, the quality of the overall reads quality is improved and variation is reduced.
+
+
+## FastQC for reads after trimming
+
+- **Re-FastQC with ** [```4.refastqc.sh```](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/4.refastqc.sh)  
+
+- Sample-1 (representative FastQC per base quality plot after reads trimming): 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/2.refastqc/WV2JYX_1_01_SL5_DMSO_37C_15min_Mg_cut_trimmed_fastqc_per_base_quality.png" width="80%">
+
+
+<details>
+<summary>View all samples before after trimming:</summary>
+
+- Sample-2:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/2.refastqc/WV2JYX_2_02_SL5_DMSO_37C_15min_Mn_cut_trimmed_fastqc_per_base_quality.png" width="80%">
+
+- Sample-3:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/2.refastqc/WV2JYX_3_03_SL5_C12_5mM_37C_15min_Mn_cut_trimmed_fastqc_per_base_quality.png" width="80%">
+
+- Sample-4:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/2.refastqc/WV2JYX_4_04_SL5_C15_5mM_37C_15min_Mn_cut_trimmed_fastqc_per_base_quality.png" width="80%">
+
+- Sample-5:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/2.refastqc/WV2JYX_5_05_SL5_C12_0.5mM_37C_15min_Mn_cut_trimmed_fastqc_per_base_quality.png" width="80%">
+
+- Sample-6:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/2.refastqc/WV2JYX_6_06_SL5_C15_0.5mM_37C_15min_Mn_cut_trimmed_fastqc_per_base_quality.png" width="80%">
+
+- Sample-7:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/2.refastqc/WV2JYX_7_07_SL5_DMSO_80C_15min_Mg_cut_trimmed_fastqc_per_base_quality.png" width="80%">
+
+- Sample-8:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/2.refastqc/WV2JYX_8_08_SL5_DMSO_80C_15min_Mn_cut_trimmed_fastqc_per_base_quality.png" width="80%">
+
+- Sample-9:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/2.refastqc/WV2JYX_9_09_SL5_C12_5mM_80C_15min_Mn_cut_trimmed_fastqc_per_base_quality.png" width="80%">
+
+- Sample-10:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/2.refastqc/WV2JYX_10_10_SL5_C15_5mM_80C_15min_Mn_cut_trimmed_fastqc_per_base_quality.png" width="80%">
+
+- Sample-11:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/2.refastqc/WV2JYX_11_11_SL5_C12_0.5mM_80C_15min_Mn_cut_trimmed_fastqc_per_base_quality.png" width="80%">
+
+- Sample-12:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/2.refastqc/WV2JYX_12_12_SL5_C15_0.5mM_80C_15min_Mn_cut_trimmed_fastqc_per_base_quality.png" width="80%">
+
+</details>
+
+
+## Reads mapping
+
+- **Reads mapping with ** [```5.bam.sh```](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/5.bam.sh)  
+
+
+## Analyzing and visualization
+
+- **Pileup with ** [```6.mpileup.sh```](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/6.mpileup.sh)  
+- **Parse with ** [```7.parse.R```](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/7.parse.R)  
+- For parsed mutation rate spreadsheets, click [here](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/pileup_parse.zip).
+- **Plot with ** [```8.plot.R```](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/8.plot.R)  
+
+### Absolute mutation rate (after reads trimming)
+
+<details>
+<summary>Absolute mutation rate:</summary>
+
+- Sample-1:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/3.absolute_mut/1-01-SL5-DMSO-37C-15min-Mg_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
+
+- Sample-2:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/3.absolute_mut/2-02-SL5-DMSO-37C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
+
+- Sample-3:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/3.absolute_mut/3-03-SL5-C12-5mM-37C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
+
+- Sample-4:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/3.absolute_mut/4-04-SL5-C15-5mM-37C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
+
+- Sample-5:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/3.absolute_mut/5-05-SL5-C12-0.5mM-37C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
+
+- Sample-6:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/3.absolute_mut/6-06-SL5-C15-0.5mM-37C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
+
+- Sample-7:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/3.absolute_mut/7-07-SL5-DMSO-80C-15min-Mg_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
+
+- Sample-8:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/3.absolute_mut/8-08-SL5-DMSO-80C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
+
+- Sample-9:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/3.absolute_mut/9-09-SL5-C12-5mM-80C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
+
+- Sample-10:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/3.absolute_mut/10-10-SL5-C15-5mM-80C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
+
+- Sample-11:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/3.absolute_mut/11-11-SL5-C12-0.5mM-80C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
+
+- Sample-12:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/3.absolute_mut/12-12-SL5-C15-0.5mM-80C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
+
+</details>
+
+### Relative mutation rate (after reads trimming)
+
+<details>
+<summary>Relative mutation rate:</summary>
+
+- Sample-1:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/4.relative_mut/1-01-SL5-DMSO-37C-15min-Mg_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
+
+- Sample-2:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/4.relative_mut/2-02-SL5-DMSO-37C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
+
+- Sample-3:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/4.relative_mut/3-03-SL5-C12-5mM-37C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
+
+- Sample-4:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/4.relative_mut/4-04-SL5-C15-5mM-37C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
+
+- Sample-5:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/4.relative_mut/5-05-SL5-C12-0.5mM-37C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
+
+- Sample-6:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/4.relative_mut/6-06-SL5-C15-0.5mM-37C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
+
+- Sample-7:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/4.relative_mut/7-07-SL5-DMSO-80C-15min-Mg_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
+
+- Sample-8:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/4.relative_mut/8-08-SL5-DMSO-80C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
+
+- Sample-9:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/4.relative_mut/9-09-SL5-C12-5mM-80C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
+
+- Sample-10:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/4.relative_mut/10-10-SL5-C15-5mM-80C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
+
+- Sample-11:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/4.relative_mut/11-11-SL5-C12-0.5mM-80C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
+
+- Sample-12:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/4.relative_mut/12-12-SL5-C15-0.5mM-80C-15min-Mn_SARS-CoV2-5UTR-Amplicon.jpg" width="100%">
+
+</details>
+
+### Base Summary
+
+- All samples:  
+
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/5.base_summary/base_summary.jpg" width="100%">
+
+- **Conclusion**: Nanopore sequencing can capture the mutational profile that is seen in [previous experiment](https://chenh19.github.io/chemProbing/2025.5.8.html#base-summary), but Nanopore is inherently noisy and requires careful QC, thus not recommended for future mutational profiling.
