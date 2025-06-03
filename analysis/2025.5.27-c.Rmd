@@ -91,7 +91,7 @@ GAGC
 
 - **Pileup with ** [```6.mpileup.sh```](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.27/3.SMN2/6.mpileup.sh)  
 - **Parse with ** [```7.parse.R```](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.27/3.SMN2/7.parse.R)  
-- For parsed mutation rate spreadsheets, click [here](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.27/3.SMN2/pileup_parse.zip).
+- For parsed mutation rate spreadsheets, click [here](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.27/3.SMN2/mpileup_parse.zip).
 - **Plot with ** [```8.plot.R```](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.27/3.SMN2/8.plot.R)  
 
 ### Absolute mutation rate (after reads trimming)
