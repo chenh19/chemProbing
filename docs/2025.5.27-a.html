@@ -459,32 +459,22 @@ Relative mutation rate:
   if (document.body.scrollHeight <= window.innerHeight) {
     footer.style.transition = "none";     // disable transition temporarily
     footer.style.transform = "translateY(0)";
-    // Force a reflow so the browser applies the style immediately
-    void footer.offsetHeight;
+    void footer.offsetHeight;               // force reflow
     footer.style.transition = "transform 0.3s ease";  // re-enable transition
   }
 
-  let lastScrollTop = 0;
   window.addEventListener("scroll", function () {
     const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
     const windowHeight = window.innerHeight;
     const bodyHeight = document.body.scrollHeight;
 
-    if (currentScroll <= 5) {
-      // At top — hide footer
-      footer.style.transform = "translateY(100%)";
-    } else if ((windowHeight + currentScroll) >= (bodyHeight - 5)) {
+    if ((windowHeight + currentScroll) >= (bodyHeight - 5)) {
       // At bottom — show footer
       footer.style.transform = "translateY(0)";
-    } else if (currentScroll > lastScrollTop) {
-      // Scrolling down — hide footer
-      footer.style.transform = "translateY(100%)";
     } else {
-      // Scrolling up — show footer
-      footer.style.transform = "translateY(0)";
+      // Any scroll not at bottom — hide footer
+      footer.style.transform = "translateY(100%)";
     }
-
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
   }, false);
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
