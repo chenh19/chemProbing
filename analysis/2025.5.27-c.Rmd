@@ -11,7 +11,7 @@ output: html_document
 
 ## Reference sequences
 
-- [Amplicon-3-trimmed.fa](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.27/3.SMN2/Amplicon-2.fa)  
+- [Amplicon-2.fa](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.27/3.SMN2/Amplicon-2.fa)  
 ```{r,eval=FALSE}
 >SMN2-Exon7-Amplicon  (324 bp)
 AACTTCCTTTATTTTCCTTACAGGGTTTTAGACAAAATCAAAAAGAAGGAAGGTGCTCACATTCCTTAAATTAAGGAGTA
