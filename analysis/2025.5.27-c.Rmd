@@ -130,6 +130,6 @@ GAGC
 
 - All samples:  
 
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/3.SMN2/5.base_summary/base_summary.jpg" width="70%">
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/3.SMN2/5.base_summary/base_summary.jpg" width="50%">
 
 - **Conclusion**: The trend of mutations is consistent, but maybe there is a degradation in the old samples.

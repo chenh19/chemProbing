@@ -146,6 +146,6 @@ GAGC
 
 - All samples:  
 
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/3.SMN2/5.base_summary/base_summary_ctrl.jpg" width="60%">
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/3.SMN2/5.base_summary/base_summary_ctrl.jpg" width="50%">
 
 - **Conclusion**: Overall result is consistent with [previous experiment](https://chenh19.github.io/chemProbing/2025.5.27-c.html#base-summary). 
