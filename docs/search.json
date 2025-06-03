@@ -172,28 +172,28 @@
     "href": "2025.5.27-c.html",
     "title": "2025.5.27-c: Plasmidsaurus data re-analysis (part-3)",
     "section": "",
-    "text": "Re-analysis of 2025.5.7 dataset with reads trimming.\nThis batch of analysis uses the trimmed SARS-CoV2-5UTR-Amplicon instead of the full length, so that it can allow comparison with the later AVITI data."
+    "text": "Re-analysis of 2025.5.7 dataset with reads trimming.\nControls using Zhichao’s cDNA."
   },
   {
     "objectID": "2025.5.27-c.html#samples",
     "href": "2025.5.27-c.html#samples",
     "title": "2025.5.27-c: Plasmidsaurus data re-analysis (part-3)",
     "section": "",
-    "text": "Re-analysis of 2025.5.7 dataset with reads trimming.\nThis batch of analysis uses the trimmed SARS-CoV2-5UTR-Amplicon instead of the full length, so that it can allow comparison with the later AVITI data."
+    "text": "Re-analysis of 2025.5.7 dataset with reads trimming.\nControls using Zhichao’s cDNA."
   },
   {
     "objectID": "2025.5.27-c.html#reference-sequences",
     "href": "2025.5.27-c.html#reference-sequences",
     "title": "2025.5.27-c: Plasmidsaurus data re-analysis (part-3)",
     "section": "Reference sequences",
-    "text": "Reference sequences\n\nAmplicon-3-trimmed.fa\n\n\n&gt;SARS-CoV2-5UTR-Amplicon-short-trimmed  (243 bp)\ntagatctgttctctaaacgaactttaaaatctgtgtggctgtcactcggctgcgtgcttagtgcactcacgcagtataat\ntaataactaattactgtcgttgacaggacacgagtaactcgtctatcttctgcaggctgcttacggtttcgtccgtgttg\ncagccgatcatcagcacatctaggtttcgtccgggtgtgaccgaaaggtaagatggagagccttgtccctggtttcaacg\nagg\n\n\nPrrepare reference sequences with  1.refseq.sh"
+    "text": "Reference sequences\n\nAmplicon-3-trimmed.fa\n\n\n&gt;SMN2-Exon7-Amplicon  (324 bp)\nAACTTCCTTTATTTTCCTTACAGGGTTTTAGACAAAATCAAAAAGAAGGAAGGTGCTCACATTCCTTAAATTAAGGAGTA\nAGTCTGCCAGCATTATGAAAGTGAATCTTACTTTTGTAAAACTTTATGGTTTGTGGAAAACAAATGTTTTTGAACATTTA\nAAAAGTTCAGATGTTAGAAAGTTGAAAGGTTAATGTAAAACAATCAATATTAAAGAATTTTGATGCCAAAACTATTAGAT\nAAAAGGTTAATCTACATCCCTACTAGAATTCTCATACTTAACTGGTTGGTTGTGTGGAAGAAACATACTTTCACAATAAA\nGAGC\n\n\nPrrepare reference sequences with  1.refseq.sh"
   },
   {
     "objectID": "2025.5.27-c.html#fastqc-for-reads",
     "href": "2025.5.27-c.html#fastqc-for-reads",
     "title": "2025.5.27-c: Plasmidsaurus data re-analysis (part-3)",
     "section": "FastQC for reads",
-    "text": "FastQC for reads\n\nFastQC with  2.fastqc.sh\nSample-1 (representative FastQC per base quality plot before reads trimming):\n\n\n\n\nView all samples before reads trimming:\n\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\nConclusion: within ~400bp, the reads quality is generally good, but the variation is big."
+    "text": "FastQC for reads\n\nFastQC with  2.fastqc.sh\nSample-13 (representative FastQC per base quality plot before reads trimming):\n\n\n\n\nView all samples before reads trimming:\n\n\nSample-14:\n\nSample-15:\n\n\n\n\nConclusion: within ~400bp, the reads quality is generally good, but the variation is big."
   },
   {
     "objectID": "2025.5.27-c.html#reads-trimming",
@@ -207,7 +207,7 @@
     "href": "2025.5.27-c.html#fastqc-for-reads-after-trimming",
     "title": "2025.5.27-c: Plasmidsaurus data re-analysis (part-3)",
     "section": "FastQC for reads after trimming",
-    "text": "FastQC for reads after trimming\n\nRe-FastQC with  4.refastqc.sh\nSample-1 (representative FastQC per base quality plot after reads trimming): \n\n\n\nView all samples before after trimming:\n\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:"
+    "text": "FastQC for reads after trimming\n\nRe-FastQC with  4.refastqc.sh\nSample-13 (representative FastQC per base quality plot after reads trimming): \n\n\n\nView all samples before after trimming:\n\n\nSample-14:\n\nSample-15:"
   },
   {
     "objectID": "2025.5.27-c.html#reads-mapping",
@@ -221,7 +221,7 @@
     "href": "2025.5.27-c.html#analyzing-and-visualization",
     "title": "2025.5.27-c: Plasmidsaurus data re-analysis (part-3)",
     "section": "Analyzing and visualization",
-    "text": "Analyzing and visualization\n\nPileup with  6.mpileup.sh\n\nParse with  7.parse.R\n\nFor parsed mutation rate spreadsheets, click here.\nPlot with  8.plot.R\n\n\nAbsolute mutation rate (after reads trimming)\n\n\nAbsolute mutation rate:\n\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\n\nRelative mutation rate (after reads trimming)\n\n\nRelative mutation rate:\n\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\n\nBase Summary\n\nAll samples:\n\n\n\nConclusion: The base summary is similar to the analysis using full length Amplicon as the refseq."
+    "text": "Analyzing and visualization\n\nPileup with  6.mpileup.sh\n\nParse with  7.parse.R\n\nFor parsed mutation rate spreadsheets, click here.\nPlot with  8.plot.R\n\n\nAbsolute mutation rate (after reads trimming)\n\n\nAbsolute mutation rate:\n\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\n\n\n\n\nRelative mutation rate (after reads trimming)\n\n\nRelative mutation rate:\n\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\n\n\n\n\nBase Summary\n\nAll samples:\n\n\n\nConclusion: The trend of mutations is consistent, but maybe there is a degradation in the control sample."
   },
   {
     "objectID": "2025.5.8.html",
