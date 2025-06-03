@@ -71,7 +71,7 @@ atcgctgtggccgaggccaagcccaccgagaacaacgaagacttcaacatcgtggccg
 
 </details>
 
-- **Conclusion**: within ~400bp, the reads quality is generally good, but the variation is big.
+- **Conclusion**: within 250bp, the reads quality is generally good. R2 has lower overall quality than R1,which is expected for paired-end reads.
 
 
 ## Reads trimming
@@ -80,13 +80,10 @@ atcgctgtggccgaggccaagcccaccgagaacaacgaagacttcaacatcgtggccg
 
 - Key filtering standards:  
 ```{r,eval=FALSE}
-1.Keeping the first 400bp and discard the tail
+1.Keeping the first 200bp and discard the tail
 2.Trimming the tail with average Q-score < 20 (4 bases moving window size)
-3.Discarding reads with more than 20% of Q-score < 20 bases
-4.Discarding reads less than 200bp
+3.Discarding reads with more than 10% of Q-score < 20 bases
 ```
-
-- **Conclusion**: after trimming, the quality of the overall reads quality is improved and variation is reduced.
 
 
 ## FastQC for reads after trimming
@@ -98,7 +95,7 @@ atcgctgtggccgaggccaagcccaccgagaacaacgaagacttcaacatcgtggccg
 
 
 <details>
-<summary>View all samples before after trimming:</summary>
+<summary>View all samples after after trimming:</summary>
 
 - Sample-2:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/2.refastqc/WV2JYX_2_02_SL5_DMSO_37C_15min_Mn_cut_trimmed_fastqc_per_base_quality.png" width="80%">
@@ -135,6 +132,8 @@ atcgctgtggccgaggccaagcccaccgagaacaacgaagacttcaacatcgtggccg
 
 </details>
 
+- **Conclusion**: after trimming, the quality of the overall reads quality is improved and variation is reduced.
+
 
 ## Reads mapping
 
@@ -145,7 +144,7 @@ atcgctgtggccgaggccaagcccaccgagaacaacgaagacttcaacatcgtggccg
 
 - **Pileup with ** [```6.mpileup.sh```](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/6.mpileup.sh)  
 - **Parse with ** [```7.parse.R```](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/7.parse.R)  
-- For parsed mutation rate spreadsheets, click [here](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/pileup_parse.zip).
+- For parsed mutation rate spreadsheets, click [here](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/mpileup_parse.zip).
 - **Plot with ** [```8.plot.R```](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/8.plot.R)  
 
 ### Absolute mutation rate (after reads trimming)
@@ -240,4 +239,4 @@ atcgctgtggccgaggccaagcccaccgagaacaacgaagacttcaacatcgtggccg
 
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/5.base_summary/base_summary.jpg" width="100%">
 
-- **Conclusion**: Nanopore sequencing can capture the mutational profile that is seen in [previous experiment](https://chenh19.github.io/chemProbing/2025.5.8.html#base-summary), but Nanopore is inherently noisy and requires careful QC, thus not recommended for future mutational profiling.
+- **Conclusion**: Overall result is consistent with [previous experiment](https://chenh19.github.io/chemProbing/2025.5.27-a.html#base-summary). 

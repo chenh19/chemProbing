@@ -25,6 +25,12 @@ website:
           href: 2025.5.27-b.html
         - text: "2025.5.27-c: Plasmidsaurus data re-analysis (part-3)"
           href: 2025.5.27-c.html
+        - text: "2025.5.28-a: Azenta Amplicon-EZ (part-1)"
+          href: 2025.5.28-a.html
+        - text: "2025.5.28-b: Azenta Amplicon-EZ (part-2)"
+          href: 2025.5.28-b.html
+        - text: "2025.5.28-c: Azenta Amplicon-EZ (part-3)"
+          href: 2025.5.28-c.html
       - text: "Misc."
         href: misc.html
     right:

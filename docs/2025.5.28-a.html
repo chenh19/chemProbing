@@ -153,6 +153,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="dropdown-item" href="./2025.5.27-c.html">
  <span class="dropdown-text">2025.5.27-c: Plasmidsaurus data re-analysis (part-3)</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./2025.5.28-a.html">
+ <span class="dropdown-text">2025.5.28-a: Azenta Amplicon-EZ (part-1)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./2025.5.28-b.html">
+ <span class="dropdown-text">2025.5.28-b: Azenta Amplicon-EZ (part-2)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./2025.5.28-c.html">
+ <span class="dropdown-text">2025.5.28-c: Azenta Amplicon-EZ (part-3)</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item">
@@ -283,7 +295,7 @@ View all samples before reads trimming:
 </ul>
 </details>
 <ul>
-<li><strong>Conclusion</strong>: within ~400bp, the reads quality is generally good, but the variation is big.</li>
+<li><strong>Conclusion</strong>: within 250bp, the reads quality is generally good. R2 has lower overall quality than R1,which is expected for paired-end reads.</li>
 </ul>
 </section>
 <section id="reads-trimming" class="level2">
@@ -293,14 +305,10 @@ View all samples before reads trimming:
 <li><p>Key filtering standards:</p></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span>Keeping the first <span class="dv">400</span>bp and discard the tail</span>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span>Keeping the first <span class="dv">200</span>bp and discard the tail</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span>Trimming the tail with average Q<span class="sc">-</span>score <span class="sc">&lt;</span> <span class="dv">20</span> (<span class="dv">4</span> bases moving window size)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span>Discarding reads with more than <span class="dv">20</span>% of Q<span class="sc">-</span>score <span class="sc">&lt;</span> <span class="dv">20</span> bases</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fl">4.</span>Discarding reads less than <span class="dv">200</span>bp</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span>Discarding reads with more than <span class="dv">10</span>% of Q<span class="sc">-</span>score <span class="sc">&lt;</span> <span class="dv">20</span> bases</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<ul>
-<li><strong>Conclusion</strong>: after trimming, the quality of the overall reads quality is improved and variation is reduced.</li>
-</ul>
 </section>
 <section id="fastqc-for-reads-after-trimming" class="level2">
 <h2 class="anchored" data-anchor-id="fastqc-for-reads-after-trimming">FastQC for reads after trimming</h2>
@@ -310,7 +318,7 @@ View all samples before reads trimming:
 </ul>
 <details>
 <summary>
-View all samples before after trimming:
+View all samples after after trimming:
 </summary>
 <ul>
 <li><p>Sample-2:<br>
@@ -337,6 +345,9 @@ View all samples before after trimming:
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/2.refastqc/WV2JYX_12_12_SL5_C15_0.5mM_80C_15min_Mn_cut_trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
 </ul>
 </details>
+<ul>
+<li><strong>Conclusion</strong>: after trimming, the quality of the overall reads quality is improved and variation is reduced.</li>
+</ul>
 </section>
 <section id="reads-mapping" class="level2">
 <h2 class="anchored" data-anchor-id="reads-mapping">Reads mapping</h2>
@@ -351,7 +362,7 @@ View all samples before after trimming:
 </li>
 <li><strong>Parse with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/7.parse.R"><code>7.parse.R</code></a><br>
 </li>
-<li>For parsed mutation rate spreadsheets, click <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/pileup_parse.zip">here</a>.</li>
+<li>For parsed mutation rate spreadsheets, click <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/mpileup_parse.zip">here</a>.</li>
 <li><strong>Plot with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/8.plot.R"><code>8.plot.R</code></a></li>
 </ul>
 <section id="absolute-mutation-rate-after-reads-trimming" class="level3">
@@ -429,7 +440,7 @@ Relative mutation rate:
 </ul>
 <p><img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/1.SL5_full_length_refseq/5.base_summary/base_summary.jpg" width="100%"></p>
 <ul>
-<li><strong>Conclusion</strong>: Nanopore sequencing can capture the mutational profile that is seen in <a href="https://chenh19.github.io/chemProbing/2025.5.8.html#base-summary">previous experiment</a>, but Nanopore is inherently noisy and requires careful QC, thus not recommended for future mutational profiling.</li>
+<li><strong>Conclusion</strong>: Overall result is consistent with <a href="https://chenh19.github.io/chemProbing/2025.5.27-a.html#base-summary">previous experiment</a>.</li>
 </ul>
 
 

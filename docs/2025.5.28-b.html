@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Misc – chemProbing</title>
+<title>2025.5.28-b: Azenta Amplicon-EZ (part-2) – chemProbing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -168,7 +168,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="./misc.html" aria-current="page"> 
+    <a class="nav-link" href="./misc.html"> 
 <span class="menu-text">Misc.</span></a>
   </li>  
 </ul>
@@ -194,7 +194,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#frequently-used-code" id="toc-frequently-used-code" class="nav-link active" data-scroll-target="#frequently-used-code">Frequently used code:</a></li>
+  <li><a href="#samples" id="toc-samples" class="nav-link active" data-scroll-target="#samples">Samples</a></li>
+  <li><a href="#reference-sequences" id="toc-reference-sequences" class="nav-link" data-scroll-target="#reference-sequences">Reference sequences</a></li>
+  <li><a href="#fastqc-for-reads" id="toc-fastqc-for-reads" class="nav-link" data-scroll-target="#fastqc-for-reads">FastQC for reads</a></li>
+  <li><a href="#reads-trimming" id="toc-reads-trimming" class="nav-link" data-scroll-target="#reads-trimming">Reads trimming</a></li>
+  <li><a href="#fastqc-for-reads-after-trimming" id="toc-fastqc-for-reads-after-trimming" class="nav-link" data-scroll-target="#fastqc-for-reads-after-trimming">FastQC for reads after trimming</a></li>
+  <li><a href="#reads-mapping" id="toc-reads-mapping" class="nav-link" data-scroll-target="#reads-mapping">Reads mapping</a></li>
+  <li><a href="#analyzing-and-visualization" id="toc-analyzing-and-visualization" class="nav-link" data-scroll-target="#analyzing-and-visualization">Analyzing and visualization</a>
+  <ul class="collapse">
+  <li><a href="#absolute-mutation-rate-after-reads-trimming" id="toc-absolute-mutation-rate-after-reads-trimming" class="nav-link" data-scroll-target="#absolute-mutation-rate-after-reads-trimming">Absolute mutation rate (after reads trimming)</a></li>
+  <li><a href="#relative-mutation-rate-after-reads-trimming" id="toc-relative-mutation-rate-after-reads-trimming" class="nav-link" data-scroll-target="#relative-mutation-rate-after-reads-trimming">Relative mutation rate (after reads trimming)</a></li>
+  <li><a href="#base-summary" id="toc-base-summary" class="nav-link" data-scroll-target="#base-summary">Base Summary</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -203,7 +214,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Misc</h1>
+<h1 class="title">2025.5.28-b: Azenta Amplicon-EZ (part-2)</h1>
 </div>
 
 
@@ -220,37 +231,196 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This website is created using <a href="https://chenh19.github.io/Quarto/misc.html">Hang’s template</a>.</p>
-<section id="frequently-used-code" class="level3">
-<h3 class="anchored" data-anchor-id="frequently-used-code">Frequently used code:</h3>
+<section id="samples" class="level2">
+<h2 class="anchored" data-anchor-id="samples">Samples</h2>
+<p><img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/Samples.png" width="100%"></p>
+<p>RNA covalent modifiers:</p>
+<p><img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/RNA_CM.png" width="50%"></p>
 <ul>
-<li>Initialize:</li>
+<li><p>The <strong>Amplicon-EZ</strong> service was provided by <a href="https://www.genewiz.com/public/services/next-generation-sequencing/amplicon-sequencing-services/amplicon-ez">Azenta</a>.</p></li>
+<li><p>For experimental details, click <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/2025.5.12%2080C%20samples%20re-seq%20with%20Azenta%20Amplicon-EZ.pdf">here</a>.</p></li>
+</ul>
+</section>
+<section id="reference-sequences" class="level2">
+<h2 class="anchored" data-anchor-id="reference-sequences">Reference sequences</h2>
+<ul>
+<li><a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/2.SL5_trimmed_refseq/Amplicon-3-trimmed.fa">Amplicon-3-trimmed.fa</a></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">[</span> <span class="ot">-d</span> ./chemProbing/ <span class="bu">]</span> <span class="kw">&amp;&amp;</span> <span class="fu">rm</span> <span class="at">-rf</span> ./chemProbing/</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> ./chemProbing/ <span class="kw">&amp;&amp;</span> <span class="bu">cd</span> ./chemProbing/</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init <span class="kw">&amp;&amp;</span> <span class="fu">git</span> remote add origin git@github.com:chenh19/chemProbing.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span>SARS<span class="sc">-</span>CoV2<span class="dv">-5</span>UTR<span class="sc">-</span>Amplicon<span class="sc">-</span>short<span class="sc">-</span><span class="fu">trimmed</span>  (<span class="dv">243</span> bp)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>tagatctgttctctaaacgaactttaaaatctgtgtggctgtcactcggctgcgtgcttagtgcactcacgcagtataat</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>taataactaattactgtcgttgacaggacacgagtaactcgtctatcttctgcaggctgcttacggtttcgtccgtgttg</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>cagccgatcatcagcacatctaggtttcgtccgggtgtgaccgaaaggtaagatggagagccttgtccctggtttcaacg</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>agg</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
-<li>Pull:</li>
+<li><strong>Prrepare reference sequences with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/2.SL5_trimmed_refseq/1.refseq.sh"><code>1.refseq.sh</code></a></li>
 </ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull git@github.com:chenh19/chemProbing.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+</section>
+<section id="fastqc-for-reads" class="level2">
+<h2 class="anchored" data-anchor-id="fastqc-for-reads">FastQC for reads</h2>
 <ul>
-<li>Render:</li>
+<li><p><strong>FastQC with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/2.SL5_trimmed_refseq/2.fastqc.sh"><code>2.fastqc.sh</code></a></p></li>
+<li><p>Sample-7_R1 (representative FastQC per base quality plot before reads trimming):<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/1.fastqc/07-SL5-DMSO-80C-15min-Mg_R1_001_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>Sample-7_R2 (representative FastQC per base quality plot before reads trimming):<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/1.fastqc/07-SL5-DMSO-80C-15min-Mg_R2_001_fastqc_per_base_quality.png" width="80%"></p></li>
 </ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render analysis</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<details>
+<summary>
+View all samples before reads trimming:
+</summary>
 <ul>
-<li>Push:</li>
+<li><p>Sample-8_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/1.fastqc/08-SL5-DMSO-80C-15min-Mn_R1_001_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>Sample-8_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/1.fastqc/08-SL5-DMSO-80C-15min-Mn_R2_001_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>Sample-9_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/1.fastqc/09-SL5-C12-5mM-80C-15min-Mn_R1_001_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>Sample-9_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/1.fastqc/09-SL5-C12-5mM-80C-15min-Mn_R2_001_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>Sample-10_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/1.fastqc/10-SL5-C15-5mM-80C-15min-Mn_R1_001_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>Sample-10_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/1.fastqc/10-SL5-C15-5mM-80C-15min-Mn_R2_001_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>Sample-11_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/1.fastqc/11-SL5-C12-500uM-80C-15min-Mn_R1_001_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>Sample-11_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/1.fastqc/11-SL5-C12-500uM-80C-15min-Mn_R2_001_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>Sample-12_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/1.fastqc/12-SL5-C15-500uM-80C-15min-Mn_R1_001_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>Sample-12_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/1.fastqc/12-SL5-C15-500uM-80C-15min-Mn_R2_001_fastqc_per_base_quality.png" width="80%"></p></li>
+</ul>
+</details>
+<ul>
+<li><strong>Conclusion</strong>: within 250bp, the reads quality is generally good. R2 has lower overall quality than R1,which is expected for paired-end reads.</li>
+</ul>
+</section>
+<section id="reads-trimming" class="level2">
+<h2 class="anchored" data-anchor-id="reads-trimming">Reads trimming</h2>
+<ul>
+<li><p><strong>Reads trimming with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/2.SL5_trimmed_refseq/3.trim.sh"><code>3.trim.sh</code></a></p></li>
+<li><p>Key filtering standards:</p></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add <span class="at">--all</span> <span class="kw">&amp;&amp;</span> <span class="fu">git</span> commit <span class="at">-a</span> <span class="at">-m</span> <span class="st">"update"</span> <span class="kw">&amp;&amp;</span> <span class="fu">git</span> push <span class="at">-u</span> origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span>Keeping the first <span class="dv">200</span>bp and discard the tail</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span>Trimming the tail with average Q<span class="sc">-</span>score <span class="sc">&lt;</span> <span class="dv">20</span> (<span class="dv">4</span> bases moving window size)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span>Discarding reads with more than <span class="dv">10</span>% of Q<span class="sc">-</span>score <span class="sc">&lt;</span> <span class="dv">20</span> bases</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section>
+<section id="fastqc-for-reads-after-trimming" class="level2">
+<h2 class="anchored" data-anchor-id="fastqc-for-reads-after-trimming">FastQC for reads after trimming</h2>
+<ul>
+<li><p><strong>Re-FastQC with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/2.SL5_trimmed_refseq/4.refastqc.sh"><code>4.refastqc.sh</code></a></p></li>
+<li><p>Sample-7_R1 (representative FastQC per base quality plot after reads trimming):<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/2.refastqc/07-SL5-DMSO-80C-15min-Mg_001_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>Sample-7_R2 (representative FastQC per base quality plot after reads trimming):<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/2.refastqc/07-SL5-DMSO-80C-15min-Mg_001_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+</ul>
+<details>
+<summary>
+View all samples after reads trimming:
+</summary>
+<ul>
+<li><p>Sample-8_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/2.refastqc/08-SL5-DMSO-80C-15min-Mn_001_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>Sample-8_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/2.refastqc/08-SL5-DMSO-80C-15min-Mn_001_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>Sample-9_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/2.refastqc/09-SL5-C12-5mM-80C-15min-Mn_001_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>Sample-9_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/2.refastqc/09-SL5-C12-5mM-80C-15min-Mn_001_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>Sample-10_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/2.refastqc/10-SL5-C15-5mM-80C-15min-Mn_001_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>Sample-10_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/2.refastqc/10-SL5-C15-5mM-80C-15min-Mn_001_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>Sample-11_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/2.refastqc/11-SL5-C12-500uM-80C-15min-Mn_001_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>Sample-11_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/2.refastqc/11-SL5-C12-500uM-80C-15min-Mn_001_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>Sample-12_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/2.refastqc/12-SL5-C15-500uM-80C-15min-Mn_001_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>Sample-12_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/2.refastqc/12-SL5-C15-500uM-80C-15min-Mn_001_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+</ul>
+</details>
+<ul>
+<li><strong>Conclusion</strong>: after trimming, the quality of the overall reads quality is improved and variation is reduced.</li>
+</ul>
+</section>
+<section id="reads-mapping" class="level2">
+<h2 class="anchored" data-anchor-id="reads-mapping">Reads mapping</h2>
+<ul>
+<li><strong>Reads mapping with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/2.SL5_trimmed_refseq/5.bam.sh"><code>5.bam.sh</code></a></li>
+</ul>
+</section>
+<section id="analyzing-and-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="analyzing-and-visualization">Analyzing and visualization</h2>
+<ul>
+<li><strong>Pileup with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/2.SL5_trimmed_refseq/6.mpileup.sh"><code>6.mpileup.sh</code></a><br>
+</li>
+<li><strong>Parse with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/2.SL5_trimmed_refseq/7.parse.R"><code>7.parse.R</code></a><br>
+</li>
+<li>For parsed mutation rate spreadsheets, click <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/2.SL5_trimmed_refseq/mpileup_parse.zip">here</a>.</li>
+<li><strong>Plot with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/2.SL5_trimmed_refseq/8.plot.R"><code>8.plot.R</code></a></li>
+</ul>
+<section id="absolute-mutation-rate-after-reads-trimming" class="level3">
+<h3 class="anchored" data-anchor-id="absolute-mutation-rate-after-reads-trimming">Absolute mutation rate (after reads trimming)</h3>
+<details>
+<summary>
+Absolute mutation rate:
+</summary>
+<ul>
+<li><p>Sample-7:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/3.absolute_mut/07-SL5-DMSO-80C-15min-Mg-001_SARS-CoV2-5UTR-Amplicon-short-trimmed.jpg" width="100%"></p></li>
+<li><p>Sample-8:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/3.absolute_mut/08-SL5-DMSO-80C-15min-Mn-001_SARS-CoV2-5UTR-Amplicon-short-trimmed.jpg" width="100%"></p></li>
+<li><p>Sample-9:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/3.absolute_mut/09-SL5-C12-5mM-80C-15min-Mn-001_SARS-CoV2-5UTR-Amplicon-short-trimmed.jpg" width="100%"></p></li>
+<li><p>Sample-10:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/3.absolute_mut/10-SL5-C15-5mM-80C-15min-Mn-001_SARS-CoV2-5UTR-Amplicon-short-trimmed.jpg" width="100%"></p></li>
+<li><p>Sample-11:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/3.absolute_mut/11-SL5-C12-500uM-80C-15min-Mn-001_SARS-CoV2-5UTR-Amplicon-short-trimmed.jpg" width="100%"></p></li>
+<li><p>Sample-12:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/3.absolute_mut/12-SL5-C15-500uM-80C-15min-Mn-001_SARS-CoV2-5UTR-Amplicon-short-trimmed.jpg" width="100%"></p></li>
+</ul>
+</details>
+</section>
+<section id="relative-mutation-rate-after-reads-trimming" class="level3">
+<h3 class="anchored" data-anchor-id="relative-mutation-rate-after-reads-trimming">Relative mutation rate (after reads trimming)</h3>
+<details>
+<summary>
+Relative mutation rate:
+</summary>
+<ul>
+<li><p>Sample-7:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/4.relative_mut/07-SL5-DMSO-80C-15min-Mg-001_SARS-CoV2-5UTR-Amplicon-short-trimmed.jpg" width="100%"></p></li>
+<li><p>Sample-8:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/4.relative_mut/08-SL5-DMSO-80C-15min-Mn-001_SARS-CoV2-5UTR-Amplicon-short-trimmed.jpg" width="100%"></p></li>
+<li><p>Sample-9:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/4.relative_mut/09-SL5-C12-5mM-80C-15min-Mn-001_SARS-CoV2-5UTR-Amplicon-short-trimmed.jpg" width="100%"></p></li>
+<li><p>Sample-10:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/4.relative_mut/10-SL5-C15-5mM-80C-15min-Mn-001_SARS-CoV2-5UTR-Amplicon-short-trimmed.jpg" width="100%"></p></li>
+<li><p>Sample-11:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/4.relative_mut/11-SL5-C12-500uM-80C-15min-Mn-001_SARS-CoV2-5UTR-Amplicon-short-trimmed.jpg" width="100%"></p></li>
+<li><p>Sample-12:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/4.relative_mut/12-SL5-C15-500uM-80C-15min-Mn-001_SARS-CoV2-5UTR-Amplicon-short-trimmed.jpg" width="100%"></p></li>
+</ul>
+</details>
+</section>
+<section id="base-summary" class="level3">
+<h3 class="anchored" data-anchor-id="base-summary">Base Summary</h3>
+<ul>
+<li>All samples:</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/2.SL5_trimmed_refseq/5.base_summary/base_summary_80C.jpg" width="70%"></p>
+<ul>
+<li><strong>Conclusion</strong>: Overall result is consistent with <a href="https://chenh19.github.io/chemProbing/2025.5.27-b.html#base-summary">previous experiment</a>.</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

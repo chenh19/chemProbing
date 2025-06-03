@@ -58,8 +58,6 @@ GAGC
 4.Discarding reads less than 200bp
 ```
 
-- **Conclusion**: after trimming, the quality of the overall reads quality is improved and variation is reduced.
-
 
 ## FastQC for reads after trimming
 
@@ -79,6 +77,8 @@ GAGC
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/3.SMN2/2.refastqc/WV2JYX_15_15_Ctrl_C15_0.1mM_80C_5min_Mn_cut_trimmed_fastqc_per_base_quality.png" width="80%">
 
 </details>
+
+- **Conclusion**: after trimming, the quality of the overall reads quality is improved and variation is reduced.
 
 
 ## Reads mapping
