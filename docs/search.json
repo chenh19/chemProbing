@@ -221,7 +221,7 @@
     "href": "2025.5.27-c.html#analyzing-and-visualization",
     "title": "2025.5.27-c: Plasmidsaurus data re-analysis (part-3)",
     "section": "Analyzing and visualization",
-    "text": "Analyzing and visualization\n\nPileup with  6.mpileup.sh\n\nParse with  7.parse.R\n\nFor parsed mutation rate spreadsheets, click here.\nPlot with  8.plot.R\n\n\nAbsolute mutation rate (after reads trimming)\n\n\nAbsolute mutation rate:\n\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\n\n\n\n\nRelative mutation rate (after reads trimming)\n\n\nRelative mutation rate:\n\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\n\n\n\n\nBase Summary\n\nAll samples:\n\n\n\nConclusion: The trend of mutations is consistent, but maybe there is a degradation in the control sample."
+    "text": "Analyzing and visualization\n\nPileup with  6.mpileup.sh\n\nParse with  7.parse.R\n\nFor parsed mutation rate spreadsheets, click here.\nPlot with  8.plot.R\n\n\nAbsolute mutation rate (after reads trimming)\n\n\nAbsolute mutation rate:\n\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\n\n\n\n\nRelative mutation rate (after reads trimming)\n\n\nRelative mutation rate:\n\n\nSample-13:\n\nSample-14:\n\nSample-15:\n\n\n\n\n\nBase Summary\n\nAll samples:\n\n\n\nConclusion: The trend of mutations is consistent, but maybe there is a degradation in the old samples."
   },
   {
     "objectID": "2025.5.8.html",
