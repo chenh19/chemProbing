@@ -29,17 +29,17 @@ GAGC
 - **FastQC with ** [```2.fastqc.sh```](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.27/3.SMN2/2.fastqc.sh)  
 
 - Sample-13 (representative FastQC per base quality plot before reads trimming):  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/3.SMN2/WV2JYX_13_13_Ctrl_DMSO_80C_5min_Mn_fastqc_per_base_quality.png" width="80%">
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/3.SMN2/1.fastqc/WV2JYX_13_13_Ctrl_DMSO_80C_5min_Mn_fastqc_per_base_quality.png" width="80%">
 
 
 <details>
 <summary>View all samples before reads trimming:</summary>
 
 - Sample-14:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/3.SMN2/WV2JYX_14_14_Ctrl_C12_0.1mM_80C_5min_Mn_fastqc_per_base_quality.png" width="80%">
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/3.SMN2/1.fastqc/WV2JYX_14_14_Ctrl_C12_0.1mM_80C_5min_Mn_fastqc_per_base_quality.png" width="80%">
 
 - Sample-15:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/3.SMN2/WV2JYX_15_15_Ctrl_C15_0.1mM_80C_5min_Mn_fastqc_per_base_quality.png" width="80%">
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.27/3.SMN2/1.fastqc/WV2JYX_15_15_Ctrl_C15_0.1mM_80C_5min_Mn_fastqc_per_base_quality.png" width="80%">
 
 </details>
 
