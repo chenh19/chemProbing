@@ -19,8 +19,12 @@ website:
           href: 2025.5.7.html
         - text: "2025.5.8: re-analysis of previous data"
           href: 2025.5.8.html
-        - text: "2025.5.27: Plasmidsaurus data re-analysis"
-          href: 2025.5.27.html
+        - text: "2025.5.27-a: Plasmidsaurus data re-analysis (part-1)"
+          href: 2025.5.27-a.html
+        - text: "2025.5.27-b: Plasmidsaurus data re-analysis (part-2)"
+          href: 2025.5.27-b.html
+        - text: "2025.5.27-c: Plasmidsaurus data re-analysis (part-3)"
+          href: 2025.5.27-c.html
       - text: "Misc."
         href: misc.html
     right:
