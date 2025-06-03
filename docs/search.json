@@ -319,7 +319,7 @@
     "href": "2025.5.28-a.html#fastqc-for-reads-after-trimming",
     "title": "2025.5.28-a: Azenta Amplicon-EZ (part-1)",
     "section": "FastQC for reads after trimming",
-    "text": "FastQC for reads after trimming\n\nRe-FastQC with  4.refastqc.sh\nSample-1 (representative FastQC per base quality plot after reads trimming): \n\n\n\nView all samples after after trimming:\n\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\nConclusion: after trimming, the quality of the overall reads quality is improved and variation is reduced."
+    "text": "FastQC for reads after trimming\n\nRe-FastQC with  4.refastqc.sh\nSample-7_R1 (representative FastQC per base quality plot after reads trimming): \nSample-7_R2 (representative FastQC per base quality plot after reads trimming): \n\n\n\nView all samples after after trimming:\n\n\nSample-8_R1:\n\nSample-8_R2:\n\nSample-9_R1:\n\nSample-9_R2:\n\nSample-10_R1:\n\nSample-10_R2:\n\nSample-11_R1:\n\nSample-11_R2:\n\nSample-12_R1:\n\nSample-12_R2:\n\n\n\n\nConclusion: after trimming, the quality of the overall reads quality is improved and variation is reduced."
   },
   {
     "objectID": "2025.5.28-a.html#reads-mapping",
@@ -333,7 +333,7 @@
     "href": "2025.5.28-a.html#analyzing-and-visualization",
     "title": "2025.5.28-a: Azenta Amplicon-EZ (part-1)",
     "section": "Analyzing and visualization",
-    "text": "Analyzing and visualization\n\nPileup with  6.mpileup.sh\n\nParse with  7.parse.R\n\nFor parsed mutation rate spreadsheets, click here.\nPlot with  8.plot.R\n\n\nAbsolute mutation rate (after reads trimming)\n\n\nAbsolute mutation rate:\n\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\n\nRelative mutation rate (after reads trimming)\n\n\nRelative mutation rate:\n\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\n\nBase Summary\n\nAll samples:\n\n\n\nConclusion: Overall result is consistent with previous experiment."
+    "text": "Analyzing and visualization\n\nPileup with  6.mpileup.sh\n\nParse with  7.parse.R\n\nFor parsed mutation rate spreadsheets, click here.\nPlot with  8.plot.R\n\n\nAbsolute mutation rate (after reads trimming)\n\n\nAbsolute mutation rate:\n\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\n\nRelative mutation rate (after reads trimming)\n\n\nRelative mutation rate:\n\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\n\nBase Summary\n\nAll samples:\n\n\n\nConclusion: Overall result is consistent with previous experiment."
   },
   {
     "objectID": "2025.5.28-c.html",
