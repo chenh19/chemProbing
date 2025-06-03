@@ -44,3 +44,4 @@ format:
     css: styles.css
     toc: true
     html-math-method: katex
+    include-after-body: _footer.html
