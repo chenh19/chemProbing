@@ -24,10 +24,10 @@ for r1 in ./2.fastq/*_R1*.fastq*; do
 
 
     # Trim R1 to 180 bp
-    cutadapt -j 8 -l 150 -o "./3.analysis/3.trim/${sample}_R1.cut.fastq.gz" $r1
+    cutadapt -j 8 -l 180 -o "./3.analysis/3.trim/${sample}_R1.cut.fastq.gz" $r1
 
     # Trim R2 to 140 bp
-    cutadapt -j 8 -l 150 -o "./3.analysis/3.trim/${sample}_R2.cut.fastq.gz" $r2
+    cutadapt -j 8 -l 180 -o "./3.analysis/3.trim/${sample}_R2.cut.fastq.gz" $r2
 
     fastp \
       -i "./3.analysis/3.trim/${sample}_R1.cut.fastq.gz" \

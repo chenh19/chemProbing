@@ -1,5 +1,0 @@
-bowtie2: low sensitivity to variants
-bwa/minimap2: mismapping > artefact
-final solution: bwa (best for variant calling) > bamtool filtering out mismapped reads
-
-side note: I extended the refseq by 3bp on each side, which reduces mismapping a little bit, but not too much

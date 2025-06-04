@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2025.5.28-c: Azenta Amplicon-EZ (part-3) – chemProbing</title>
+<title>2025.5.29-a: Amplicon-seq analysis troubleshooting – chemProbing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -206,18 +206,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#samples" id="toc-samples" class="nav-link active" data-scroll-target="#samples">Samples</a></li>
-  <li><a href="#reference-sequences" id="toc-reference-sequences" class="nav-link" data-scroll-target="#reference-sequences">Reference sequences</a></li>
-  <li><a href="#fastqc-for-reads" id="toc-fastqc-for-reads" class="nav-link" data-scroll-target="#fastqc-for-reads">FastQC for reads</a></li>
-  <li><a href="#reads-trimming" id="toc-reads-trimming" class="nav-link" data-scroll-target="#reads-trimming">Reads trimming</a></li>
-  <li><a href="#fastqc-for-reads-after-trimming" id="toc-fastqc-for-reads-after-trimming" class="nav-link" data-scroll-target="#fastqc-for-reads-after-trimming">FastQC for reads after trimming</a></li>
-  <li><a href="#reads-mapping" id="toc-reads-mapping" class="nav-link" data-scroll-target="#reads-mapping">Reads mapping</a></li>
-  <li><a href="#analyzing-and-visualization" id="toc-analyzing-and-visualization" class="nav-link" data-scroll-target="#analyzing-and-visualization">Analyzing and visualization</a>
-  <ul class="collapse">
-  <li><a href="#absolute-mutation-rate-after-reads-trimming" id="toc-absolute-mutation-rate-after-reads-trimming" class="nav-link" data-scroll-target="#absolute-mutation-rate-after-reads-trimming">Absolute mutation rate (after reads trimming)</a></li>
-  <li><a href="#relative-mutation-rate-after-reads-trimming" id="toc-relative-mutation-rate-after-reads-trimming" class="nav-link" data-scroll-target="#relative-mutation-rate-after-reads-trimming">Relative mutation rate (after reads trimming)</a></li>
-  <li><a href="#base-summary" id="toc-base-summary" class="nav-link" data-scroll-target="#base-summary">Base Summary</a></li>
-  </ul></li>
+  <li><a href="#the-issue" id="toc-the-issue" class="nav-link active" data-scroll-target="#the-issue">The issue</a></li>
+  <li><a href="#troubleshooting-attempts" id="toc-troubleshooting-attempts" class="nav-link" data-scroll-target="#troubleshooting-attempts">Troubleshooting attempts</a></li>
+  <li><a href="#final-solution" id="toc-final-solution" class="nav-link" data-scroll-target="#final-solution">Final solution</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
     </div>
@@ -226,7 +218,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">2025.5.28-c: Azenta Amplicon-EZ (part-3)</h1>
+<h1 class="title">2025.5.29-a: Amplicon-seq analysis troubleshooting</h1>
 </div>
 
 
@@ -243,161 +235,92 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="samples" class="level2">
-<h2 class="anchored" data-anchor-id="samples">Samples</h2>
-<p><img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/Samples.png" width="100%"></p>
-<p>RNA covalent modifiers:</p>
-<p><img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/RNA_CM.png" width="50%"></p>
+<section id="the-issue" class="level2">
+<h2 class="anchored" data-anchor-id="the-issue">The issue</h2>
 <ul>
-<li><p>The <strong>Amplicon-EZ</strong> service was provided by <a href="https://www.genewiz.com/public/services/next-generation-sequencing/amplicon-sequencing-services/amplicon-ez">Azenta</a>.</p></li>
-<li><p>For experimental details, click <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/2025.5.12%2080C%20samples%20re-seq%20with%20Azenta%20Amplicon-EZ.pdf">here</a>.</p></li>
+<li>Mis-mapping led to wrong variants calling (artifact at around 150bp):</li>
 </ul>
-</section>
-<section id="reference-sequences" class="level2">
-<h2 class="anchored" data-anchor-id="reference-sequences">Reference sequences</h2>
+<p><img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/bug/artefact.jpg" width="100%"></p>
 <ul>
-<li><a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/3.SMN2/Amplicon-2.fa">Amplicon-3-trimmed.fa</a></li>
+<li>This issue doesn’t always happen on all samples, and by checking the bam files, I realized it’s mis-mapping (repeated 34bp large deletion).</li>
+<li>It seems that when the length of the insert (i.e., &lt;300bp) between two adapters is shorter than the combination of two reads (i.e., 150bpx2), <code>BWA</code> can get confused.</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/bug/bwa-mem.png" width="100%"></p>
+</section>
+<section id="troubleshooting-attempts" class="level2">
+<h2 class="anchored" data-anchor-id="troubleshooting-attempts">Troubleshooting attempts</h2>
+<ul>
+<li>Reads trimming and filtering (both loose and stringent criteria): can’t avoid the artifact.</li>
+<li>Mapping as paired-end reads vs separate single-end reads: can’t avoid the artifact.</li>
+<li>Adjust the refseq by including 5’ and 3’ sequences (i.e., additional 3bp on each side), although they might not be in the mutational profiling region: this reduces mis-mapping by a little bit.</li>
+<li>Use different aligners: <code>Bowtie2</code> aligns perfectly (bam screenshot below), but has much lower variant calling sensitivity; <code>Minimap2</code> has the same mis-mapping issue.</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/bug/bowtie2.png" width="100%"></p>
+<ul>
+<li>Using the <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/project-1_bwa+filter/3.trim.sh">same read trimming and filtering criteria</a> (key parameters listed below), Bowtie2 detects only about half as many variants as BWA.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span>SMN2<span class="sc">-</span>Exon7<span class="sc">-</span><span class="fu">Amplicon</span>  (<span class="dv">324</span> bp)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>AACTTCCTTTATTTTCCTTACAGGGTTTTAGACAAAATCAAAAAGAAGGAAGGTGCTCACATTCCTTAAATTAAGGAGTA</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>AGTCTGCCAGCATTATGAAAGTGAATCTTACTTTTGTAAAACTTTATGGTTTGTGGAAAACAAATGTTTTTGAACATTTA</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>AAAAGTTCAGATGTTAGAAAGTTGAAAGGTTAATGTAAAACAATCAATATTAAAGAATTTTGATGCCAAAACTATTAGAT</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>AAAAGGTTAATCTACATCCCTACTAGAATTCTCATACTTAACTGGTTGGTTGTGTGGAAGAAACATACTTTCACAATAAA</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>GAGC</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">fastp</span> <span class="dt">\</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">--trim_front1</span> 5 <span class="dt">\</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">--trim_front2</span> 5 <span class="dt">\</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">--cut_tail</span> <span class="dt">\</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">--cut_tail_window_size</span> 4 <span class="dt">\</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">--cut_tail_mean_quality</span> 20 <span class="dt">\</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">--length_required</span> 80 <span class="dt">\</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">--qualified_quality_phred</span> 20 <span class="dt">\</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">--unqualified_percent_limit</span> 20 <span class="dt">\</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bowtie2/5.base_summary/base_summary.jpg" width="100%"></p>
+</section>
+<section id="final-solution" class="level2">
+<h2 class="anchored" data-anchor-id="final-solution">Final solution</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># align reads</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">bwa</span> index ./3.analysis/1.refseq/refseq.fa</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> r1 <span class="kw">in</span> ./3.analysis/3.trim/<span class="pp">*</span>_R1<span class="pp">*</span>trimmed.fastq.gz<span class="kw">;</span> <span class="cf">do</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="bu">[</span> <span class="ot">-f</span> <span class="st">"</span><span class="va">$r1</span><span class="st">"</span> <span class="bu">]</span> <span class="kw">||</span> <span class="cf">continue</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="va">r2</span><span class="op">=</span><span class="va">$(</span><span class="bu">echo</span> <span class="st">"</span><span class="va">$r1</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">sed</span> <span class="at">-E</span> <span class="st">'s/_R1/_R2/'</span><span class="va">)</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="va">base</span><span class="op">=</span><span class="va">$(</span><span class="fu">basename</span> <span class="st">"</span><span class="va">$r1</span><span class="st">"</span> .trimmed.fastq.gz<span class="va">)</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="va">sample</span><span class="op">=</span><span class="va">$(</span><span class="bu">echo</span> <span class="st">"</span><span class="va">$base</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">sed</span> <span class="at">-E</span> <span class="st">'s/_R1//'</span><span class="va">)</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="ex">bwa</span> mem <span class="at">-t</span> 16 ./3.analysis/1.refseq/refseq.fa <span class="va">$r1</span> <span class="va">$r2</span> <span class="kw">|</span> <span class="dt">\</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="ex">samtools</span> sort <span class="at">-@</span> 16 <span class="at">-o</span> ./3.analysis/5.bam/<span class="va">${sample}</span>.bam</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="ex">samtools</span> index ./3.analysis/5.bam/<span class="va">${sample}</span>.bam</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  <span class="ex">bamtools</span> filter <span class="at">-in</span> ./3.analysis/5.bam/<span class="va">${sample}</span>.bam <span class="at">-out</span> ./3.analysis/5.bam/<span class="va">${sample}</span>.filtered.bam <span class="at">-tag</span> <span class="st">"NM:&lt;34"</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="ex">samtools</span> index ./3.analysis/5.bam/<span class="va">${sample}</span>.filtered.bam</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rm</span> <span class="at">-f</span> ./3.analysis/5.bam/<span class="va">${sample}</span>.bam ./3.analysis/5.bam/<span class="va">${sample}</span>.bam.bai</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
-<li><strong>Prrepare reference sequences with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/3.SMN2/1.refseq.sh"><code>1.refseq.sh</code></a></li>
-</ul>
-</section>
-<section id="fastqc-for-reads" class="level2">
-<h2 class="anchored" data-anchor-id="fastqc-for-reads">FastQC for reads</h2>
-<ul>
-<li><p><strong>FastQC with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/3.SMN2/2.fastqc.sh"><code>2.fastqc.sh</code></a></p></li>
-<li><p>Sample-13_R1 (representative FastQC per base quality plot before reads trimming):<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/3.SMN2/1.fastqc/13-Ctrl-DMSO-80C-5min-Mn_R1_001_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-13_R2 (representative FastQC per base quality plot before reads trimming):<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/3.SMN2/1.fastqc/13-Ctrl-DMSO-80C-5min-Mn_R2_001_fastqc_per_base_quality.png" width="80%"></p></li>
-</ul>
-<details>
-<summary>
-View all samples before reads trimming:
-</summary>
-<ul>
-<li><p>Sample-14_R1:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/3.SMN2/1.fastqc/14-Ctrl-C12-100uM-80C-5min-Mn_R1_001_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-14_R2:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/3.SMN2/1.fastqc/14-Ctrl-C12-100uM-80C-5min-Mn_R2_001_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-15_R1:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/3.SMN2/1.fastqc/15-Ctrl-C15-100uM-80C-5min-Mn_R1_001_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-15_R2:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/3.SMN2/1.fastqc/15-Ctrl-C15-100uM-80C-5min-Mn_R2_001_fastqc_per_base_quality.png" width="80%"></p></li>
-</ul>
-</details>
-<ul>
-<li><strong>Conclusion</strong>: within 250bp, the reads quality is generally good. R2 has slightly lower overall quality than R1,which is expected for paired-end reads.</li>
-</ul>
-</section>
-<section id="reads-trimming" class="level2">
-<h2 class="anchored" data-anchor-id="reads-trimming">Reads trimming</h2>
-<ul>
-<li><p><strong>Reads trimming with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/3.SMN2/3.trim.sh"><code>3.trim.sh</code></a></p></li>
-<li><p>Key filtering standards:</p></li>
+<li>`<code>BWA</code>: better for variants calling</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span>Keeping the first <span class="dv">200</span>bp and discard the tail</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span>Trimming the tail with average Q<span class="sc">-</span>score <span class="sc">&lt;</span> <span class="dv">20</span> (<span class="dv">4</span> bases moving window size)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span>Discarding reads with more than <span class="dv">20</span>% of Q<span class="sc">-</span>score <span class="sc">&lt;</span> <span class="dv">20</span> bases</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">bwa</span> mem <span class="at">-t</span> 16 ./3.analysis/1.refseq/refseq.fa <span class="va">$r1</span> <span class="va">$r2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<ul>
+<li><code>bamtool</code>: empirically filter out mis-mapped reads (large deletion)</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">bamtools</span> filter <span class="at">-in</span> ./3.analysis/5.bam/<span class="va">${sample}</span>.bam <span class="at">-out</span> ./3.analysis/5.bam/<span class="va">${sample}</span>.filtered.bam <span class="at">-tag</span> <span class="st">"NM:&lt;34"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>The artifact at around 150bp is gone:</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/3.absolute_mut/JW-HC-002_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"></p>
+<ul>
+<li>The mutational signals are well retained compared to <code>Bowtie2</code>:</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/5.base_summary/base_summary.jpg" width="100%"></p>
 </section>
-<section id="fastqc-for-reads-after-trimming" class="level2">
-<h2 class="anchored" data-anchor-id="fastqc-for-reads-after-trimming">FastQC for reads after trimming</h2>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
 <ul>
-<li><p><strong>Re-FastQC with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/3.SMN2/4.refastqc.sh"><code>4.refastqc.sh</code></a></p></li>
-<li><p>Sample-7_R1 (representative FastQC per base quality plot after reads trimming):<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/3.SMN2/2.refastqc/13-Ctrl-DMSO-80C-5min-Mn_001_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-7_R2 (representative FastQC per base quality plot after reads trimming):<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/3.SMN2/2.refastqc/13-Ctrl-DMSO-80C-5min-Mn_001_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
-</ul>
-<details>
-<summary>
-View all samples after reads trimming:
-</summary>
-<ul>
-<li><p>Sample-8_R1:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/3.SMN2/2.refastqc/14-Ctrl-C12-100uM-80C-5min-Mn_001_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-8_R2:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/3.SMN2/2.refastqc/14-Ctrl-C12-100uM-80C-5min-Mn_001_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-9_R1:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/3.SMN2/2.refastqc/15-Ctrl-C15-100uM-80C-5min-Mn_001_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-9_R2:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/3.SMN2/2.refastqc/15-Ctrl-C15-100uM-80C-5min-Mn_001_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
-</ul>
-</details>
-<ul>
-<li><strong>Conclusion</strong>: after trimming, the quality of the overall reads quality is improved and variation is reduced.</li>
-</ul>
-</section>
-<section id="reads-mapping" class="level2">
-<h2 class="anchored" data-anchor-id="reads-mapping">Reads mapping</h2>
-<ul>
-<li><strong>Reads mapping with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/3.SMN2/5.bam.sh"><code>5.bam.sh</code></a></li>
-</ul>
-</section>
-<section id="analyzing-and-visualization" class="level2">
-<h2 class="anchored" data-anchor-id="analyzing-and-visualization">Analyzing and visualization</h2>
-<ul>
-<li><strong>Pileup with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/3.SMN2/6.mpileup.sh"><code>6.mpileup.sh</code></a><br>
-</li>
-<li><strong>Parse with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/3.SMN2/7.parse.R"><code>7.parse.R</code></a><br>
-</li>
-<li>For parsed mutation rate spreadsheets, click <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/3.SMN2/mpileup_parse.zip">here</a>.</li>
-<li><strong>Plot with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/3.SMN2/8.plot.R"><code>8.plot.R</code></a></li>
-</ul>
-<section id="absolute-mutation-rate-after-reads-trimming" class="level3">
-<h3 class="anchored" data-anchor-id="absolute-mutation-rate-after-reads-trimming">Absolute mutation rate (after reads trimming)</h3>
-<details>
-<summary>
-Absolute mutation rate:
-</summary>
-<ul>
-<li><p>Sample-13:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/3.SMN2/3.absolute_mut/13-Ctrl-DMSO-80C-5min-Mn-001_SMN2-Exon7-Amplicon.jpg" width="100%"></p></li>
-<li><p>Sample-14:<br>
-&lt;img src=“https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/3.SMN2/3.absolute_mut/14-Ctrl-C12-100uM-80C-5min-Mn-001_SMN2-Exon7-Amplicon.jpg width=”100%“&gt;</p></li>
-<li><p>Sample-15:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/3.SMN2/3.absolute_mut/15-Ctrl-C15-100uM-80C-5min-Mn-001_SMN2-Exon7-Amplicon.jpg" width="100%"></p></li>
-</ul>
-</details>
-</section>
-<section id="relative-mutation-rate-after-reads-trimming" class="level3">
-<h3 class="anchored" data-anchor-id="relative-mutation-rate-after-reads-trimming">Relative mutation rate (after reads trimming)</h3>
-<details>
-<summary>
-Relative mutation rate:
-</summary>
-<ul>
-<li><p>Sample-13:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/3.SMN2/4.relative_mut/13-Ctrl-DMSO-80C-5min-Mn-001_SMN2-Exon7-Amplicon.jpg" width="100%"></p></li>
-<li><p>Sample-14:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/3.SMN2/4.relative_mut/14-Ctrl-C12-100uM-80C-5min-Mn-001_SMN2-Exon7-Amplicon.jpg" width="100%"></p></li>
-<li><p>Sample-15:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/3.SMN2/4.relative_mut/15-Ctrl-C15-100uM-80C-5min-Mn-001_SMN2-Exon7-Amplicon.jpg" width="100%"></p></li>
-</ul>
-</details>
-</section>
-<section id="base-summary" class="level3">
-<h3 class="anchored" data-anchor-id="base-summary">Base Summary</h3>
-<ul>
-<li>All samples:</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/3.SMN2/5.base_summary/base_summary_ctrl.jpg" width="50%"></p>
-<ul>
-<li><strong>Conclusion</strong>: Overall result is consistent with <a href="https://chenh19.github.io/chemProbing/2025.5.27-c.html#base-summary">previous experiment</a>.</li>
+<li><strong><code>BWA</code> mapping + <code>bamtools</code> filtering</strong> will be used for future amplicon-seq analysis.</li>
 </ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

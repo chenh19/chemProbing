@@ -1,0 +1,94 @@
+---
+title: "2025.5.29-a: Amplicon-seq analysis troubleshooting"
+output: html_document
+---
+
+
+## The issue
+
+- Mis-mapping led to wrong variants calling (artifact at around 150bp):  
+
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/bug/artefact.jpg" width="100%">
+
+- This issue doesn't always happen on all samples, and by checking the bam files, I realized it's mis-mapping (repeated 34bp large deletion).
+- It seems that when the length of the insert (i.e., <300bp) between two adapters is shorter than the combination of two reads (i.e., 150bpx2), ```BWA``` can get confused.
+
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/bug/bwa-mem.png" width="100%">
+
+
+
+
+## Troubleshooting attempts
+
+- Reads trimming and filtering (both loose and stringent criteria): can't avoid the artifact.
+- Mapping as paired-end reads vs separate single-end reads: can't avoid the artifact.
+- Adjust the refseq by including 5' and 3' sequences (i.e., additional 3bp on each side), although they might not be in the mutational profiling region: this reduces mis-mapping by a little bit.
+- Use different aligners: ```Bowtie2``` aligns perfectly (bam screenshot below), but has much lower variant calling sensitivity; ```Minimap2``` has the same mis-mapping issue.
+
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/bug/bowtie2.png" width="100%">
+
+- Using the [same read trimming and filtering criteria](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/project-1_bwa+filter/3.trim.sh) (key parameters listed below), Bowtie2 detects only about half as many variants as BWA.
+
+```{bash,eval=FALSE}
+fastp \
+  --trim_front1 5 \
+  --trim_front2 5 \
+  --cut_tail \
+  --cut_tail_window_size 4 \
+  --cut_tail_mean_quality 20 \
+  --length_required 80 \
+  --qualified_quality_phred 20 \
+  --unqualified_percent_limit 20 \
+```
+
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bowtie2/5.base_summary/base_summary.jpg" width="100%">
+
+
+## Final solution
+
+
+```{bash,eval=FALSE}
+# align reads
+bwa index ./3.analysis/1.refseq/refseq.fa
+for r1 in ./3.analysis/3.trim/*_R1*trimmed.fastq.gz; do
+  [ -f "$r1" ] || continue
+  r2=$(echo "$r1" | sed -E 's/_R1/_R2/')
+  base=$(basename "$r1" .trimmed.fastq.gz)
+  sample=$(echo "$base" | sed -E 's/_R1//')
+
+  bwa mem -t 16 ./3.analysis/1.refseq/refseq.fa $r1 $r2 | \
+    samtools sort -@ 16 -o ./3.analysis/5.bam/${sample}.bam
+  samtools index ./3.analysis/5.bam/${sample}.bam
+
+  bamtools filter -in ./3.analysis/5.bam/${sample}.bam -out ./3.analysis/5.bam/${sample}.filtered.bam -tag "NM:<34"
+  samtools index ./3.analysis/5.bam/${sample}.filtered.bam
+
+  rm -f ./3.analysis/5.bam/${sample}.bam ./3.analysis/5.bam/${sample}.bam.bai
+done
+
+```
+
+- ```BWA``: better for variants calling
+
+```{bash,eval=FALSE}
+bwa mem -t 16 ./3.analysis/1.refseq/refseq.fa $r1 $r2
+```
+
+- ```bamtool```: empirically filter out mis-mapped reads (large deletion)
+
+```{bash,eval=FALSE}
+bamtools filter -in ./3.analysis/5.bam/${sample}.bam -out ./3.analysis/5.bam/${sample}.filtered.bam -tag "NM:<34"
+```
+
+- The artifact at around 150bp is gone:  
+
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/3.absolute_mut/JW-HC-002_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%">
+
+- The mutational signals are well retained compared to ```Bowtie2```:  
+
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/5.base_summary/base_summary.jpg" width="100%">
+
+
+## Conclusion
+
+- **```BWA``` mapping + ```bamtools``` filtering**  will be used for future amplicon-seq analysis.
