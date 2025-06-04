@@ -22,7 +22,7 @@ output: html_document
 
 - Reads trimming and filtering (both loose and stringent criteria): can't avoid the artifact.
 - Mapping as paired-end reads vs separate single-end reads: can't avoid the artifact.
-- Adjust the refseq by including 5' and 3' sequences (i.e., additional 3bp on each side), although they might not be in the mutational profiling region: this reduces mis-mapping by a little bit.
+- Adjust the refseq by including more 5' and 3' sequences (i.e., additional 3bp on each side), although they might not be in the mutational profiling region: this reduces mis-mapping by a little bit.
 - Use different aligners: ```Bowtie2``` aligns perfectly (bam screenshot below), but has much lower variant calling sensitivity; ```Minimap2``` has the same mis-mapping issue.
 
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/bug/bowtie2.png" width="100%">
