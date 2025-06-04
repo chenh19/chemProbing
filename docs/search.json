@@ -515,7 +515,7 @@
     "href": "2025.5.29-c.html#reads-trimming",
     "title": "2025.5.29-c: Project-2. Activity-based RNA profiling",
     "section": "Reads trimming",
-    "text": "Reads trimming\n\nReads trimming with  3.trim.sh\nKey filtering standards:\n\n\n1.Keeping the first 200bp and discard the tail\n2.Trimming the tail with average Q-score &lt; 20 (4 bases moving window size)\n3.Discarding reads with more than 10% of Q-score &lt; 20 bases\n\n\nReads counting before and after trimming  retaining_percentage.csv"
+    "text": "Reads trimming\n\nReads trimming with  3.trim.sh\nKey filtering standards:\n\n\n1.Keeping the first 200bp and discard the tail\n2.Trimming the tail with average Q-score &lt; 20 (4 bases moving window size)\n3.Discarding reads with more than 20% of Q-score &lt; 20 bases\n\n\nReads counting before and after trimming  retaining_percentage.csv"
   },
   {
     "objectID": "2025.5.29-c.html#fastqc-for-reads-after-trimming",
