@@ -29,7 +29,7 @@ gggtgtgaccgaaaggtaagatggagagccttgtccctggtttcaacgagggagtcaaagttctgtttgccctgatctgc
 atcgctgtggccgaggccaagcccaccgagaacaacgaagacttcaacatcgtggccg
 ```
 
-- **Prrepare reference sequences with ** [```1.refseq.sh```](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/1.refseq.sh)
+- **Prepare reference sequences with ** [```1.refseq.sh```](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/1.refseq.sh)
 
 
 ## FastQC for reads

@@ -6,11 +6,39 @@ output: html_document
 
 ## Samples
 
+<div style="font-size: 0.8em;">
+| #  | Treated on   | Treatment                 | Incubation            | RT ion     | Index        | i5       | i7       |
+|----|--------------|---------------------------|-----------------------|------------|--------------|----------|----------|
+| 52 | Purified RNA | Ctrl (10% DMSO)           | 37°C for 30min on RNA | Mg2+ (3mM) | i5-7 + i7-1  | AAGGAGTA | TCGCCTTA |
+| 53 | Purified RNA | Ctrl (10% DMSO)           | 37°C for 30min on RNA | Mg2+ (3mM) | i5-7 + i7-2  | AAGGAGTA | CTAGTACG |
+| 54 | Purified RNA | Ctrl (10% DMSO)           | 37°C for 30min on RNA | Mg2+ (3mM) | i5-7 + i7-3  | AAGGAGTA | TTCTGCCT |
+| 55 | Purified RNA | Ctrl (10% DMSO)           | 37°C for 30min on RNA | Mn2+ (3mM) | i5-7 + i7-4  | AAGGAGTA | GCTCAGGA |
+| 56 | Purified RNA | Ctrl (10% DMSO)           | 37°C for 30min on RNA | Mn2+ (3mM) | i5-7 + i7-5  | AAGGAGTA | AGGAGTCC |
+| 57 | Purified RNA | Ctrl (10% DMSO)           | 37°C for 30min on RNA | Mn2+ (3mM) | i5-7 + i7-6  | AAGGAGTA | CATGCCTA |
+| 58 | Purified RNA | Ctrl (10% DMSO)           | 37°C for 2h on RNA    | Mg2+ (3mM) | i5-7 + i7-7  | AAGGAGTA | GTAGAGAG |
+| 59 | Purified RNA | Ctrl (10% DMSO)           | 37°C for 2h on RNA    | Mg2+ (3mM) | i5-7 + i7-8  | AAGGAGTA | CCTCTCTG |
+| 60 | Purified RNA | Ctrl (10% DMSO)           | 37°C for 2h on RNA    | Mg2+ (3mM) | i5-7 + i7-9  | AAGGAGTA | AGCGTAGC |
+| 61 | Purified RNA | Ctrl (10% DMSO)           | 37°C for 2h on RNA    | Mn2+ (3mM) | i5-7 + i7-10 | AAGGAGTA | CAGCCTCG |
+| 62 | Purified RNA | Ctrl (10% DMSO)           | 37°C for 2h on RNA    | Mn2+ (3mM) | i5-7 + i7-11 | AAGGAGTA | TGCCTCTT |
+| 63 | Purified RNA | Ctrl (10% DMSO)           | 37°C for 2h on RNA    | Mn2+ (3mM) | i5-7 + i7-12 | AAGGAGTA | TCCTCTAC |
+| 64 | Purified RNA | C34-NM (1mM final)        | 37°C for 2h on RNA    | Mn2+ (3mM) | i5-8 + i7-1  | CTAAGCCT | TCGCCTTA |
+| 65 | Purified RNA | C34-NM (1mM final)        | 37°C for 2h on RNA    | Mn2+ (3mM) | i5-8 + i7-2  | CTAAGCCT | CTAGTACG |
+| 66 | Purified RNA | C34-NM (1mM final)        | 37°C for 2h on RNA    | Mn2+ (3mM) | i5-8 + i7-3  | CTAAGCCT | TTCTGCCT |
+| 67 | Purified RNA | NM-only (1mM final)       | 37°C for 2h on RNA    | Mn2+ (3mM) | i5-8 + i7-4  | CTAAGCCT | GCTCAGGA |
+| 68 | Purified RNA | NM-only (1mM final)       | 37°C for 2h on RNA    | Mn2+ (3mM) | i5-8 + i7-5  | CTAAGCCT | AGGAGTCC |
+| 69 | Purified RNA | NM-only (1mM final)       | 37°C for 2h on RNA    | Mn2+ (3mM) | i5-8 + i7-6  | CTAAGCCT | CATGCCTA |
+| 70 | Purified RNA | C34-Squarate (1mM final)  | 37°C for 30min on RNA | Mn2+ (3mM) | i5-8 + i7-7  | CTAAGCCT | GTAGAGAG |
+| 71 | Purified RNA | C34-Squarate (1mM final)  | 37°C for 30min on RNA | Mn2+ (3mM) | i5-8 + i7-8  | CTAAGCCT | CCTCTCTG |
+| 72 | Purified RNA | C34-Squarate (1mM final)  | 37°C for 30min on RNA | Mn2+ (3mM) | i5-8 + i7-9  | CTAAGCCT | AGCGTAGC |
+| 73 | Purified RNA | Squarate-only (1mM final) | 37°C for 30min on RNA | Mn2+ (3mM) | i5-8 + i7-10 | CTAAGCCT | CAGCCTCG |
+| 74 | Purified RNA | Squarate-only (1mM final) | 37°C for 30min on RNA | Mn2+ (3mM) | i5-8 + i7-11 | CTAAGCCT | TGCCTCTT |
+| 75 | Purified RNA | Squarate-only (1mM final) | 37°C for 30min on RNA | Mn2+ (3mM) | i5-8 + i7-12 | CTAAGCCT | TCCTCTAC |
+</div>
+<br>
 
-
-- [Experimental details: cDNA preparation](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/2025.5.1-19 cDNA preparation.pdf)
-- [Experimental details: Library construction](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/2025.5.20 Amplicon library #1.pdf)
-- Sequenced with [AVITI Low Output 2 x 150](https://www.elementbiosciences.com/products/aviti/specs)
+- Experiment details: [cDNA preparation](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/2025.5.1-19 cDNA preparation.pdf)
+- Experiment details: [Library construction](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/2025.5.20 Amplicon library-1.pdf)
+- Sequenced with [AVITI Low Output 2 x 150](https://www.elementbiosciences.com/products/aviti/specs) (250M)
 
 
 ## Reference sequences
@@ -24,7 +52,7 @@ ttgcagccgatcatcagcacatctaggtttcgtccgggtgtgaccgaaaggtaagatggagagccttgtccctggtttca
 acgaggGAG
 ```
 
-- **Prrepare reference sequences with ** [```1.refseq.sh```](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/1.refseq.sh)
+- **Prepare reference sequences with ** [```1.refseq.sh```](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/1.refseq.sh)
 
 
 ## FastQC for reads
