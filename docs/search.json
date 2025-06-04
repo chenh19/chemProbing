@@ -273,32 +273,11 @@
     "text": "Analyzing and visualization\n\nPileup with  6.mpileup.sh\n\nParse with  7.parse.R\n\nFor parsed mutation rate spreadsheets, click here.\nPlot with  8.plot.R\n\n\nAbsolute mutation rate (after reads trimming)\n\n\nAbsolute mutation rate:\n\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\n\nRelative mutation rate (after reads trimming)\n\n\nRelative mutation rate:\n\n\nSample-1:\n\nSample-2:\n\nSample-3:\n\nSample-4:\n\nSample-5:\n\nSample-6:\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\n\nBase Summary\n\nAll samples:\n\n\n\nConclusion: The base summary is similar to the analysis using full length Amplicon as the refseq."
   },
   {
-    "objectID": "index.html#section",
-    "href": "index.html#section",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "chemProbing",
     "section": "",
-    "text": "2025.5.29-a: Amplicon-seq analysis troubleshooting\n2025.5.29-b: Project-1. Small molecule-binding RNA structural probing\n2025.5.29-c: Project-2. Activity-based RNA profiling"
-  },
-  {
-    "objectID": "index.html#section-1",
-    "href": "index.html#section-1",
-    "title": "chemProbing",
-    "section": "",
-    "text": "2025.5.28-a: Azenta Amplicon-EZ (part-1)\n2025.5.28-b: Azenta Amplicon-EZ (part-2)\n2025.5.28-c: Azenta Amplicon-EZ (part-3)"
-  },
-  {
-    "objectID": "index.html#section-2",
-    "href": "index.html#section-2",
-    "title": "chemProbing",
-    "section": "",
-    "text": "2025.5.27-a: Plasmidsaurus data re-analysis (part-1)\n2025.5.27-b: Plasmidsaurus data re-analysis (part-2)\n2025.5.27-c: Plasmidsaurus data re-analysis (part-3)"
-  },
-  {
-    "objectID": "index.html#section-3",
-    "href": "index.html#section-3",
-    "title": "chemProbing",
-    "section": "",
-    "text": "2025.5.8: Re-analysis of Zhichao’s previous data\n2025.5.7: C12/C15 mutational profiling pilot testing"
+    "text": "Analyses list:\n\n\n\n\n2025.5.29-a: Amplicon-seq analysis troubleshooting\n2025.5.29-b: Project-1. Small molecule-binding RNA structural probing\n2025.5.29-c: Project-2. Activity-based RNA profiling\n\n\n\n\n\n2025.5.28-a: Azenta Amplicon-EZ (part-1)\n2025.5.28-b: Azenta Amplicon-EZ (part-2)\n2025.5.28-c: Azenta Amplicon-EZ (part-3)\n\n\n\n\n\n2025.5.27-a: Plasmidsaurus data re-analysis (part-1)\n2025.5.27-b: Plasmidsaurus data re-analysis (part-2)\n2025.5.27-c: Plasmidsaurus data re-analysis (part-3)\n\n\n\n\n\n2025.5.8: Re-analysis of Zhichao’s previous data\n2025.5.7: C12/C15 mutational profiling pilot testing"
   },
   {
     "objectID": "2025.5.27-a.html",

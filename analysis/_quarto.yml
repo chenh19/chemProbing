@@ -32,11 +32,11 @@ website:
         - text: "2025.5.28-c: Azenta Amplicon-EZ (part-3)"
           href: 2025.5.28-c.html
         - text: "2025.5.29-a: Amplicon-seq analysis troubleshooting"
-          href: 2025.5.28-a.html
+          href: 2025.5.29-a.html
         - text: "2025.5.29-b: Project-1. Small molecule-binding RNA structural probing"
-          href: 2025.5.28-b.html
+          href: 2025.5.29-b.html
         - text: "2025.5.29-c: Project-2. Activity-based RNA profiling"
-          href: 2025.5.28-c.html
+          href: 2025.5.29-c.html
       - text: "Misc."
         href: misc.html
     right:
