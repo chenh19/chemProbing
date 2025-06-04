@@ -27,7 +27,7 @@ output: html_document
 
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/bug/bowtie2.png" width="100%">
 
-- Using the [same read trimming and filtering criteria](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/project-1_bwa+filter/3.trim.sh) (key parameters listed below), Bowtie2 detects only about half as many variants as BWA.
+- Using the [same read trimming and filtering criteria](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/project-1_bwa+filter/3.trim.sh) (key parameters listed below), ```Bowtie2``` detects only about half as many variants as BWA.
 
 ```{bash,eval=FALSE}
 fastp \
@@ -68,7 +68,7 @@ done
 
 ```
 
-- ```BWA``: better for variants calling
+- ```BWA```: better for variants calling
 
 ```{bash,eval=FALSE}
 bwa mem -t 16 ./3.analysis/1.refseq/refseq.fa $r1 $r2
@@ -84,11 +84,11 @@ bamtools filter -in ./3.analysis/5.bam/${sample}.bam -out ./3.analysis/5.bam/${s
 
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/3.absolute_mut/JW-HC-002_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%">
 
-- The mutational signals are well retained compared to ```Bowtie2```:  
+- The mutational signals are better preserved when using ```BWA``` compared to ```Bowtie2```:  
 
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/5.base_summary/base_summary.jpg" width="100%">
 
 
 ## Conclusion
 
-- **```BWA``` mapping + ```bamtools``` filtering**  will be used for future amplicon-seq analysis.
+- ```BWA``` mapping + ```bamtools``` filtering  will be used for future amplicon-seq analysis.
