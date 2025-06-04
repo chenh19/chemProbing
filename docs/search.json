@@ -53,14 +53,14 @@
     "href": "2025.5.29-b.html",
     "title": "2025.5.29-b: Project-1. Small molecule-binding RNA structural probing",
     "section": "",
-    "text": "Experimental details: cDNA preparation\nExperimental details: Library construction\nSequenced with AVITI Low Output 2 x 150"
+    "text": "Experimental details: cDNA preparation\nExperimental details: Library construction\nSequenced with AVITI Low Output 2 x 150 (250M)"
   },
   {
     "objectID": "2025.5.29-b.html#samples",
     "href": "2025.5.29-b.html#samples",
     "title": "2025.5.29-b: Project-1. Small molecule-binding RNA structural probing",
     "section": "",
-    "text": "Experimental details: cDNA preparation\nExperimental details: Library construction\nSequenced with AVITI Low Output 2 x 150"
+    "text": "Experimental details: cDNA preparation\nExperimental details: Library construction\nSequenced with AVITI Low Output 2 x 150 (250M)"
   },
   {
     "objectID": "2025.5.29-b.html#reference-sequences",
@@ -74,21 +74,21 @@
     "href": "2025.5.29-b.html#fastqc-for-reads",
     "title": "2025.5.29-b: Project-1. Small molecule-binding RNA structural probing",
     "section": "FastQC for reads",
-    "text": "FastQC for reads\n\nFastQC with  2.fastqc.sh\nSample-7_R1 (representative FastQC per base quality plot before reads trimming):\n\nSample-7_R2 (representative FastQC per base quality plot before reads trimming):\n\n\n\n\nView all samples before reads trimming:\n\n\nSample-8_R1:\n\nSample-8_R2:\n\nSample-9_R1:\n\nSample-9_R2:\n\nSample-10_R1:\n\nSample-10_R2:\n\nSample-11_R1:\n\nSample-11_R2:\n\nSample-12_R1:\n\nSample-12_R2:\n\n\n\n\nConclusion: within 250bp, the reads quality is generally good. R2 has lower overall quality than R1,which is expected for paired-end reads."
+    "text": "FastQC for reads\n\nFastQC with  2.fastqc.sh\nJW-HC-001_R1 (representative FastQC per base quality plot before reads trimming):\n\nJW-HC-001_R2 (representative FastQC per base quality plot before reads trimming):\n\n\n\n\nView all samples before reads trimming:\n\n\nJW-HC-002_R1:\n\nJW-HC-002_R2:\n\nJW-HC-003_R1:\n\nJW-HC-003_R2:\n\nJW-HC-004_R1:\n\nJW-HC-004_R2:\n\nJW-HC-005_R1:\n\nJW-HC-005_R2:\n\nJW-HC-006_R1:\n\nJW-HC-006_R2:\n\nJW-HC-007_R1:\n\nJW-HC-007_R2:\n\nJW-HC-008_R1:\n\nJW-HC-008_R2:\n\nJW-HC-009_R1:\n\nJW-HC-009_R2:\n\nJW-HC-010_R1:\n\nJW-HC-010_R2:\n\nJW-HC-011_R1:\n\nJW-HC-011_R2:\n\nJW-HC-012_R1:\n\nJW-HC-012_R2:\n\nJW-HC-016_R1:\n\nJW-HC-016_R2:\n\nJW-HC-017_R1:\n\nJW-HC-017_R2:\n\nJW-HC-018_R1:\n\nJW-HC-018_R2:\n\nJW-HC-019_R1:\n\nJW-HC-019_R2:\n\nJW-HC-020_R1:\n\nJW-HC-020_R2:\n\nJW-HC-021_R1:\n\nJW-HC-021_R2:\n\nJW-HC-022_R1:\n\nJW-HC-022_R2:\n\nJW-HC-023_R1:\n\nJW-HC-023_R2:\n\nJW-HC-024_R1:\n\nJW-HC-024_R2:\n\nJW-HC-025_R1:\n\nJW-HC-025_R2:\n\nJW-HC-026_R1:\n\nJW-HC-026_R2:\n\nJW-HC-027_R1:\n\nJW-HC-027_R2:\n\nJW-HC-028_R1:\n\nJW-HC-028_R2:\n\nJW-HC-029_R1:\n\nJW-HC-029_R2:\n\nJW-HC-030_R1:\n\nJW-HC-030_R2:\n\nJW-HC-031_R1:\n\nJW-HC-031_R2:\n\nJW-HC-032_R1:\n\nJW-HC-032_R2:\n\nJW-HC-033_R1:\n\nJW-HC-033_R2:\n\nJW-HC-034_R1:\n\nJW-HC-034_R2:\n\nJW-HC-035_R1:\n\nJW-HC-035_R2:\n\nJW-HC-036_R1:\n\nJW-HC-036_R2:\n\nJW-HC-037_R1:\n\nJW-HC-037_R2:\n\nJW-HC-038_R1:\n\nJW-HC-038_R2:\n\nJW-HC-039_R1:\n\nJW-HC-039_R2:\n\nJW-HC-040_R1:\n\nJW-HC-040_R2:\n\nJW-HC-041_R1:\n\nJW-HC-041_R2:\n\nJW-HC-042_R1:\n\nJW-HC-042_R2:\n\nJW-HC-043_R1:\n\nJW-HC-043_R2:\n\nJW-HC-044_R1:\n\nJW-HC-044_R2:\n\nJW-HC-045_R1:\n\nJW-HC-045_R2:\n\nJW-HC-046_R1:\n\nJW-HC-046_R2:\n\nJW-HC-047_R1:\n\nJW-HC-047_R2:\n\nJW-HC-048_R1:\n\nJW-HC-048_R2:\n\nJW-HC-049_R1:\n\nJW-HC-049_R2:\n\nJW-HC-050_R1:\n\nJW-HC-050_R2:\n\nJW-HC-051_R1:\n\nJW-HC-051_R2:\n\n\n\n\nConclusion: within 150bp, the reads quality is generally good. R2 has lower overall quality than R1, which is expected for paired-end reads."
   },
   {
     "objectID": "2025.5.29-b.html#reads-trimming",
     "href": "2025.5.29-b.html#reads-trimming",
     "title": "2025.5.29-b: Project-1. Small molecule-binding RNA structural probing",
     "section": "Reads trimming",
-    "text": "Reads trimming\n\nReads trimming with  3.trim.sh\nKey filtering standards:\n\n\n1.Keeping the first 200bp and discard the tail\n2.Trimming the tail with average Q-score &lt; 20 (4 bases moving window size)\n3.Discarding reads with more than 10% of Q-score &lt; 20 bases"
+    "text": "Reads trimming\n\nReads trimming with  3.trim.sh\nKey filtering standards:\n\n\n1.Keeping the first 200bp and discard the tail\n2.Trimming the tail with average Q-score &lt; 20 (4 bases moving window size)\n3.Discarding reads with more than 10% of Q-score &lt; 20 bases\n\n\nReads counting before and after trimming  retaining_percentage.csv"
   },
   {
     "objectID": "2025.5.29-b.html#fastqc-for-reads-after-trimming",
     "href": "2025.5.29-b.html#fastqc-for-reads-after-trimming",
     "title": "2025.5.29-b: Project-1. Small molecule-binding RNA structural probing",
     "section": "FastQC for reads after trimming",
-    "text": "FastQC for reads after trimming\n\nRe-FastQC with  4.refastqc.sh\nSample-7_R1 (representative FastQC per base quality plot after reads trimming): \nSample-7_R2 (representative FastQC per base quality plot after reads trimming): \n\n\n\nView all samples after after trimming:\n\n\nSample-8_R1:\n\nSample-8_R2:\n\nSample-9_R1:\n\nSample-9_R2:\n\nSample-10_R1:\n\nSample-10_R2:\n\nSample-11_R1:\n\nSample-11_R2:\n\nSample-12_R1:\n\nSample-12_R2:\n\n\n\n\nConclusion: after trimming, the quality of the overall reads quality is improved and variation is reduced."
+    "text": "FastQC for reads after trimming\n\nRe-FastQC with  4.refastqc.sh\nJW-HC-001_R1 (representative FastQC per base quality plot after reads trimming):\n\nJW-HC-001_R2 (representative FastQC per base quality plot after reads trimming):\n\n\n\n\nView all samples after reads trimming:\n\n\nJW-HC-002_R1:\n\nJW-HC-002_R2:\n\nJW-HC-003_R1:\n\nJW-HC-003_R2:\n\nJW-HC-004_R1:\n\nJW-HC-004_R2:\n\nJW-HC-005_R1:\n\nJW-HC-005_R2:\n\nJW-HC-006_R1:\n\nJW-HC-006_R2:\n\nJW-HC-007_R1:\n\nJW-HC-007_R2:\n\nJW-HC-008_R1:\n\nJW-HC-008_R2:\n\nJW-HC-009_R1:\n\nJW-HC-009_R2:\n\nJW-HC-010_R1:\n\nJW-HC-010_R2:\n\nJW-HC-011_R1:\n\nJW-HC-011_R2:\n\nJW-HC-012_R1:\n\nJW-HC-012_R2:\n\nJW-HC-016_R1:\n\nJW-HC-016_R2:\n\nJW-HC-017_R1:\n\nJW-HC-017_R2:\n\nJW-HC-018_R1:\n\nJW-HC-018_R2:\n\nJW-HC-019_R1:\n\nJW-HC-019_R2:\n\nJW-HC-020_R1:\n\nJW-HC-020_R2:\n\nJW-HC-021_R1:\n\nJW-HC-021_R2:\n\nJW-HC-022_R1:\n\nJW-HC-022_R2:\n\nJW-HC-023_R1:\n\nJW-HC-023_R2:\n\nJW-HC-024_R1:\n\nJW-HC-024_R2:\n\nJW-HC-025_R1:\n\nJW-HC-025_R2:\n\nJW-HC-026_R1:\n\nJW-HC-026_R2:\n\nJW-HC-027_R1:\n\nJW-HC-027_R2:\n\nJW-HC-028_R1:\n\nJW-HC-028_R2:\n\nJW-HC-029_R1:\n\nJW-HC-029_R2:\n\nJW-HC-030_R1:\n\nJW-HC-030_R2:\n\nJW-HC-031_R1:\n\nJW-HC-031_R2:\n\nJW-HC-032_R1:\n\nJW-HC-032_R2:\n\nJW-HC-033_R1:\n\nJW-HC-033_R2:\n\nJW-HC-034_R1:\n\nJW-HC-034_R2:\n\nJW-HC-035_R1:\n\nJW-HC-035_R2:\n\nJW-HC-036_R1:\n\nJW-HC-036_R2:\n\nJW-HC-037_R1:\n\nJW-HC-037_R2:\n\nJW-HC-038_R1:\n\nJW-HC-038_R2:\n\nJW-HC-039_R1:\n\nJW-HC-039_R2:\n\nJW-HC-040_R1:\n\nJW-HC-040_R2:\n\nJW-HC-041_R1:\n\nJW-HC-041_R2:\n\nJW-HC-042_R1:\n\nJW-HC-042_R2:\n\nJW-HC-043_R1:\n\nJW-HC-043_R2:\n\nJW-HC-044_R1:\n\nJW-HC-044_R2:\n\nJW-HC-045_R1:\n\nJW-HC-045_R2:\n\nJW-HC-046_R1:\n\nJW-HC-046_R2:\n\nJW-HC-047_R1:\n\nJW-HC-047_R2:\n\nJW-HC-048_R1:\n\nJW-HC-048_R2:\n\nJW-HC-049_R1:\n\nJW-HC-049_R2:\n\nJW-HC-050_R1:\n\nJW-HC-050_R2:\n\nJW-HC-051_R1:\n\nJW-HC-051_R2:\n\n\n\n\nConclusion: after trimming, the quality of the overall reads quality is improved and variation is reduced."
   },
   {
     "objectID": "2025.5.29-b.html#reads-mapping",
@@ -102,7 +102,7 @@
     "href": "2025.5.29-b.html#analyzing-and-visualization",
     "title": "2025.5.29-b: Project-1. Small molecule-binding RNA structural probing",
     "section": "Analyzing and visualization",
-    "text": "Analyzing and visualization\n\nPileup with  6.mpileup.sh\n\nParse with  7.parse.R\n\nFor parsed mutation rate spreadsheets, click here.\nPlot with  8.plot.R\n\n\nAbsolute mutation rate (after reads trimming)\n\n\nAbsolute mutation rate:\n\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\n\nRelative mutation rate (after reads trimming)\n\n\nRelative mutation rate:\n\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\n\nBase Summary\n\nAll samples:\n\n\n\nConclusion: Overall result is consistent with previous experiment."
+    "text": "Analyzing and visualization\n\nPileup with  6.mpileup.sh\n\nParse with  7.parse.R\n\nFor parsed mutation rate spreadsheets, click here.\nFor sample groups, click here.\nPlot with  8.plot.R\n\n\nAbsolute mutation rate (after reads trimming)\n\n\nAbsolute mutation rate:\n\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\n\nRelative mutation rate (after reads trimming)\n\n\nRelative mutation rate:\n\n\nSample-7:\n\nSample-8:\n\nSample-9:\n\nSample-10:\n\nSample-11:\n\nSample-12:\n\n\n\n\n\nBase Summary\n\nAll samples:\n\n\n\nConclusion: Overall result is consistent with previous experiment."
   },
   {
     "objectID": "2025.5.28-c.html",
@@ -130,7 +130,7 @@
     "href": "2025.5.28-c.html#fastqc-for-reads",
     "title": "2025.5.28-c: Azenta Amplicon-EZ (part-3)",
     "section": "FastQC for reads",
-    "text": "FastQC for reads\n\nFastQC with  2.fastqc.sh\nSample-13_R1 (representative FastQC per base quality plot before reads trimming):\n\nSample-13_R2 (representative FastQC per base quality plot before reads trimming):\n\n\n\n\nView all samples before reads trimming:\n\n\nSample-14_R1:\n\nSample-14_R2:\n\nSample-15_R1:\n\nSample-15_R2:\n\n\n\n\nConclusion: within 250bp, the reads quality is generally good. R2 has slightly lower overall quality than R1,which is expected for paired-end reads."
+    "text": "FastQC for reads\n\nFastQC with  2.fastqc.sh\nSample-13_R1 (representative FastQC per base quality plot before reads trimming):\n\nSample-13_R2 (representative FastQC per base quality plot before reads trimming):\n\n\n\n\nView all samples before reads trimming:\n\n\nSample-14_R1:\n\nSample-14_R2:\n\nSample-15_R1:\n\nSample-15_R2:\n\n\n\n\nConclusion: within 250bp, the reads quality is generally good. R2 has slightly lower overall quality than R1, which is expected for paired-end reads."
   },
   {
     "objectID": "2025.5.28-c.html#reads-trimming",
@@ -186,7 +186,7 @@
     "href": "2025.5.28-a.html#fastqc-for-reads",
     "title": "2025.5.28-a: Azenta Amplicon-EZ (part-1)",
     "section": "FastQC for reads",
-    "text": "FastQC for reads\n\nFastQC with  2.fastqc.sh\nSample-7_R1 (representative FastQC per base quality plot before reads trimming):\n\nSample-7_R2 (representative FastQC per base quality plot before reads trimming):\n\n\n\n\nView all samples before reads trimming:\n\n\nSample-8_R1:\n\nSample-8_R2:\n\nSample-9_R1:\n\nSample-9_R2:\n\nSample-10_R1:\n\nSample-10_R2:\n\nSample-11_R1:\n\nSample-11_R2:\n\nSample-12_R1:\n\nSample-12_R2:\n\n\n\n\nConclusion: within 250bp, the reads quality is generally good. R2 has lower overall quality than R1,which is expected for paired-end reads."
+    "text": "FastQC for reads\n\nFastQC with  2.fastqc.sh\nSample-7_R1 (representative FastQC per base quality plot before reads trimming):\n\nSample-7_R2 (representative FastQC per base quality plot before reads trimming):\n\n\n\n\nView all samples before reads trimming:\n\n\nSample-8_R1:\n\nSample-8_R2:\n\nSample-9_R1:\n\nSample-9_R2:\n\nSample-10_R1:\n\nSample-10_R2:\n\nSample-11_R1:\n\nSample-11_R2:\n\nSample-12_R1:\n\nSample-12_R2:\n\n\n\n\nConclusion: within 250bp, the reads quality is generally good. R2 has lower overall quality than R1, which is expected for paired-end reads."
   },
   {
     "objectID": "2025.5.28-a.html#reads-trimming",
@@ -417,7 +417,7 @@
     "href": "2025.5.28-b.html#fastqc-for-reads",
     "title": "2025.5.28-b: Azenta Amplicon-EZ (part-2)",
     "section": "FastQC for reads",
-    "text": "FastQC for reads\n\nFastQC with  2.fastqc.sh\nSample-7_R1 (representative FastQC per base quality plot before reads trimming):\n\nSample-7_R2 (representative FastQC per base quality plot before reads trimming):\n\n\n\n\nView all samples before reads trimming:\n\n\nSample-8_R1:\n\nSample-8_R2:\n\nSample-9_R1:\n\nSample-9_R2:\n\nSample-10_R1:\n\nSample-10_R2:\n\nSample-11_R1:\n\nSample-11_R2:\n\nSample-12_R1:\n\nSample-12_R2:\n\n\n\n\nConclusion: within 250bp, the reads quality is generally good. R2 has lower overall quality than R1,which is expected for paired-end reads."
+    "text": "FastQC for reads\n\nFastQC with  2.fastqc.sh\nSample-7_R1 (representative FastQC per base quality plot before reads trimming):\n\nSample-7_R2 (representative FastQC per base quality plot before reads trimming):\n\n\n\n\nView all samples before reads trimming:\n\n\nSample-8_R1:\n\nSample-8_R2:\n\nSample-9_R1:\n\nSample-9_R2:\n\nSample-10_R1:\n\nSample-10_R2:\n\nSample-11_R1:\n\nSample-11_R2:\n\nSample-12_R1:\n\nSample-12_R2:\n\n\n\n\nConclusion: within 250bp, the reads quality is generally good. R2 has lower overall quality than R1, which is expected for paired-end reads."
   },
   {
     "objectID": "2025.5.28-b.html#reads-trimming",
@@ -508,7 +508,7 @@
     "href": "2025.5.29-c.html#fastqc-for-reads",
     "title": "2025.5.29-c: Project-2. Activity-based RNA profiling",
     "section": "FastQC for reads",
-    "text": "FastQC for reads\n\nFastQC with  2.fastqc.sh\nSample-7_R1 (representative FastQC per base quality plot before reads trimming):\n\nSample-7_R2 (representative FastQC per base quality plot before reads trimming):\n\n\n\n\nView all samples before reads trimming:\n\n\nSample-8_R1:\n\nSample-8_R2:\n\nSample-9_R1:\n\nSample-9_R2:\n\nSample-10_R1:\n\nSample-10_R2:\n\nSample-11_R1:\n\nSample-11_R2:\n\nSample-12_R1:\n\nSample-12_R2:\n\n\n\n\nConclusion: within 250bp, the reads quality is generally good. R2 has lower overall quality than R1,which is expected for paired-end reads."
+    "text": "FastQC for reads\n\nFastQC with  2.fastqc.sh\nSample-7_R1 (representative FastQC per base quality plot before reads trimming):\n\nSample-7_R2 (representative FastQC per base quality plot before reads trimming):\n\n\n\n\nView all samples before reads trimming:\n\n\nSample-8_R1:\n\nSample-8_R2:\n\nSample-9_R1:\n\nSample-9_R2:\n\nSample-10_R1:\n\nSample-10_R2:\n\nSample-11_R1:\n\nSample-11_R2:\n\nSample-12_R1:\n\nSample-12_R2:\n\n\n\n\nConclusion: within 150bp, the reads quality is generally good. R2 has lower overall quality than R1, which is expected for paired-end reads."
   },
   {
     "objectID": "2025.5.29-c.html#reads-trimming",

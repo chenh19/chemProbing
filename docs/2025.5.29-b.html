@@ -247,8 +247,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="samples">Samples</h2>
 <ul>
 <li>Experimental details: <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/2025.5.1-19%20cDNA%20preparation.pdf">cDNA preparation</a></li>
-<li>Experimental details: <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/2025.5.20%20Amplicon%20library%20#1.pdf">Library construction</a></li>
-<li>Sequenced with <a href="https://www.elementbiosciences.com/products/aviti/specs">AVITI Low Output 2 x 150</a></li>
+<li>Experimental details: <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/2025.5.20%20Amplicon%20library-1.pdf">Library construction</a></li>
+<li>Sequenced with <a href="https://www.elementbiosciences.com/products/aviti/specs">AVITI Low Output 2 x 150</a> (250M)</li>
 </ul>
 </section>
 <section id="reference-sequences" class="level2">
@@ -264,53 +264,221 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>acgaggGAG</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
-<li><strong>Prrepare reference sequences with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/1.refseq.sh"><code>1.refseq.sh</code></a></li>
+<li><strong>Prrepare reference sequences with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/project-1_bwa+filter/1.refseq.sh"><code>1.refseq.sh</code></a></li>
 </ul>
 </section>
 <section id="fastqc-for-reads" class="level2">
 <h2 class="anchored" data-anchor-id="fastqc-for-reads">FastQC for reads</h2>
 <ul>
-<li><p><strong>FastQC with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/2.fastqc.sh"><code>2.fastqc.sh</code></a></p></li>
-<li><p>Sample-7_R1 (representative FastQC per base quality plot before reads trimming):<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/1.fastqc/07-SL5-DMSO-80C-15min-Mg_R1_001_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-7_R2 (representative FastQC per base quality plot before reads trimming):<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/1.fastqc/07-SL5-DMSO-80C-15min-Mg_R2_001_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p><strong>FastQC with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/project-1_bwa+filter/2.fastqc.sh"><code>2.fastqc.sh</code></a></p></li>
+<li><p>JW-HC-001_R1 (representative FastQC per base quality plot before reads trimming):<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-001_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-001_R2 (representative FastQC per base quality plot before reads trimming):<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-001_R2_fastqc_per_base_quality.png" width="80%"></p></li>
 </ul>
 <details>
 <summary>
 View all samples before reads trimming:
 </summary>
 <ul>
-<li><p>Sample-8_R1:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/1.fastqc/08-SL5-DMSO-80C-15min-Mn_R1_001_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-8_R2:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/1.fastqc/08-SL5-DMSO-80C-15min-Mn_R2_001_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-9_R1:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/1.fastqc/09-SL5-C12-5mM-80C-15min-Mn_R1_001_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-9_R2:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/1.fastqc/09-SL5-C12-5mM-80C-15min-Mn_R2_001_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-10_R1:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/1.fastqc/10-SL5-C15-5mM-80C-15min-Mn_R1_001_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-10_R2:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/1.fastqc/10-SL5-C15-5mM-80C-15min-Mn_R2_001_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-11_R1:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/1.fastqc/11-SL5-C12-500uM-80C-15min-Mn_R1_001_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-11_R2:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/1.fastqc/11-SL5-C12-500uM-80C-15min-Mn_R2_001_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-12_R1:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/1.fastqc/12-SL5-C15-500uM-80C-15min-Mn_R1_001_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-12_R2:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/1.fastqc/12-SL5-C15-500uM-80C-15min-Mn_R2_001_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-002_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-002_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-002_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-002_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-003_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-003_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-003_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-003_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-004_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-004_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-004_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-004_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-005_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-005_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-005_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-005_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-006_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-006_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-006_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-006_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-007_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-007_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-007_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-007_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-008_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-008_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-008_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-008_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-009_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-009_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-009_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-009_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-010_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-010_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-010_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-010_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-011_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-011_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-011_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-011_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-012_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-012_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-012_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-012_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-016_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-016_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-016_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-016_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-017_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-017_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-017_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-017_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-018_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-018_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-018_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-018_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-019_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-019_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-019_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-019_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-020_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-020_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-020_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-020_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-021_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-021_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-021_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-021_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-022_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-022_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-022_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-022_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-023_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-023_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-023_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-023_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-024_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-024_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-024_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-024_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-025_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-025_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-025_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-025_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-026_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-026_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-026_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-026_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-027_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-027_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-027_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-027_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-028_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-028_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-028_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-028_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-029_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-029_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-029_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-029_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-030_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-030_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-030_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-030_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-031_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-031_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-031_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-031_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-032_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-032_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-032_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-032_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-033_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-033_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-033_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-033_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-034_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-034_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-034_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-034_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-035_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-035_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-035_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-035_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-036_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-036_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-036_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-036_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-037_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-037_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-037_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-037_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-038_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-038_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-038_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-038_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-039_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-039_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-039_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-039_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-040_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-040_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-040_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-040_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-041_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-041_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-041_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-041_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-042_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-042_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-042_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-042_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-043_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-043_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-043_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-043_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-044_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-044_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-044_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-044_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-045_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-045_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-045_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-045_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-046_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-046_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-046_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-046_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-047_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-047_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-047_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-047_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-048_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-048_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-048_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-048_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-049_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-049_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-049_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-049_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-050_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-050_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-050_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-050_R2_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-051_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-051_R1_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-051_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/1.fastqc/JW-HC-051_R2_fastqc_per_base_quality.png" width="80%"></p></li>
 </ul>
 </details>
 <ul>
-<li><strong>Conclusion</strong>: within 250bp, the reads quality is generally good. R2 has lower overall quality than R1,which is expected for paired-end reads.</li>
+<li><strong>Conclusion</strong>: within 150bp, the reads quality is generally good. R2 has lower overall quality than R1, which is expected for paired-end reads.</li>
 </ul>
 </section>
 <section id="reads-trimming" class="level2">
 <h2 class="anchored" data-anchor-id="reads-trimming">Reads trimming</h2>
 <ul>
-<li><p><strong>Reads trimming with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/3.trim.sh"><code>3.trim.sh</code></a></p></li>
+<li><p><strong>Reads trimming with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/project-1_bwa+filter/3.trim.sh"><code>3.trim.sh</code></a></p></li>
 <li><p>Key filtering standards:</p></li>
 </ul>
 <div class="cell">
@@ -318,39 +486,212 @@ View all samples before reads trimming:
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span>Trimming the tail with average Q<span class="sc">-</span>score <span class="sc">&lt;</span> <span class="dv">20</span> (<span class="dv">4</span> bases moving window size)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fl">3.</span>Discarding reads with more than <span class="dv">10</span>% of Q<span class="sc">-</span>score <span class="sc">&lt;</span> <span class="dv">20</span> bases</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<ul>
+<li><strong>Reads counting before and after trimming </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/project-1_bwa+filter/retaining_percentage.csv"><code>retaining_percentage.csv</code></a></li>
+</ul>
 </section>
 <section id="fastqc-for-reads-after-trimming" class="level2">
 <h2 class="anchored" data-anchor-id="fastqc-for-reads-after-trimming">FastQC for reads after trimming</h2>
 <ul>
-<li><p><strong>Re-FastQC with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/4.refastqc.sh"><code>4.refastqc.sh</code></a></p></li>
-<li><p>Sample-7_R1 (representative FastQC per base quality plot after reads trimming): <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/2.refastqc/07-SL5-DMSO-80C-15min-Mg_001_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-7_R2 (representative FastQC per base quality plot after reads trimming): <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/2.refastqc/07-SL5-DMSO-80C-15min-Mg_001_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p><strong>Re-FastQC with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/project-1_bwa+filter/4.refastqc.sh"><code>4.refastqc.sh</code></a></p></li>
+<li><p>JW-HC-001_R1 (representative FastQC per base quality plot after reads trimming):<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-001_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-001_R2 (representative FastQC per base quality plot after reads trimming):<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-001_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
 </ul>
 <details>
 <summary>
-View all samples after after trimming:
+View all samples after reads trimming:
 </summary>
 <ul>
-<li><p>Sample-8_R1:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/2.refastqc/08-SL5-DMSO-80C-15min-Mn_001_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-8_R2:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/2.refastqc/08-SL5-DMSO-80C-15min-Mn_001_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-9_R1:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/2.refastqc/09-SL5-C12-5mM-80C-15min-Mn_001_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-9_R2:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/2.refastqc/09-SL5-C12-5mM-80C-15min-Mn_001_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-10_R1:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/2.refastqc/10-SL5-C15-5mM-80C-15min-Mn_001_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-10_R2:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/2.refastqc/10-SL5-C15-5mM-80C-15min-Mn_001_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-11_R1:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/2.refastqc/11-SL5-C12-500uM-80C-15min-Mn_001_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-11_R2:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/2.refastqc/11-SL5-C12-500uM-80C-15min-Mn_001_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-12_R1:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/2.refastqc/12-SL5-C15-500uM-80C-15min-Mn_001_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
-<li><p>Sample-12_R2:<br>
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.28/1.SL5_full_length_refseq/2.refastqc/12-SL5-C15-500uM-80C-15min-Mn_001_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-002_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-002_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-002_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-002_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-003_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-003_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-003_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-003_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-004_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-004_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-004_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-004_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-005_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-005_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-005_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-005_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-006_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-006_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-006_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-006_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-007_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-007_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-007_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-007_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-008_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-008_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-008_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-008_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-009_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-009_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-009_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-009_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-010_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-010_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-010_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-010_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-011_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-011_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-011_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-011_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-012_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-012_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-012_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-012_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-016_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-016_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-016_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-016_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-017_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-017_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-017_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-017_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-018_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-018_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-018_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-018_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-019_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-019_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-019_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-019_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-020_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-020_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-020_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-020_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-021_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-021_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-021_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-021_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-022_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-022_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-022_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-022_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-023_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-023_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-023_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-023_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-024_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-024_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-024_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-024_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-025_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-025_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-025_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-025_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-026_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-026_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-026_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-026_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-027_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-027_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-027_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-027_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-028_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-028_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-028_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-028_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-029_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-029_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-029_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-029_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-030_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-030_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-030_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-030_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-031_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-031_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-031_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-031_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-032_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-032_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-032_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-032_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-033_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-033_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-033_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-033_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-034_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-034_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-034_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-034_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-035_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-035_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-035_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-035_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-036_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-036_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-036_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-036_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-037_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-037_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-037_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-037_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-038_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-038_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-038_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-038_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-039_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-039_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-039_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-039_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-040_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-040_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-040_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-040_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-041_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-041_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-041_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-041_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-042_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-042_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-042_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-042_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-043_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-043_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-043_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-043_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-044_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-044_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-044_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-044_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-045_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-045_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-045_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-045_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-046_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-046_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-046_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-046_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-047_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-047_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-047_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-047_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-048_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-048_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-048_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-048_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-049_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-049_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-049_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-049_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-050_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-050_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-050_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-050_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-051_R1:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-051_R1.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
+<li><p>JW-HC-051_R2:<br>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-1_bwa+filter/2.refastqc/JW-HC-051_R2.trimmed_fastqc_per_base_quality.png" width="80%"></p></li>
 </ul>
 </details>
 <ul>
@@ -360,18 +701,19 @@ View all samples after after trimming:
 <section id="reads-mapping" class="level2">
 <h2 class="anchored" data-anchor-id="reads-mapping">Reads mapping</h2>
 <ul>
-<li><strong>Reads mapping with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/5.bam.sh"><code>5.bam.sh</code></a></li>
+<li><strong>Reads mapping with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/project-1_bwa+filter/5.bam.sh"><code>5.bam.sh</code></a></li>
 </ul>
 </section>
 <section id="analyzing-and-visualization" class="level2">
 <h2 class="anchored" data-anchor-id="analyzing-and-visualization">Analyzing and visualization</h2>
 <ul>
-<li><strong>Pileup with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/6.mpileup.sh"><code>6.mpileup.sh</code></a><br>
+<li><strong>Pileup with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/project-1_bwa+filter/6.mpileup.sh"><code>6.mpileup.sh</code></a><br>
 </li>
-<li><strong>Parse with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/7.parse.R"><code>7.parse.R</code></a><br>
+<li><strong>Parse with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/project-1_bwa+filter/7.parse.R"><code>7.parse.R</code></a><br>
 </li>
-<li>For parsed mutation rate spreadsheets, click <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/mpileup_parse.zip">here</a>.</li>
-<li><strong>Plot with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/1.SL5_full_length_refseq/8.plot.R"><code>8.plot.R</code></a></li>
+<li>For parsed mutation rate spreadsheets, click <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/project-1_bwa+filter/mpileup_parse.zip">here</a>.</li>
+<li>For sample groups, click <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/project-1_bwa+filter/list.csv">here</a>.</li>
+<li><strong>Plot with </strong> <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/project-1_bwa+filter/8.plot.R"><code>8.plot.R</code></a></li>
 </ul>
 <section id="absolute-mutation-rate-after-reads-trimming" class="level3">
 <h3 class="anchored" data-anchor-id="absolute-mutation-rate-after-reads-trimming">Absolute mutation rate (after reads trimming)</h3>

@@ -56,7 +56,7 @@ GAGC
 
 </details>
 
-- **Conclusion**: within 250bp, the reads quality is generally good. R2 has slightly lower overall quality than R1,which is expected for paired-end reads.
+- **Conclusion**: within 250bp, the reads quality is generally good. R2 has slightly lower overall quality than R1, which is expected for paired-end reads.
 
 
 ## Reads trimming
