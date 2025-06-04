@@ -337,9 +337,9 @@ acgaggGAG
 
 - Key filtering standards:  
 ```{r,eval=FALSE}
-1.Keeping the first 200bp and discard the tail
+1.Trim the first 5bp
 2.Trimming the tail with average Q-score < 20 (4 bases moving window size)
-3.Discarding reads with more than 10% of Q-score < 20 bases
+3.Discarding reads with more than 20% of Q-score < 20 bases
 ```
 
 - **Reads counting before and after trimming ** [```retaining_percentage.csv```](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/project-1_bwa+filter/retaining_percentage.csv)  
