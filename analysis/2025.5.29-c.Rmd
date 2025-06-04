@@ -454,7 +454,7 @@ acgaggGAG
 - Group 24-rna-Squarate-only-1mM-37C-30min-Mn:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.5.29/project-2_bwa+filter/4.relative_mut/24-rna-Squarate-only-1mM-37C-30min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%">
 
-- **Note:** Bulge G is at position 124 in this trimmed refseq.
+- **Note:** SL5's bulge G is at position 124 in this trimmed refseq.
 
 </details>
 
