@@ -9,54 +9,54 @@ output: html_document
 <div style="font-size: 0.8em;">
 | #  | Treated on | Treatment         | Incubation                | RT ion     | Index        | i5       | i7       |
 |----|------------|-------------------|---------------------------|------------|--------------|----------|----------|
-| 1  | Cells      | Ctrl (5% DMSO)    | 37°C for 15min on cells   | Mg2+ (3mM) | i5-3 + i7-1  | TATCCTCT | TCGCCTTA |
-| 16 | Cells      | Ctrl (5% DMSO)    | 37°C for 15min on cells   | Mg2+ (3mM) | i5-3 + i7-2  | TATCCTCT | CTAGTACG |
-| 17 | Cells      | Ctrl (5% DMSO)    | 37°C for 15min on cells   | Mg2+ (3mM) | i5-3 + i7-3  | TATCCTCT | TTCTGCCT |
-| 2  | Cells      | Ctrl (5% DMSO)    | 37°C for 15min on cells   | Mn2+ (3mM) | i5-3 + i7-4  | TATCCTCT | GCTCAGGA |
-| 18 | Cells      | Ctrl (5% DMSO)    | 37°C for 15min on cells   | Mn2+ (3mM) | i5-3 + i7-5  | TATCCTCT | AGGAGTCC |
-| 19 | Cells      | Ctrl (5% DMSO)    | 37°C for 15min on cells   | Mn2+ (3mM) | i5-3 + i7-6  | TATCCTCT | CATGCCTA |
-| 7  | Cells      | Ctrl (5% DMSO)    | 80°C for 15min on cells   | Mg2+ (3mM) | i5-3 + i7-7  | TATCCTCT | GTAGAGAG |
-| 22 | Cells      | Ctrl (5% DMSO)    | 80°C for 15min on cells   | Mg2+ (3mM) | i5-3 + i7-8  | TATCCTCT | CCTCTCTG |
-| 23 | Cells      | Ctrl (5% DMSO)    | 80°C for 15min on cells   | Mg2+ (3mM) | i5-3 + i7-9  | TATCCTCT | AGCGTAGC |
-| 8  | Cells      | Ctrl (5% DMSO)    | 80°C for 15min on cells   | Mn2+ (3mM) | i5-3 + i7-10 | TATCCTCT | CAGCCTCG |
-| 24 | Cells      | Ctrl (5% DMSO)    | 80°C for 15min on cells   | Mn2+ (3mM) | i5-3 + i7-11 | TATCCTCT | TGCCTCTT |
-| 25 | Cells      | Ctrl (5% DMSO)    | 80°C for 15min on cells   | Mn2+ (3mM) | i5-3 + i7-12 | TATCCTCT | TCCTCTAC |
-| 3  | Cells      | C12 (5mM final)   | 37°C for 15min on cells   | Mn2+ (3mM) | i5-4 + i7-1  | AGAGTAGA | TCGCCTTA |
-| 28 | Cells      | C12 (5mM final)   | 37°C for 15min on cells   | Mn2+ (3mM) | i5-4 + i7-2  | AGAGTAGA | CTAGTACG |
-| 29 | Cells      | C12 (5mM final)   | 37°C for 15min on cells   | Mn2+ (3mM) | i5-4 + i7-3  | AGAGTAGA | TTCTGCCT |
-| 5  | Cells      | C12 (0.5mM final) | 37°C for 15min on cells   | Mn2+ (3mM) | i5-4 + i7-4  | AGAGTAGA | GCTCAGGA |
-| 34 | Cells      | C12 (0.5mM final) | 37°C for 15min on cells   | Mn2+ (3mM) | i5-4 + i7-5  | AGAGTAGA | AGGAGTCC |
-| 35 | Cells      | C12 (0.5mM final) | 37°C for 15min on cells   | Mn2+ (3mM) | i5-4 + i7-6  | AGAGTAGA | CATGCCTA |
-| 9  | Cells      | C12 (5mM final)   | 80°C for 15min on cells   | Mn2+ (3mM) | i5-4 + i7-7  | AGAGTAGA | GTAGAGAG |
-| 40 | Cells      | C12 (5mM final)   | 80°C for 15min on cells   | Mn2+ (3mM) | i5-4 + i7-8  | AGAGTAGA | CCTCTCTG |
-| 41 | Cells      | C12 (5mM final)   | 80°C for 15min on cells   | Mn2+ (3mM) | i5-4 + i7-9  | AGAGTAGA | AGCGTAGC |
-| 11 | Cells      | C12 (0.5mM final) | 80°C for 15min on cells   | Mn2+ (3mM) | i5-4 + i7-10 | AGAGTAGA | CAGCCTCG |
-| 46 | Cells      | C12 (0.5mM final) | 80°C for 15min on cells   | Mn2+ (3mM) | i5-4 + i7-11 | AGAGTAGA | TGCCTCTT |
-| 47 | Cells      | C12 (0.5mM final) | 80°C for 15min on cells   | Mn2+ (3mM) | i5-4 + i7-12 | AGAGTAGA | TCCTCTAC |
-| 4  | Cells      | C15 (5mM final)   | 37°C for 15min on cells   | Mn2+ (3mM) | i5-5 + i7-1  | GTAAGGAG | TCGCCTTA |
-| 30 | Cells      | C15 (5mM final)   | 37°C for 15min on cells   | Mn2+ (3mM) | i5-5 + i7-2  | GTAAGGAG | CTAGTACG |
-| 31 | Cells      | C15 (5mM final)   | 37°C for 15min on cells   | Mn2+ (3mM) | i5-5 + i7-3  | GTAAGGAG | TTCTGCCT |
-| 6  | Cells      | C15 (0.5mM final) | 37°C for 15min on cells   | Mn2+ (3mM) | i5-5 + i7-4  | GTAAGGAG | GCTCAGGA |
-| 36 | Cells      | C15 (0.5mM final) | 37°C for 15min on cells   | Mn2+ (3mM) | i5-5 + i7-5  | GTAAGGAG | AGGAGTCC |
-| 37 | Cells      | C15 (0.5mM final) | 37°C for 15min on cells   | Mn2+ (3mM) | i5-5 + i7-6  | GTAAGGAG | CATGCCTA |
-| 10 | Cells      | C15 (5mM final)   | 80°C for 15min on cells   | Mn2+ (3mM) | i5-5 + i7-7  | GTAAGGAG | GTAGAGAG |
-| 42 | Cells      | C15 (5mM final)   | 80°C for 15min on cells   | Mn2+ (3mM) | i5-5 + i7-8  | GTAAGGAG | CCTCTCTG |
-| 43 | Cells      | C15 (5mM final)   | 80°C for 15min on cells   | Mn2+ (3mM) | i5-5 + i7-9  | GTAAGGAG | AGCGTAGC |
-| 12 | Cells      | C15 (0.5mM final) | 80°C for 15min on cells   | Mn2+ (3mM) | i5-5 + i7-10 | GTAAGGAG | CAGCCTCG |
-| 48 | Cells      | C15 (0.5mM final) | 80°C for 15min on cells   | Mn2+ (3mM) | i5-5 + i7-11 | GTAAGGAG | TGCCTCTT |
-| 49 | Cells      | C15 (0.5mM final) | 80°C for 15min on cells   | Mn2+ (3mM) | i5-5 + i7-12 | GTAAGGAG | TCCTCTAC |
-| 20 | Cells      | C30 (5mM final)   | 37°C for 15min on cells   | Mn2+ (3mM) | i5-6 + i7-1  | ACTGCATA | TCGCCTTA |
-| 32 | Cells      | C30 (5mM final)   | 37°C for 15min on cells   | Mn2+ (3mM) | i5-6 + i7-2  | ACTGCATA | CTAGTACG |
-| 33 | Cells      | C30 (5mM final)   | 37°C for 15min on cells   | Mn2+ (3mM) | i5-6 + i7-3  | ACTGCATA | TTCTGCCT |
-| 21 | Cells      | C30 (0.5mM final) | 37°C for 15min on cells   | Mn2+ (3mM) | i5-6 + i7-4  | ACTGCATA | GCTCAGGA |
-| 38 | Cells      | C30 (0.5mM final) | 37°C for 15min on cells   | Mn2+ (3mM) | i5-6 + i7-5  | ACTGCATA | AGGAGTCC |
-| 39 | Cells      | C30 (0.5mM final) | 37°C for 15min on cells   | Mn2+ (3mM) | i5-6 + i7-6  | ACTGCATA | CATGCCTA |
-| 26 | Cells      | C30 (5mM final)   | 80°C for 15min on cells   | Mn2+ (3mM) | i5-6 + i7-7  | ACTGCATA | GTAGAGAG |
-| 44 | Cells      | C30 (5mM final)   | 80°C for 15min on cells   | Mn2+ (3mM) | i5-6 + i7-8  | ACTGCATA | CCTCTCTG |
-| 45 | Cells      | C30 (5mM final)   | 80°C for 15min on cells   | Mn2+ (3mM) | i5-6 + i7-9  | ACTGCATA | AGCGTAGC |
-| 27 | Cells      | C30 (0.5mM final) | 80°C for 15min on cells   | Mn2+ (3mM) | i5-6 + i7-10 | ACTGCATA | CAGCCTCG |
-| 50 | Cells      | C30 (0.5mM final) | 80°C for 15min on cells   | Mn2+ (3mM) | i5-6 + i7-11 | ACTGCATA | TGCCTCTT |
-| 51 | Cells      | C30 (0.5mM final) | 80°C for 15min on cells   | Mn2+ (3mM) | i5-6 + i7-12 | ACTGCATA | TCCTCTAC |
+| 1  | Live cells | Ctrl (5% DMSO)    | 37°C for 15min on cells   | Mg2+ (3mM) | i5-3 + i7-1  | TATCCTCT | TCGCCTTA |
+| 16 | Live cells | Ctrl (5% DMSO)    | 37°C for 15min on cells   | Mg2+ (3mM) | i5-3 + i7-2  | TATCCTCT | CTAGTACG |
+| 17 | Live cells | Ctrl (5% DMSO)    | 37°C for 15min on cells   | Mg2+ (3mM) | i5-3 + i7-3  | TATCCTCT | TTCTGCCT |
+| 2  | Live cells | Ctrl (5% DMSO)    | 37°C for 15min on cells   | Mn2+ (3mM) | i5-3 + i7-4  | TATCCTCT | GCTCAGGA |
+| 18 | Live cells | Ctrl (5% DMSO)    | 37°C for 15min on cells   | Mn2+ (3mM) | i5-3 + i7-5  | TATCCTCT | AGGAGTCC |
+| 19 | Live cells | Ctrl (5% DMSO)    | 37°C for 15min on cells   | Mn2+ (3mM) | i5-3 + i7-6  | TATCCTCT | CATGCCTA |
+| 7  | Live cells | Ctrl (5% DMSO)    | 80°C for 15min on cells   | Mg2+ (3mM) | i5-3 + i7-7  | TATCCTCT | GTAGAGAG |
+| 22 | Live cells | Ctrl (5% DMSO)    | 80°C for 15min on cells   | Mg2+ (3mM) | i5-3 + i7-8  | TATCCTCT | CCTCTCTG |
+| 23 | Live cells | Ctrl (5% DMSO)    | 80°C for 15min on cells   | Mg2+ (3mM) | i5-3 + i7-9  | TATCCTCT | AGCGTAGC |
+| 8  | Live cells | Ctrl (5% DMSO)    | 80°C for 15min on cells   | Mn2+ (3mM) | i5-3 + i7-10 | TATCCTCT | CAGCCTCG |
+| 24 | Live cells | Ctrl (5% DMSO)    | 80°C for 15min on cells   | Mn2+ (3mM) | i5-3 + i7-11 | TATCCTCT | TGCCTCTT |
+| 25 | Live cells | Ctrl (5% DMSO)    | 80°C for 15min on cells   | Mn2+ (3mM) | i5-3 + i7-12 | TATCCTCT | TCCTCTAC |
+| 3  | Live cells | C12 (5mM final)   | 37°C for 15min on cells   | Mn2+ (3mM) | i5-4 + i7-1  | AGAGTAGA | TCGCCTTA |
+| 28 | Live cells | C12 (5mM final)   | 37°C for 15min on cells   | Mn2+ (3mM) | i5-4 + i7-2  | AGAGTAGA | CTAGTACG |
+| 29 | Live cells | C12 (5mM final)   | 37°C for 15min on cells   | Mn2+ (3mM) | i5-4 + i7-3  | AGAGTAGA | TTCTGCCT |
+| 5  | Live cells | C12 (0.5mM final) | 37°C for 15min on cells   | Mn2+ (3mM) | i5-4 + i7-4  | AGAGTAGA | GCTCAGGA |
+| 34 | Live cells | C12 (0.5mM final) | 37°C for 15min on cells   | Mn2+ (3mM) | i5-4 + i7-5  | AGAGTAGA | AGGAGTCC |
+| 35 | Live cells | C12 (0.5mM final) | 37°C for 15min on cells   | Mn2+ (3mM) | i5-4 + i7-6  | AGAGTAGA | CATGCCTA |
+| 9  | Live cells | C12 (5mM final)   | 80°C for 15min on cells   | Mn2+ (3mM) | i5-4 + i7-7  | AGAGTAGA | GTAGAGAG |
+| 40 | Live cells | C12 (5mM final)   | 80°C for 15min on cells   | Mn2+ (3mM) | i5-4 + i7-8  | AGAGTAGA | CCTCTCTG |
+| 41 | Live cells | C12 (5mM final)   | 80°C for 15min on cells   | Mn2+ (3mM) | i5-4 + i7-9  | AGAGTAGA | AGCGTAGC |
+| 11 | Live cells | C12 (0.5mM final) | 80°C for 15min on cells   | Mn2+ (3mM) | i5-4 + i7-10 | AGAGTAGA | CAGCCTCG |
+| 46 | Live cells | C12 (0.5mM final) | 80°C for 15min on cells   | Mn2+ (3mM) | i5-4 + i7-11 | AGAGTAGA | TGCCTCTT |
+| 47 | Live cells | C12 (0.5mM final) | 80°C for 15min on cells   | Mn2+ (3mM) | i5-4 + i7-12 | AGAGTAGA | TCCTCTAC |
+| 4  | Live cells | C15 (5mM final)   | 37°C for 15min on cells   | Mn2+ (3mM) | i5-5 + i7-1  | GTAAGGAG | TCGCCTTA |
+| 30 | Live cells | C15 (5mM final)   | 37°C for 15min on cells   | Mn2+ (3mM) | i5-5 + i7-2  | GTAAGGAG | CTAGTACG |
+| 31 | Live cells | C15 (5mM final)   | 37°C for 15min on cells   | Mn2+ (3mM) | i5-5 + i7-3  | GTAAGGAG | TTCTGCCT |
+| 6  | Live cells | C15 (0.5mM final) | 37°C for 15min on cells   | Mn2+ (3mM) | i5-5 + i7-4  | GTAAGGAG | GCTCAGGA |
+| 36 | Live cells | C15 (0.5mM final) | 37°C for 15min on cells   | Mn2+ (3mM) | i5-5 + i7-5  | GTAAGGAG | AGGAGTCC |
+| 37 | Live cells | C15 (0.5mM final) | 37°C for 15min on cells   | Mn2+ (3mM) | i5-5 + i7-6  | GTAAGGAG | CATGCCTA |
+| 10 | Live cells | C15 (5mM final)   | 80°C for 15min on cells   | Mn2+ (3mM) | i5-5 + i7-7  | GTAAGGAG | GTAGAGAG |
+| 42 | Live cells | C15 (5mM final)   | 80°C for 15min on cells   | Mn2+ (3mM) | i5-5 + i7-8  | GTAAGGAG | CCTCTCTG |
+| 43 | Live cells | C15 (5mM final)   | 80°C for 15min on cells   | Mn2+ (3mM) | i5-5 + i7-9  | GTAAGGAG | AGCGTAGC |
+| 12 | Live cells | C15 (0.5mM final) | 80°C for 15min on cells   | Mn2+ (3mM) | i5-5 + i7-10 | GTAAGGAG | CAGCCTCG |
+| 48 | Live cells | C15 (0.5mM final) | 80°C for 15min on cells   | Mn2+ (3mM) | i5-5 + i7-11 | GTAAGGAG | TGCCTCTT |
+| 49 | Live cells | C15 (0.5mM final) | 80°C for 15min on cells   | Mn2+ (3mM) | i5-5 + i7-12 | GTAAGGAG | TCCTCTAC |
+| 20 | Live cells | C30 (5mM final)   | 37°C for 15min on cells   | Mn2+ (3mM) | i5-6 + i7-1  | ACTGCATA | TCGCCTTA |
+| 32 | Live cells | C30 (5mM final)   | 37°C for 15min on cells   | Mn2+ (3mM) | i5-6 + i7-2  | ACTGCATA | CTAGTACG |
+| 33 | Live cells | C30 (5mM final)   | 37°C for 15min on cells   | Mn2+ (3mM) | i5-6 + i7-3  | ACTGCATA | TTCTGCCT |
+| 21 | Live cells | C30 (0.5mM final) | 37°C for 15min on cells   | Mn2+ (3mM) | i5-6 + i7-4  | ACTGCATA | GCTCAGGA |
+| 38 | Live cells | C30 (0.5mM final) | 37°C for 15min on cells   | Mn2+ (3mM) | i5-6 + i7-5  | ACTGCATA | AGGAGTCC |
+| 39 | Live cells | C30 (0.5mM final) | 37°C for 15min on cells   | Mn2+ (3mM) | i5-6 + i7-6  | ACTGCATA | CATGCCTA |
+| 26 | Live cells | C30 (5mM final)   | 80°C for 15min on cells   | Mn2+ (3mM) | i5-6 + i7-7  | ACTGCATA | GTAGAGAG |
+| 44 | Live cells | C30 (5mM final)   | 80°C for 15min on cells   | Mn2+ (3mM) | i5-6 + i7-8  | ACTGCATA | CCTCTCTG |
+| 45 | Live cells | C30 (5mM final)   | 80°C for 15min on cells   | Mn2+ (3mM) | i5-6 + i7-9  | ACTGCATA | AGCGTAGC |
+| 27 | Live cells | C30 (0.5mM final) | 80°C for 15min on cells   | Mn2+ (3mM) | i5-6 + i7-10 | ACTGCATA | CAGCCTCG |
+| 50 | Live cells | C30 (0.5mM final) | 80°C for 15min on cells   | Mn2+ (3mM) | i5-6 + i7-11 | ACTGCATA | TGCCTCTT |
+| 51 | Live cells | C30 (0.5mM final) | 80°C for 15min on cells   | Mn2+ (3mM) | i5-6 + i7-12 | ACTGCATA | TCCTCTAC |
 </div>
 <br>
 
