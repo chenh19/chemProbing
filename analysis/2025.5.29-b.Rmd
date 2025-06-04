@@ -6,10 +6,8 @@ output: html_document
 
 ## Samples
 
-
-
-- [Experimental details: cDNA preparation](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/2025.5.1-19 cDNA preparation.pdf)
-- [Experimental details: Library construction](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/2025.5.20 Amplicon library #1.pdf)
+- Experimental details: [cDNA preparation](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/2025.5.1-19 cDNA preparation.pdf)
+- Experimental details: [Library construction](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.29/2025.5.20 Amplicon library #1.pdf)
 - Sequenced with [AVITI Low Output 2 x 150](https://www.elementbiosciences.com/products/aviti/specs)
 
 
