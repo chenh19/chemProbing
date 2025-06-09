@@ -1,0 +1,50 @@
+---
+title: "2025.6.13-b: Project-1 - C34 structural protection on live cells at 50°C and 60°C"
+output: html_document
+---
+
+
+## Samples
+
+<div style="font-size: 0.8em;">
+| #   | Treated on | Treatment                         | Incubation     | RT ion     | Index        | i5       | i7       |
+|-----|------------|-----------------------------------|----------------|------------|--------------|----------|----------|
+| 120 | Live cells | Ctrl (5% DMSO)                    | 50°C for 15min | Mn2+ (3mM) | i5-1 + i7-7  | TAGATCGC | GTAGAGAG |
+| 121 | Live cells | Ctrl (5% DMSO)                    | 50°C for 15min | Mn2+ (3mM) | i5-1 + i7-8  | TAGATCGC | CCTCTCTG |
+| 122 | Live cells | C12 (5mM final)                   | 50°C for 15min | Mn2+ (3mM) | i5-1 + i7-9  | TAGATCGC | AGCGTAGC |
+| 123 | Live cells | C12 (5mM final)                   | 50°C for 15min | Mn2+ (3mM) | i5-1 + i7-10 | TAGATCGC | CAGCCTCG |
+| 124 | Live cells | C30 (5mM final)                   | 50°C for 15min | Mn2+ (3mM) | i5-1 + i7-11 | TAGATCGC | TGCCTCTT |
+| 125 | Live cells | C30 (5mM final)                   | 50°C for 15min | Mn2+ (3mM) | i5-1 + i7-12 | TAGATCGC | TCCTCTAC |
+| 126 | Live cells | C34 (1mM final)                   | 50°C for 15min | Mn2+ (3mM) | i5-2 + i7-1  | CTCTCTAT | TCGCCTTA |
+| 127 | Live cells | C34 (1mM final)                   | 50°C for 15min | Mn2+ (3mM) | i5-2 + i7-2  | CTCTCTAT | CTAGTACG |
+| 128 | Live cells | C12 (5mM final) + C34 (1mM final) | 50°C for 15min | Mn2+ (3mM) | i5-2 + i7-3  | CTCTCTAT | TTCTGCCT |
+| 129 | Live cells | C12 (5mM final) + C34 (1mM final) | 50°C for 15min | Mn2+ (3mM) | i5-2 + i7-4  | CTCTCTAT | GCTCAGGA |
+| 130 | Live cells | C30 (5mM final) + C34 (1mM final) | 50°C for 15min | Mn2+ (3mM) | i5-2 + i7-5  | CTCTCTAT | AGGAGTCC |
+| 131 | Live cells | C30 (5mM final) + C34 (1mM final) | 50°C for 15min | Mn2+ (3mM) | i5-2 + i7-6  | CTCTCTAT | CATGCCTA |
+| 132 | Live cells | Ctrl (5% DMSO)                    | 60°C for 15min | Mn2+ (3mM) | i5-2 + i7-7  | CTCTCTAT | GTAGAGAG |
+| 133 | Live cells | Ctrl (5% DMSO)                    | 60°C for 15min | Mn2+ (3mM) | i5-2 + i7-8  | CTCTCTAT | CCTCTCTG |
+| 134 | Live cells | C12 (5mM final)                   | 60°C for 15min | Mn2+ (3mM) | i5-2 + i7-9  | CTCTCTAT | AGCGTAGC |
+| 135 | Live cells | C12 (5mM final)                   | 60°C for 15min | Mn2+ (3mM) | i5-2 + i7-10 | CTCTCTAT | CAGCCTCG |
+| 136 | Live cells | C30 (5mM final)                   | 60°C for 15min | Mn2+ (3mM) | i5-2 + i7-11 | CTCTCTAT | TGCCTCTT |
+| 137 | Live cells | C30 (5mM final)                   | 60°C for 15min | Mn2+ (3mM) | i5-2 + i7-12 | CTCTCTAT | TCCTCTAC |
+| 138 | Live cells | C34 (1mM final)                   | 60°C for 15min | Mn2+ (3mM) | i5-3 + i7-1  | TATCCTCT | TCGCCTTA |
+| 139 | Live cells | C34 (1mM final)                   | 60°C for 15min | Mn2+ (3mM) | i5-3 + i7-2  | TATCCTCT | CTAGTACG |
+| 140 | Live cells | C12 (5mM final) + C34 (1mM final) | 60°C for 15min | Mn2+ (3mM) | i5-3 + i7-3  | TATCCTCT | TTCTGCCT |
+| 141 | Live cells | C12 (5mM final) + C34 (1mM final) | 60°C for 15min | Mn2+ (3mM) | i5-3 + i7-4  | TATCCTCT | GCTCAGGA |
+| 142 | Live cells | C30 (5mM final) + C34 (1mM final) | 60°C for 15min | Mn2+ (3mM) | i5-3 + i7-5  | TATCCTCT | AGGAGTCC |
+| 143 | Live cells | C30 (5mM final) + C34 (1mM final) | 60°C for 15min | Mn2+ (3mM) | i5-3 + i7-6  | TATCCTCT | CATGCCTA |
+</div>
+<br>
+
+- Sequenced with [AVITI Low Output 2 x 150](https://www.elementbiosciences.com/products/aviti/specs) (250M)
+
+
+## Reference sequences
+
+```{r,eval=FALSE}
+>SARS-CoV2-5UTR-Amplicon-short-trimmed+3  (249 bp)
+TTGtagatctgttctctaaacgaactttaaaatctgtgtggctgtcactcggctgcgtgcttagtgcactcacgcagtat
+aattaataactaattactgtcgttgacaggacacgagtaactcgtctatcttctgcaggctgcttacggtttcgtccgtg
+ttgcagccgatcatcagcacatctaggtttcgtccgggtgtgaccgaaaggtaagatggagagccttgtccctggtttca
+acgaggGAG
+```

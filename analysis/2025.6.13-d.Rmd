@@ -1,0 +1,62 @@
+---
+title: "2025.6.13-d: Project-2 - C34-NM/C34-Sq/C34-FAI on live/fixed cells at 37°C"
+output: html_document
+---
+
+
+## Samples
+
+<div style="font-size: 0.8em;">
+| #   | Treated on  | Treatment                 | Incubation     | RT ion     | Index        | i5       | i7       |
+|-----|-------------|---------------------------|----------------|------------|--------------|----------|----------|
+| 76  | Live cells  | Ctrl (5% DMSO)            | 37°C for 2h    | Mn2+ (3mM) | i5-5 + i7-11 | GTAAGGAG | TGCCTCTT |
+| 77  | Live cells  | Ctrl (5% DMSO)            | 37°C for 2h    | Mn2+ (3mM) | i5-5 + i7-12 | GTAAGGAG | TCCTCTAC |
+| 78  | Live cells  | C34-NM (1mM final)        | 37°C for 2h    | Mn2+ (3mM) | i5-6 + i7-1  | ACTGCATA | TCGCCTTA |
+| 79  | Live cells  | C34-NM (1mM final)        | 37°C for 2h    | Mn2+ (3mM) | i5-6 + i7-2  | ACTGCATA | CTAGTACG |
+| 80  | Live cells  | NM-only (1mM final)       | 37°C for 2h    | Mn2+ (3mM) | i5-6 + i7-3  | ACTGCATA | TTCTGCCT |
+| 81  | Live cells  | NM-only (1mM final)       | 37°C for 2h    | Mn2+ (3mM) | i5-6 + i7-4  | ACTGCATA | GCTCAGGA |
+| 82  | Live cells  | Ctrl (5% DMSO)            | 37°C for 30min | Mn2+ (3mM) | i5-6 + i7-5  | ACTGCATA | AGGAGTCC |
+| 83  | Live cells  | Ctrl (5% DMSO)            | 37°C for 30min | Mn2+ (3mM) | i5-6 + i7-6  | ACTGCATA | CATGCCTA |
+| 84  | Live cells  | C34-Squarate (1mM final)  | 37°C for 30min | Mn2+ (3mM) | i5-6 + i7-7  | ACTGCATA | GTAGAGAG |
+| 85  | Live cells  | C34-Squarate (1mM final)  | 37°C for 30min | Mn2+ (3mM) | i5-6 + i7-8  | ACTGCATA | CCTCTCTG |
+| 86  | Live cells  | Squarate-only (1mM final) | 37°C for 30min | Mn2+ (3mM) | i5-6 + i7-9  | ACTGCATA | AGCGTAGC |
+| 87  | Live cells  | Squarate-only (1mM final) | 37°C for 30min | Mn2+ (3mM) | i5-6 + i7-10 | ACTGCATA | CAGCCTCG |
+| 150 | Live cells  | Ctrl (5% DMSO)            | 37°C for 15min | Mn2+ (3mM) | i5-4 + i7-1  | AGAGTAGA | TCGCCTTA |
+| 151 | Live cells  | Ctrl (5% DMSO)            | 37°C for 15min | Mn2+ (3mM) | i5-4 + i7-2  | AGAGTAGA | CTAGTACG |
+| 152 | Live cells  | C30-FAI (1mM final)       | 37°C for 15min | Mn2+ (3mM) | i5-4 + i7-3  | AGAGTAGA | TTCTGCCT |
+| 153 | Live cells  | C30-FAI (1mM final)       | 37°C for 15min | Mn2+ (3mM) | i5-4 + i7-4  | AGAGTAGA | GCTCAGGA |
+| 154 | Live cells  | FAI-N3 (1mM final)        | 37°C for 15min | Mn2+ (3mM) | i5-4 + i7-5  | AGAGTAGA | AGGAGTCC |
+| 155 | Live cells  | FAI-N3 (1mM final)        | 37°C for 15min | Mn2+ (3mM) | i5-4 + i7-6  | AGAGTAGA | CATGCCTA |
+| 88  | Fixed cells | Ctrl (5% DMSO)            | 37°C for 2h    | Mn2+ (3mM) | i5-6 + i7-11 | ACTGCATA | TGCCTCTT |
+| 89  | Fixed cells | Ctrl (5% DMSO)            | 37°C for 2h    | Mn2+ (3mM) | i5-6 + i7-12 | ACTGCATA | TCCTCTAC |
+| 90  | Fixed cells | C34-NM (1mM final)        | 37°C for 2h    | Mn2+ (3mM) | i5-7 + i7-1  | AAGGAGTA | TCGCCTTA |
+| 91  | Fixed cells | C34-NM (1mM final)        | 37°C for 2h    | Mn2+ (3mM) | i5-7 + i7-2  | AAGGAGTA | CTAGTACG |
+| 92  | Fixed cells | NM-only (1mM final)       | 37°C for 2h    | Mn2+ (3mM) | i5-7 + i7-3  | AAGGAGTA | TTCTGCCT |
+| 93  | Fixed cells | NM-only (1mM final)       | 37°C for 2h    | Mn2+ (3mM) | i5-7 + i7-4  | AAGGAGTA | GCTCAGGA |
+| 94  | Fixed cells | Ctrl (5% DMSO)            | 37°C for 30min | Mn2+ (3mM) | i5-7 + i7-5  | AAGGAGTA | AGGAGTCC |
+| 95  | Fixed cells | Ctrl (5% DMSO)            | 37°C for 30min | Mn2+ (3mM) | i5-7 + i7-6  | AAGGAGTA | CATGCCTA |
+| 96  | Fixed cells | C34-Squarate (1mM final)  | 37°C for 30min | Mn2+ (3mM) | i5-7 + i7-7  | AAGGAGTA | GTAGAGAG |
+| 97  | Fixed cells | C34-Squarate (1mM final)  | 37°C for 30min | Mn2+ (3mM) | i5-7 + i7-8  | AAGGAGTA | CCTCTCTG |
+| 98  | Fixed cells | Squarate-only (1mM final) | 37°C for 30min | Mn2+ (3mM) | i5-7 + i7-9  | AAGGAGTA | AGCGTAGC |
+| 99  | Fixed cells | Squarate-only (1mM final) | 37°C for 30min | Mn2+ (3mM) | i5-7 + i7-10 | AAGGAGTA | CAGCCTCG |
+| 164 | Fixed cells | Ctrl (5% DMSO)            | 37°C for 15min | Mn2+ (3mM) | i5-7 + i7-11 | AAGGAGTA | TGCCTCTT |
+| 165 | Fixed cells | Ctrl (5% DMSO)            | 37°C for 15min | Mn2+ (3mM) | i5-7 + i7-12 | AAGGAGTA | TCCTCTAC |
+| 166 | Fixed cells | C30-FAI (1mM final)       | 37°C for 15min | Mn2+ (3mM) | i5-8 + i7-1  | CTAAGCCT | TCGCCTTA |
+| 167 | Fixed cells | C30-FAI (1mM final)       | 37°C for 15min | Mn2+ (3mM) | i5-8 + i7-2  | CTAAGCCT | CTAGTACG |
+| 168 | Fixed cells | FAI-N3 (1mM final)        | 37°C for 15min | Mn2+ (3mM) | i5-8 + i7-3  | CTAAGCCT | TTCTGCCT |
+| 169 | Fixed cells | FAI-N3 (1mM final)        | 37°C for 15min | Mn2+ (3mM) | i5-8 + i7-4  | CTAAGCCT | GCTCAGGA |
+</div>
+<br>
+
+- Sequenced with [AVITI Low Output 2 x 150](https://www.elementbiosciences.com/products/aviti/specs) (250M)
+
+
+## Reference sequences
+
+```{r,eval=FALSE}
+>SARS-CoV2-5UTR-Amplicon-short-trimmed+3  (249 bp)
+TTGtagatctgttctctaaacgaactttaaaatctgtgtggctgtcactcggctgcgtgcttagtgcactcacgcagtat
+aattaataactaattactgtcgttgacaggacacgagtaactcgtctatcttctgcaggctgcttacggtttcgtccgtg
+ttgcagccgatcatcagcacatctaggtttcgtccgggtgtgaccgaaaggtaagatggagagccttgtccctggtttca
+acgaggGAG
+```

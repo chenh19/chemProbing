@@ -1,0 +1,43 @@
+---
+title: "2025.6.13-c: Project-1 - C12/C15/C30 on live/fixed cells at 80°C"
+output: html_document
+---
+
+
+## Samples
+
+<div style="font-size: 0.8em;">
+| #   | Treated on  | Treatment                         | Incubation     | RT ion     | Index        | i5       | i7       |
+|-----|-------------|-----------------------------------|----------------|------------|--------------|----------|----------|
+| 156 | Live cells  | Ctrl (5% DMSO)                    | 80°C for 15min | Mn2+ (3mM) | i5-4 + i7-7  | AGAGTAGA | GTAGAGAG |
+| 157 | Live cells  | Ctrl (5% DMSO)                    | 80°C for 15min | Mn2+ (3mM) | i5-4 + i7-8  | AGAGTAGA | CCTCTCTG |
+| 158 | Live cells  | C12 (5mM final)                   | 80°C for 15min | Mn2+ (3mM) | i5-4 + i7-9  | AGAGTAGA | AGCGTAGC |
+| 159 | Live cells  | C12 (5mM final)                   | 80°C for 15min | Mn2+ (3mM) | i5-4 + i7-10 | AGAGTAGA | CAGCCTCG |
+| 160 | Live cells  | C15 (5mM final)                   | 80°C for 15min | Mn2+ (3mM) | i5-4 + i7-11 | AGAGTAGA | TGCCTCTT |
+| 161 | Live cells  | C15 (5mM final)                   | 80°C for 15min | Mn2+ (3mM) | i5-4 + i7-12 | AGAGTAGA | TCCTCTAC |
+| 162 | Live cells  | C30 (5mM final)                   | 80°C for 15min | Mn2+ (3mM) | i5-5 + i7-9  | GTAAGGAG | AGCGTAGC |
+| 163 | Live cells  | C30 (5mM final)                   | 80°C for 15min | Mn2+ (3mM) | i5-5 + i7-10 | GTAAGGAG | CAGCCTCG |
+| 178 | Live cells  | C12 (5mM final) + C30 (5mM final) | 80°C for 15min | Mn2+ (3mM) | i5-5 + i7-8  | GTAAGGAG | CCTCTCTG |
+| 170 | Fixed cells | Ctrl (5% DMSO)                    | 80°C for 15min | Mn2+ (3mM) | i5-8 + i7-5  | CTAAGCCT | AGGAGTCC |
+| 171 | Fixed cells | Ctrl (5% DMSO)                    | 80°C for 15min | Mn2+ (3mM) | i5-8 + i7-6  | CTAAGCCT | CATGCCTA |
+| 172 | Fixed cells | C12 (5mM final)                   | 80°C for 15min | Mn2+ (3mM) | i5-8 + i7-7  | CTAAGCCT | GTAGAGAG |
+| 173 | Fixed cells | C12 (5mM final)                   | 80°C for 15min | Mn2+ (3mM) | i5-8 + i7-8  | CTAAGCCT | CCTCTCTG |
+| 174 | Fixed cells | C15 (5mM final)                   | 80°C for 15min | Mn2+ (3mM) | i5-8 + i7-9  | CTAAGCCT | AGCGTAGC |
+| 175 | Fixed cells | C15 (5mM final)                   | 80°C for 15min | Mn2+ (3mM) | i5-8 + i7-10 | CTAAGCCT | CAGCCTCG |
+| 176 | Fixed cells | C30 (5mM final)                   | 80°C for 15min | Mn2+ (3mM) | i5-8 + i7-11 | CTAAGCCT | TGCCTCTT |
+| 177 | Fixed cells | C30 (5mM final)                   | 80°C for 15min | Mn2+ (3mM) | i5-8 + i7-12 | CTAAGCCT | TCCTCTAC |
+</div>
+<br>
+
+- Sequenced with [AVITI Low Output 2 x 150](https://www.elementbiosciences.com/products/aviti/specs) (250M)
+
+
+## Reference sequences
+
+```{r,eval=FALSE}
+>SARS-CoV2-5UTR-Amplicon-short-trimmed+3  (249 bp)
+TTGtagatctgttctctaaacgaactttaaaatctgtgtggctgtcactcggctgcgtgcttagtgcactcacgcagtat
+aattaataactaattactgtcgttgacaggacacgagtaactcgtctatcttctgcaggctgcttacggtttcgtccgtg
+ttgcagccgatcatcagcacatctaggtttcgtccgggtgtgaccgaaaggtaagatggagagccttgtccctggtttca
+acgaggGAG
+```

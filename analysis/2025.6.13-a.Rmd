@@ -1,0 +1,56 @@
+---
+title: "2025.6.13-a: Project-1 - C12/C15 Temperature gradient on live cells from 40°C to 80°C"
+output: html_document
+---
+
+
+## Samples
+
+<div style="font-size: 0.8em;">
+| #   | Treated on | Treatment       | Incubation     | RT ion     | Index        | i5       | i7       |
+|-----|------------|-----------------|----------------|------------|--------------|----------|----------|
+| 114 | Live cells | Ctrl (5% DMSO)  | 40°C for 15min | Mn2+ (3mM) | i5-1 + i7-1  | TAGATCGC | TCGCCTTA |
+| 115 | Live cells | Ctrl (5% DMSO)  | 40°C for 15min | Mn2+ (3mM) | i5-1 + i7-2  | TAGATCGC | CTAGTACG |
+| 116 | Live cells | C12 (5mM final) | 40°C for 15min | Mn2+ (3mM) | i5-1 + i7-3  | TAGATCGC | TTCTGCCT |
+| 117 | Live cells | C12 (5mM final) | 40°C for 15min | Mn2+ (3mM) | i5-1 + i7-4  | TAGATCGC | GCTCAGGA |
+| 118 | Live cells | C30 (5mM final) | 40°C for 15min | Mn2+ (3mM) | i5-1 + i7-5  | TAGATCGC | AGGAGTCC |
+| 119 | Live cells | C30 (5mM final) | 40°C for 15min | Mn2+ (3mM) | i5-1 + i7-6  | TAGATCGC | CATGCCTA |
+| 120 | Live cells | Ctrl (5% DMSO)  | 50°C for 15min | Mn2+ (3mM) | i5-1 + i7-7  | TAGATCGC | GTAGAGAG |
+| 121 | Live cells | Ctrl (5% DMSO)  | 50°C for 15min | Mn2+ (3mM) | i5-1 + i7-8  | TAGATCGC | CCTCTCTG |
+| 122 | Live cells | C12 (5mM final) | 50°C for 15min | Mn2+ (3mM) | i5-1 + i7-9  | TAGATCGC | AGCGTAGC |
+| 123 | Live cells | C12 (5mM final) | 50°C for 15min | Mn2+ (3mM) | i5-1 + i7-10 | TAGATCGC | CAGCCTCG |
+| 124 | Live cells | C30 (5mM final) | 50°C for 15min | Mn2+ (3mM) | i5-1 + i7-11 | TAGATCGC | TGCCTCTT |
+| 125 | Live cells | C30 (5mM final) | 50°C for 15min | Mn2+ (3mM) | i5-1 + i7-12 | TAGATCGC | TCCTCTAC |
+| 132 | Live cells | Ctrl (5% DMSO)  | 60°C for 15min | Mn2+ (3mM) | i5-2 + i7-7  | CTCTCTAT | GTAGAGAG |
+| 133 | Live cells | Ctrl (5% DMSO)  | 60°C for 15min | Mn2+ (3mM) | i5-2 + i7-8  | CTCTCTAT | CCTCTCTG |
+| 134 | Live cells | C12 (5mM final) | 60°C for 15min | Mn2+ (3mM) | i5-2 + i7-9  | CTCTCTAT | AGCGTAGC |
+| 135 | Live cells | C12 (5mM final) | 60°C for 15min | Mn2+ (3mM) | i5-2 + i7-10 | CTCTCTAT | CAGCCTCG |
+| 136 | Live cells | C30 (5mM final) | 60°C for 15min | Mn2+ (3mM) | i5-2 + i7-11 | CTCTCTAT | TGCCTCTT |
+| 137 | Live cells | C30 (5mM final) | 60°C for 15min | Mn2+ (3mM) | i5-2 + i7-12 | CTCTCTAT | TCCTCTAC |
+| 144 | Live cells | Ctrl (5% DMSO)  | 70°C for 15min | Mn2+ (3mM) | i5-3 + i7-7  | TATCCTCT | GTAGAGAG |
+| 145 | Live cells | Ctrl (5% DMSO)  | 70°C for 15min | Mn2+ (3mM) | i5-3 + i7-8  | TATCCTCT | CCTCTCTG |
+| 146 | Live cells | C12 (5mM final) | 70°C for 15min | Mn2+ (3mM) | i5-3 + i7-9  | TATCCTCT | AGCGTAGC |
+| 147 | Live cells | C12 (5mM final) | 70°C for 15min | Mn2+ (3mM) | i5-3 + i7-10 | TATCCTCT | CAGCCTCG |
+| 148 | Live cells | C30 (5mM final) | 70°C for 15min | Mn2+ (3mM) | i5-3 + i7-11 | TATCCTCT | TGCCTCTT |
+| 149 | Live cells | C30 (5mM final) | 70°C for 15min | Mn2+ (3mM) | i5-3 + i7-12 | TATCCTCT | TCCTCTAC |
+| 156 | Live cells | Ctrl (5% DMSO)  | 80°C for 15min | Mn2+ (3mM) | i5-4 + i7-7  | AGAGTAGA | GTAGAGAG |
+| 157 | Live cells | Ctrl (5% DMSO)  | 80°C for 15min | Mn2+ (3mM) | i5-4 + i7-8  | AGAGTAGA | CCTCTCTG |
+| 158 | Live cells | C12 (5mM final) | 80°C for 15min | Mn2+ (3mM) | i5-4 + i7-9  | AGAGTAGA | AGCGTAGC |
+| 159 | Live cells | C12 (5mM final) | 80°C for 15min | Mn2+ (3mM) | i5-4 + i7-10 | AGAGTAGA | CAGCCTCG |
+| 162 | Live cells | C30 (5mM final) | 80°C for 15min | Mn2+ (3mM) | i5-5 + i7-9  | GTAAGGAG | AGCGTAGC |
+| 163 | Live cells | C30 (5mM final) | 80°C for 15min | Mn2+ (3mM) | i5-5 + i7-10 | GTAAGGAG | CAGCCTCG |
+</div>
+<br>
+
+- Sequenced with [AVITI Low Output 2 x 150](https://www.elementbiosciences.com/products/aviti/specs) (250M)
+
+
+## Reference sequences
+
+```{r,eval=FALSE}
+>SARS-CoV2-5UTR-Amplicon-short-trimmed+3  (249 bp)
+TTGtagatctgttctctaaacgaactttaaaatctgtgtggctgtcactcggctgcgtgcttagtgcactcacgcagtat
+aattaataactaattactgtcgttgacaggacacgagtaactcgtctatcttctgcaggctgcttacggtttcgtccgtg
+ttgcagccgatcatcagcacatctaggtttcgtccgggtgtgaccgaaaggtaagatggagagccttgtccctggtttca
+acgaggGAG
+```
