@@ -37,14 +37,14 @@ website:
           href: 2025.5.29-b.html
         - text: "2025.5.29-c: Project-2. Activity-based RNA profiling"
           href: 2025.5.29-c.html
-        - text: "2025.6.13-a: Project-1 - C12/C15 Temperature gradient from 40°C to 80°C"
-          href: 2025.6.13-a.html
-        - text: "2025.6.13-b: Project-1 - C34 structural protection at 50°C and 60°C"
-          href: 2025.6.13-b.html
-        - text: "2025.6.13-c: Project-1 - C12/C15/C30 on live/fixed cells at 80°C"
-          href: 2025.6.13-c.html
-        - text: "2025.6.13-d: Project-2 - C34-NM/C34-Sq/C34-FAI on cells at 37°C"
-          href: 2025.6.13-d.html
+        - text: "2025.6.9-a: Project-1 - C12/C15 Temperature gradient from 40°C to 80°C"
+          href: 2025.6.9-a.html
+        - text: "2025.6.9-b: Project-1 - C34 structural protection at 50°C and 60°C"
+          href: 2025.6.9-b.html
+        - text: "2025.6.9-c: Project-1 - C12/C15/C30 on live/fixed cells at 80°C"
+          href: 2025.6.9-c.html
+        - text: "2025.6.9-d: Project-2 - C34-NM/C34-Sq/C34-FAI on cells at 37°C"
+          href: 2025.6.9-d.html
       - text: "Misc."
         href: misc.html
     right:

@@ -8,10 +8,10 @@ toc: false
 ### Analyses list:
 
 #
-- [2025.6.13-a: Project-1 - C12/C15 Temperature gradient from 40°C to 80°C](https://chenh19.github.io/chemProbing/2025.6.13-a.html)
-- [2025.6.13-b: Project-1 - C34 structural protection at 50°C and 60°C](https://chenh19.github.io/chemProbing/2025.6.13-b.html)
-- [2025.6.13-c: Project-1 - C12/C15/C30 on live/fixed cells at 80°C](https://chenh19.github.io/chemProbing/2025.6.13-c.html)
-- [2025.6.13-d: Project-2 - C34-NM/C34-Sq/C34-FAI on cells at 37°C](https://chenh19.github.io/chemProbing/2025.6.13-d.html)
+- [2025.6.9-a: Project-1 - C12/C15 Temperature gradient from 40°C to 80°C](https://chenh19.github.io/chemProbing/2025.6.9-a.html)
+- [2025.6.9-b: Project-1 - C34 structural protection at 50°C and 60°C](https://chenh19.github.io/chemProbing/2025.6.9-b.html)
+- [2025.6.9-c: Project-1 - C12/C15/C30 on live/fixed cells at 80°C](https://chenh19.github.io/chemProbing/2025.6.9-c.html)
+- [2025.6.9-d: Project-2 - C34-NM/C34-Sq/C34-FAI on cells at 37°C](https://chenh19.github.io/chemProbing/2025.6.9-d.html)
 
 #
 - [2025.5.29-a: Amplicon-seq analysis troubleshooting](https://chenh19.github.io/chemProbing/2025.5.29-a.html)
