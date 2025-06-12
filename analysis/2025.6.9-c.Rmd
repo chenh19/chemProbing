@@ -29,6 +29,8 @@ output: html_document
 </div>
 <br>
 
+- Experiment details: [cDNA preparation](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.6.9/2025.6.2-4 C12 C15 C30 (on live-fixed cells); C12+C30 co-editing (on live cells).pdf)
+- Experiment details: [Library construction](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.6.9/2025.6.5 Amplicon library #2.pdf)
 - Sequenced with [AVITI Low Output 2 x 150](https://www.elementbiosciences.com/products/aviti/specs) (250M)
 
 
