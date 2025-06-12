@@ -14,7 +14,7 @@ RNA covalent modifiers:
 
 - The **Amplicon-EZ** service was provided by [Azenta](https://www.genewiz.com/public/services/next-generation-sequencing/amplicon-sequencing-services/amplicon-ez).  
 
-- For experimental details, click [here](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/2025.5.12 80C samples re-seq with Azenta Amplicon-EZ.pdf).
+- For experimental details, click [here](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.5.28/2025.5.12 80°C samples re-seq with Azenta Amplicon-EZ 2025-05-12.pdf).
 
 
 ## Reference sequences
