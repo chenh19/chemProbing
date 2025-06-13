@@ -53,7 +53,7 @@
     "href": "2025.6.9-a.html#counting-reads-and-calculating-mutation-rates",
     "title": "2025.6.9-a: Project-1 - C12/C15 Temperature gradient on live cells from 40°C to 80°C",
     "section": "Counting reads and calculating mutation rates",
-    "text": "Counting reads and calculating mutation rates\n\nAmpile pipeline\nAdditional custom scripts"
+    "text": "Counting reads and calculating mutation rates\n\nAmpile pipeline\nAdditional custom scripts\nAll spreadsheets"
   },
   {
     "objectID": "2025.6.9-a.html#fastqc-for-reads",
@@ -368,7 +368,7 @@
     "href": "index.html",
     "title": "chemProbing",
     "section": "",
-    "text": "Analyses list:\n\n\n\n\n2025.6.9-a: Project-1 - C12/C15 Temperature gradient from 40°C to 80°C\n2025.6.9-b: Project-1 - C34 structural protection at 50°C and 60°C\n2025.6.9-c: Project-1 - C12/C15/C30 on live/fixed cells at 80°C\n2025.6.9-d: Project-2 - C34-NM/C34-Sq/C34-FAI on cells at 37°C\n\n\n\n\n\n2025.5.29-a: Amplicon-seq analysis troubleshooting\n2025.5.29-b: Project-1. Small molecule-binding RNA structural probing\n2025.5.29-c: Project-2. Activity-based RNA profiling\n\n\n\n\n\n2025.5.28-a: Azenta Amplicon-EZ (part-1)\n2025.5.28-b: Azenta Amplicon-EZ (part-2)\n2025.5.28-c: Azenta Amplicon-EZ (part-3)\n\n\n\n\n\n2025.5.27-a: Plasmidsaurus data re-analysis (part-1)\n2025.5.27-b: Plasmidsaurus data re-analysis (part-2)\n2025.5.27-c: Plasmidsaurus data re-analysis (part-3)\n\n\n\n\n\n2025.5.8: Re-analysis of Zhichao’s previous data\n2025.5.7: C12/C15 mutational profiling pilot testing"
+    "text": "Analyses list:\n\n\n\n\n2025.6.9-a: Project-1 - C12/C15 Temperature gradient from 40°C to 80°C\n2025.6.9-b: Project-1 - C34 structural protection at 50°C and 60°C\n\n\n\n\n\n2025.5.29-a: Amplicon-seq analysis troubleshooting\n2025.5.29-b: Project-1. Small molecule-binding RNA structural probing\n2025.5.29-c: Project-2. Activity-based RNA profiling\n\n\n\n\n\n2025.5.28-a: Azenta Amplicon-EZ (part-1)\n2025.5.28-b: Azenta Amplicon-EZ (part-2)\n2025.5.28-c: Azenta Amplicon-EZ (part-3)\n\n\n\n\n\n2025.5.27-a: Plasmidsaurus data re-analysis (part-1)\n2025.5.27-b: Plasmidsaurus data re-analysis (part-2)\n2025.5.27-c: Plasmidsaurus data re-analysis (part-3)\n\n\n\n\n\n2025.5.8: Re-analysis of Zhichao’s previous data\n2025.5.7: C12/C15 mutational profiling pilot testing"
   },
   {
     "objectID": "2025.5.27-a.html",
@@ -697,49 +697,49 @@
     "href": "2025.6.9-b.html#counting-reads-and-calculating-mutation-rates",
     "title": "2025.6.9-b: Project-1 - C34 structural protection on live cells at 50°C and 60°C",
     "section": "Counting reads and calculating mutation rates",
-    "text": "Counting reads and calculating mutation rates\n\nAmpile pipeline\nAdditional custom scripts"
+    "text": "Counting reads and calculating mutation rates\n\nAmpile pipeline\nAdditional custom scripts\nAll spreadsheets"
   },
   {
     "objectID": "2025.6.9-b.html#fastqc-for-reads",
     "href": "2025.6.9-b.html#fastqc-for-reads",
     "title": "2025.6.9-b: Project-1 - C34 structural protection on live cells at 50°C and 60°C",
     "section": "FastQC for reads",
-    "text": "FastQC for reads\n\n\nView per base quality for each sample before reads trimming:\n\n\n\nConclusion:"
+    "text": "FastQC for reads\n\nJW-JZ-3s-HC2a-HC-120_R1 (representative FastQC per base quality plot before reads trimming):\n\nJW-JZ-3s-HC2a-HC-120_R2 (representative FastQC per base quality plot before reads trimming):\n\n\n\n\nView per base quality for each sample before reads trimming:\n\n\nJW-JZ-3s-HC2a-HC-121_R1:\n\nJW-JZ-3s-HC2a-HC-121_R2:\n\nJW-JZ-3s-HC2a-HC-122_R1:\n\nJW-JZ-3s-HC2a-HC-122_R2:\n\nJW-JZ-3s-HC2a-HC-123_R1:\n\nJW-JZ-3s-HC2a-HC-123_R2:\n\nJW-JZ-3s-HC2a-HC-124_R1:\n\nJW-JZ-3s-HC2a-HC-124_R2:\n\nJW-JZ-3s-HC2a-HC-125_R1:\n\nJW-JZ-3s-HC2a-HC-125_R2:\n\nJW-JZ-3s-HC2a-HC-126_R1:\n\nJW-JZ-3s-HC2a-HC-126_R2:\n\nJW-JZ-3s-HC2a-HC-127_R1:\n\nJW-JZ-3s-HC2a-HC-127_R2:\n\nJW-JZ-3s-HC2a-HC-128_R1:\n\nJW-JZ-3s-HC2a-HC-128_R2:\n\nJW-JZ-3s-HC2a-HC-129_R1:\n\nJW-JZ-3s-HC2a-HC-129_R2:\n\nJW-JZ-3s-HC2a-HC-130_R1:\n\nJW-JZ-3s-HC2a-HC-130_R2:\n\nJW-JZ-3s-HC2a-HC-131_R1:\n\nJW-JZ-3s-HC2a-HC-131_R2:\n\nJW-JZ-3s-HC2a-HC-132_R1:\n\nJW-JZ-3s-HC2a-HC-132_R2:\n\nJW-JZ-3s-HC2a-HC-133_R1:\n\nJW-JZ-3s-HC2a-HC-133_R2:\n\nJW-JZ-3s-HC2a-HC-134_R1:\n\nJW-JZ-3s-HC2a-HC-134_R2:\n\nJW-JZ-3s-HC2a-HC-135_R1:\n\nJW-JZ-3s-HC2a-HC-135_R2:\n\nJW-JZ-3s-HC2a-HC-136_R1:\n\nJW-JZ-3s-HC2a-HC-136_R2:\n\nJW-JZ-3s-HC2a-HC-137_R1:\n\nJW-JZ-3s-HC2a-HC-137_R2:\n\nJW-JZ-3s-HC2a-HC-138_R1:\n\nJW-JZ-3s-HC2a-HC-138_R2:\n\nJW-JZ-3s-HC2a-HC-139_R1:\n\nJW-JZ-3s-HC2a-HC-139_R2:\n\nJW-JZ-3s-HC2a-HC-140_R1:\n\nJW-JZ-3s-HC2a-HC-140_R2:\n\nJW-JZ-3s-HC2a-HC-141_R1:\n\nJW-JZ-3s-HC2a-HC-141_R2:\n\nJW-JZ-3s-HC2a-HC-142_R1:\n\nJW-JZ-3s-HC2a-HC-142_R2:\n\nJW-JZ-3s-HC2a-HC-143_R1:\n\nJW-JZ-3s-HC2a-HC-143_R2:\n\n\n\n\nConclusion: within 150bp, the reads quality is generally good. R2 has lower overall quality than R1, which is expected for paired-end reads."
   },
   {
     "objectID": "2025.6.9-b.html#fastqc-for-reads-after-trimming",
     "href": "2025.6.9-b.html#fastqc-for-reads-after-trimming",
     "title": "2025.6.9-b: Project-1 - C34 structural protection on live cells at 50°C and 60°C",
     "section": "FastQC for reads after trimming",
-    "text": "FastQC for reads after trimming\n\n\nView per base quality for each sample after reads trimming:\n\n\n\nConclusion:"
+    "text": "FastQC for reads after trimming\n\nJW-JZ-3s-HC2a-HC-120_R1 (representative FastQC per base quality plot after reads trimming):\n\nJW-JZ-3s-HC2a-HC-120_R2 (representative FastQC per base quality plot after reads trimming):\n\n\n\n\nView per base quality for each sample after reads trimming:\n\n\nJW-JZ-3s-HC2a-HC-121_R1:\n\nJW-JZ-3s-HC2a-HC-121_R2:\n\nJW-JZ-3s-HC2a-HC-122_R1:\n\nJW-JZ-3s-HC2a-HC-122_R2:\n\nJW-JZ-3s-HC2a-HC-123_R1:\n\nJW-JZ-3s-HC2a-HC-123_R2:\n\nJW-JZ-3s-HC2a-HC-124_R1:\n\nJW-JZ-3s-HC2a-HC-124_R2:\n\nJW-JZ-3s-HC2a-HC-125_R1:\n\nJW-JZ-3s-HC2a-HC-125_R2:\n\nJW-JZ-3s-HC2a-HC-126_R1:\n\nJW-JZ-3s-HC2a-HC-126_R2:\n\nJW-JZ-3s-HC2a-HC-127_R1:\n\nJW-JZ-3s-HC2a-HC-127_R2:\n\nJW-JZ-3s-HC2a-HC-128_R1:\n\nJW-JZ-3s-HC2a-HC-128_R2:\n\nJW-JZ-3s-HC2a-HC-129_R1:\n\nJW-JZ-3s-HC2a-HC-129_R2:\n\nJW-JZ-3s-HC2a-HC-130_R1:\n\nJW-JZ-3s-HC2a-HC-130_R2:\n\nJW-JZ-3s-HC2a-HC-131_R1:\n\nJW-JZ-3s-HC2a-HC-131_R2:\n\nJW-JZ-3s-HC2a-HC-132_R1:\n\nJW-JZ-3s-HC2a-HC-132_R2:\n\nJW-JZ-3s-HC2a-HC-133_R1:\n\nJW-JZ-3s-HC2a-HC-133_R2:\n\nJW-JZ-3s-HC2a-HC-134_R1:\n\nJW-JZ-3s-HC2a-HC-134_R2:\n\nJW-JZ-3s-HC2a-HC-135_R1:\n\nJW-JZ-3s-HC2a-HC-135_R2:\n\nJW-JZ-3s-HC2a-HC-136_R1:\n\nJW-JZ-3s-HC2a-HC-136_R2:\n\nJW-JZ-3s-HC2a-HC-137_R1:\n\nJW-JZ-3s-HC2a-HC-137_R2:\n\nJW-JZ-3s-HC2a-HC-138_R1:\n\nJW-JZ-3s-HC2a-HC-138_R2:\n\nJW-JZ-3s-HC2a-HC-139_R1:\n\nJW-JZ-3s-HC2a-HC-139_R2:\n\nJW-JZ-3s-HC2a-HC-140_R1:\n\nJW-JZ-3s-HC2a-HC-140_R2:\n\nJW-JZ-3s-HC2a-HC-141_R1:\n\nJW-JZ-3s-HC2a-HC-141_R2:\n\nJW-JZ-3s-HC2a-HC-142_R1:\n\nJW-JZ-3s-HC2a-HC-142_R2:\n\nJW-JZ-3s-HC2a-HC-143_R1:\n\nJW-JZ-3s-HC2a-HC-143_R2:\n\n\n\n\nConclusion: after trimming, the quality of the overall reads quality is improved and variation is reduced."
   },
   {
     "objectID": "2025.6.9-b.html#absolute-mutation-rate",
     "href": "2025.6.9-b.html#absolute-mutation-rate",
     "title": "2025.6.9-b: Project-1 - C34 structural protection on live cells at 50°C and 60°C",
     "section": "Absolute mutation rate",
-    "text": "Absolute mutation rate\n\n\nView absolute mutation rate for each sample:\n\n\n\nConclusion:"
+    "text": "Absolute mutation rate\n \n\n\nView absolute mutation rate for each sample:\n\n\nJW-JZ-3s-HC2a-HC-120:\n\nJW-JZ-3s-HC2a-HC-121:\n\nJW-JZ-3s-HC2a-HC-122:\n\nJW-JZ-3s-HC2a-HC-123:\n\nJW-JZ-3s-HC2a-HC-124:\n\nJW-JZ-3s-HC2a-HC-125:\n\nJW-JZ-3s-HC2a-HC-126:\n\nJW-JZ-3s-HC2a-HC-127:\n\nJW-JZ-3s-HC2a-HC-128:\n\nJW-JZ-3s-HC2a-HC-129:\n\nJW-JZ-3s-HC2a-HC-130:\n\nJW-JZ-3s-HC2a-HC-131:\n\nJW-JZ-3s-HC2a-HC-132:\n\nJW-JZ-3s-HC2a-HC-133:\n\nJW-JZ-3s-HC2a-HC-134:\n\nJW-JZ-3s-HC2a-HC-135:\n\nJW-JZ-3s-HC2a-HC-136:\n\nJW-JZ-3s-HC2a-HC-137:\n\nJW-JZ-3s-HC2a-HC-138:\n\nJW-JZ-3s-HC2a-HC-139:\n\nJW-JZ-3s-HC2a-HC-140:\n\nJW-JZ-3s-HC2a-HC-141:\n\nJW-JZ-3s-HC2a-HC-142:\n\nJW-JZ-3s-HC2a-HC-143:\n\n\n\n\nConclusion:"
   },
   {
     "objectID": "2025.6.9-b.html#reproducibility-assessment",
     "href": "2025.6.9-b.html#reproducibility-assessment",
     "title": "2025.6.9-b: Project-1 - C34 structural protection on live cells at 50°C and 60°C",
     "section": "Reproducibility assessment",
-    "text": "Reproducibility assessment\n\n\nView reproducibility assessment for each group:\n\n\n\nConclusion:"
+    "text": "Reproducibility assessment\n\n\n\nView reproducibility assessment for each group:\n\n\n16_live-cell_DMSO_50C-15min_Mn:\n\n17_live-cell_C12-mM_50C-15min_Mn:\n\n18_live-cell_C30-5mM_50C-15min_Mn:\n\n19_live-cell_C34-1mM_50C-15min_Mn:\n\n20_live-cell_C12-5mM+C34-1mM_50C-15min_Mn:\n\n21_live-cell_C30-5mM+C34-1mM_50C-15min_Mn:\n\n22_live-cell_DMSO_60C-15min_Mn:\n\n23_live-cell_C12-mM_60C-15min_Mn:\n\n24_live-cell_C30-5mM_60C-15min_Mn:\n\n25_live-cell_C34-1mM_60C-15min_Mn.jpg:\n\n26_live-cell_C12-5mM+C34-1mM_60C-15min_Mn:\n\n27_live-cell_C30-5mM+C34-1mM_60C-15min_Mn:\n\n\n\n\nConclusion: mutation rats are consistent between the 2 replicates for each group."
   },
   {
     "objectID": "2025.6.9-b.html#relative-mutation-rate",
     "href": "2025.6.9-b.html#relative-mutation-rate",
     "title": "2025.6.9-b: Project-1 - C34 structural protection on live cells at 50°C and 60°C",
     "section": "Relative mutation rate",
-    "text": "Relative mutation rate\n\n\nView absolute mutation rate for each sample:\n\n\n\nConclusion:"
+    "text": "Relative mutation rate\n\n\n\nView relative mutation rate for each sample:\n\n\n16-live-cell-DMSO-50C-15min-Mn:\n\n17-live-cell-C12-mM-50C-15min-Mn:\n\n18-live-cell-C30-5mM-50C-15min-Mn:\n\n19-live-cell-C34-1mM-50C-15min-Mn:\n\n20-live-cell-C12-5mM+C34-1mM-50C-15min-Mn:\n\n21-live-cell-C30-5mM+C34-1mM-50C-15min-Mn:\n\n22-live-cell-DMSO-60C-15min-Mn:\n\n23-live-cell-C12-mM-60C-15min-Mn:\n\n24-live-cell-C30-5mM-60C-15min-Mn:\n\n25-live-cell-C34-1mM-60C-15min-Mn:\n\n26-live-cell-C12-5mM+C34-1mM-60C-15min-Mn:\n\n27-live-cell-C30-5mM+C34-1mM-60C-15min-Mn:\n\n\n\n\nConclusion: when C34 is present, there seems to be very small changes in terms of C12’s and C30’s reactivity."
   },
   {
     "objectID": "2025.6.9-b.html#conclusion",
     "href": "2025.6.9-b.html#conclusion",
     "title": "2025.6.9-b: Project-1 - C34 structural protection on live cells at 50°C and 60°C",
     "section": "Conclusion",
-    "text": "Conclusion"
+    "text": "Conclusion\n\nC12, 50°C:\n \nC30, 50°C:\n \nC12, 60°C:\n \nC30, 60°C:\n \nTrimmed Arc plot of SARS-CoV2-5UTR for reference (high resolution):"
   },
   {
     "objectID": "2025.6.9-d.html",

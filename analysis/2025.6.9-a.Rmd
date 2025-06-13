@@ -63,6 +63,7 @@ acgaggGAG
 
 - [Ampile pipeline](https://github.com/chenh19/Ampile)
 - [Additional custom scripts](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.6.9/a/custom_scripts.zip)
+- [All spreadsheets](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.6.9/a/8.spreadsheets.zip)
 
 
 ## FastQC for reads
