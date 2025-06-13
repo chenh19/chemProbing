@@ -56,3 +56,9 @@ aattaataactaattactgtcgttgacaggacacgagtaactcgtctatcttctgcaggctgcttacggtttcgtccgtg
 ttgcagccgatcatcagcacatctaggtttcgtccgggtgtgaccgaaaggtaagatggagagccttgtccctggtttca
 acgaggGAG
 ```
+
+## Counting reads and calculating mutation rates
+
+- Using Hang's [Ampile pipeline](https://github.com/chenh19/Ampile)
+
+
