@@ -826,9 +826,6 @@ View absolute mutation rate for each sample:
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/b/3.absolute_mut/JW-JZ-3s-HC2a-HC-143_SARS-CoV2-5UTR-Amplicon-short-trimmed+3_absolute-mutation-rate.jpg" width="100%"></p></li>
 </ul>
 </details>
-<ul>
-<li><strong>Conclusion</strong>:</li>
-</ul>
 </section>
 <section id="reproducibility-assessment" class="level2">
 <h2 class="anchored" data-anchor-id="reproducibility-assessment">Reproducibility assessment</h2>
@@ -920,13 +917,13 @@ View relative mutation rate for each sample:
 <li><p>Trimmed Arc plot of SARS-CoV2-5UTR for reference (high resolution):<br>
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/b/8.differential_mutation/merged_sars2_invivo.map_5cdf-trim.png" width="100%"></p></li>
 </ul>
-<section id="conclusion-1" class="level4">
-<h4 class="anchored" data-anchor-id="conclusion-1"><strong>Conclusion</strong></h4>
+<section id="conclusion-1" class="level5">
+<h5 class="anchored" data-anchor-id="conclusion-1"><strong>Conclusion</strong></h5>
 <ul>
 <li>When using Chi-square test to compare read counts difference between the groups with and without C34, there can be many extremely small p-values, some of them might be false positive.</li>
 <li>I further tested using <a href="https://doi.org/10.1186/s13059-014-0550-8">DESeq2</a> to compare read counts difference between the groups with and without C34. DESeq2 is originally intended for differential expression gene analysis, however, if assuming 1) the total read count of the amplicon is an analogy of the sequencing depth of a transcriptome, 2) each position of the amplicon is an analogy of a gene, and 3) the mutated read count at each position of the amplicon is an analogy of a gene expression level.</li>
 <li>DESeq2 uses Wald test and can accomodate replicates in the analysis, which seemed to give less extreme p-values and fewer false positive signals comparing to <a href="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.6.9/b/chi-square.pdf">the plain Chi-square test I did</a>.</li>
-<li>C12 seemed to consistently detect C34’s binding sites within the SL5 sequence. C30’s signals seemed to be more noisy and less significant.</li>
+<li>C12 seemed to consistently detect C34’s binding sites within the SL5 sequence (the position numbers are matched betweeen the Arc plot and volcano/manhattan plots). C30’s signals seemed to be more noisy and less significant.</li>
 </ul>
 
 
