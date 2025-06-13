@@ -389,7 +389,7 @@ acgaggGAG
 
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/4.absolute_mut_summary/absolute_mutation_rate_base_summary_part1.jpg" width="100%">
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/4.absolute_mut_summary/absolute_mutation_rate_base_summary_part2.jpg" width="100%">
-<div style="text-align:center;"><img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/4.absolute_mut_summary/absolute_mutation_rate_base_summary_part3.jpg" width="60%"></div>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/4.absolute_mut_summary/absolute_mutation_rate_base_summary_part3.jpg" width="60%">
 
 <details>
 <summary>View absolute mutation rate for each sample:</summary>
@@ -495,49 +495,49 @@ acgaggGAG
 <summary>View relative mutation rate for each group:</summary>
 
 - 01_live-cell_DMSO_40C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/01-live-cell-DMSO-40C-15min-Mn.jpg" width="40%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/01_live-cell_DMSO_40C-15min_Mn.jpg" width="60%"> 
 
 - 02_live-cell_C12-5mM_40C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/02-live-cell-C12-5mM-40C-15min-Mn.jpg" width="40%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/02_live-cell_C12-5mM_40C-15min_Mn.jpg" width="60%"> 
 
 - 03_live-cell_C30-5mM_40C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/03-live-cell-C30-5mM-40C-15min-Mn.jpg" width="40%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/03_live-cell_C30-5mM_40C-15min_Mn.jpg" width="60%"> 
 
 - 04_live-cell_DMSO_50C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/04-live-cell-DMSO-50C-15min-Mn.jpg" width="40%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/04_live-cell_DMSO_50C-15min_Mn.jpg" width="60%"> 
 
 - 05_live-cell_C12-5mM_50C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/05-live-cell-C12-5mM-50C-15min-Mn.jpg" width="40%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/05_live-cell_C12-5mM_50C-15min_Mn.jpg" width="60%"> 
 
 - 06_live-cell_C30-5mM_50C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/06-live-cell-C30-5mM-50C-15min-Mn.jpg" width="40%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/06_live-cell_C30-5mM_50C-15min_Mn.jpg" width="60%"> 
 
 - 07_live-cell_DMSO_60C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/07-live-cell-DMSO-60C-15min-Mn.jpg" width="40%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/07_live-cell_DMSO_60C-15min_Mn.jpg" width="60%"> 
 
 - 08_live-cell_C12-5mM_60C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/08-live-cell-C12-5mM-60C-15min-Mn.jpg" width="40%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/08_live-cell_C12-5mM_60C-15min_Mn.jpg" width="60%"> 
 
 - 09_live-cell_C30-5mM_60C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/09-live-cell-C30-5mM-60C-15min-Mn.jpg" width="40%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/09_live-cell_C30-5mM_60C-15min_Mn.jpg" width="60%"> 
 
 - 10_live-cell_DMSO_70C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/10-live-cell-DMSO-70C-15min-Mn.jpg" width="40%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/10_live-cell_DMSO_70C-15min_Mn.jpg" width="60%"> 
 
 - 11_live-cell_C12-5mM_70C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/11-live-cell-C12-5mM-70C-15min-Mn.jpg" width="40%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/11_live-cell_C12-5mM_70C-15min_Mn.jpg" width="60%"> 
 
 - 12_live-cell_C30-5mM_70C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/12-live-cell-C30-5mM-70C-15min-Mn.jpg" width="40%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/12_live-cell_C30-5mM_70C-15min_Mn.jpg" width="60%"> 
 
 - 13_live-cell_DMSO_80C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/13-live-cell-DMSO-80C-15min-Mn.jpg" width="40%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/13_live-cell_DMSO_80C-15min_Mn.jpg" width="60%"> 
 
 - 14_live-cell_C12-5mM_80C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/14-live-cell-C12-5mM-80C-15min-Mn.jpg" width="40%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/14_live-cell_C12-5mM_80C-15min_Mn.jpg" width="60%"> 
 
 - 15_live-cell_C30-5mM_80C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/15-live-cell-C30-5mM-80C-15min-Mn.jpg" width="40%">
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/5.replicate_plot/15_live-cell_C30-5mM_80C-15min_Mn.jpg" width="60%">
 
 </details>
 
@@ -552,49 +552,49 @@ acgaggGAG
 <summary>View relative mutation rate for each group:</summary>
 
 - 01_live-cell_DMSO_40C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/01_live-cell-DMSO-40C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/01-live-cell-DMSO-40C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
 
 - 02_live-cell_C12-5mM_40C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/02_live-cell-C12-5mM-40C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/02-live-cell-C12-5mM-40C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
 
 - 03_live-cell_C30-5mM_40C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/03_live-cell-C30-5mM-40C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/03-live-cell-C30-5mM-40C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
 
 - 04_live-cell_DMSO_50C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/04_live-cell-DMSO-50C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/04-live-cell-DMSO-50C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
 
 - 05_live-cell_C12-5mM_50C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/05_live-cell-C12-5mM-50C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/05-live-cell-C12-5mM-50C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
 
 - 06_live-cell_C30-5mM_50C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/06_live-cell-C30-5mM-50C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/06-live-cell-C30-5mM-50C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
 
 - 07_live-cell_DMSO_60C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/07_live-cell-DMSO-60C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/07-live-cell-DMSO-60C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
 
 - 08_live-cell_C12-5mM_60C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/08_live-cell-C12-5mM-60C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/08-live-cell-C12-5mM-60C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
 
 - 09_live-cell_C30-5mM_60C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/09_live-cell-C30-5mM-60C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/09-live-cell-C30-5mM-60C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
 
 - 10_live-cell_DMSO_70C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/10_live-cell-DMSO-70C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/10-live-cell-DMSO-70C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
 
 - 11_live-cell_C12-5mM_70C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/11_live-cell-C12-5mM-70C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/11-live-cell-C12-5mM-70C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
 
 - 12_live-cell_C30-5mM_70C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/12_live-cell-C30-5mM-70C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/12-live-cell-C30-5mM-70C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
 
 - 13_live-cell_DMSO_80C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/13_live-cell-DMSO-80C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/13-live-cell-DMSO-80C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
 
 - 14_live-cell_C12-5mM_80C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/14_live-cell-C12-5mM-80C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/14-live-cell-C12-5mM-80C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%"> 
 
 - 15_live-cell_C30-5mM_80C-15min_Mn:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/15_live-cell-C30-5mM-80C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%">
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/6.relative_mut/15-live-cell-C30-5mM-80C-15min-Mn_SARS-CoV2-5UTR-Amplicon-short-trimmed+3.jpg" width="100%">
 
 
 </details>
@@ -604,7 +604,7 @@ acgaggGAG
 
 ## Conclusion
 
-<div style="text-align:center;"><img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/8.temp_gradient/smooth_summary.jpg" width="80%"></div>
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/8.temp_gradient/smooth_summary.jpg" width="80%">
 
 - **Conclusion**: there is a temperature-dependent mutation rate change for C12 and C30, which provides the temperature range for small molecule-binding RNA structural probing.
 
