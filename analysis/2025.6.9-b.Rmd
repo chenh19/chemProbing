@@ -43,6 +43,7 @@ output: html_document
 
 ## Reference sequences
 
+- [Amplicon-short-trimmed+3.fa](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.6.9/Amplicon-short-trimmed+3.fa)  
 ```{r,eval=FALSE}
 >SARS-CoV2-5UTR-Amplicon-short-trimmed+3  (249 bp)
 TTGtagatctgttctctaaacgaactttaaaatctgtgtggctgtcactcggctgcgtgcttagtgcactcacgcagtat
@@ -50,3 +51,60 @@ aattaataactaattactgtcgttgacaggacacgagtaactcgtctatcttctgcaggctgcttacggtttcgtccgtg
 ttgcagccgatcatcagcacatctaggtttcgtccgggtgtgaccgaaaggtaagatggagagccttgtccctggtttca
 acgaggGAG
 ```
+
+## Counting reads and calculating mutation rates
+
+- [Ampile pipeline](https://github.com/chenh19/Ampile)
+- [Additional custom scripts](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.6.9/b/custom_scripts.zip)
+
+## FastQC for reads
+
+<details>
+<summary>View per base quality for each sample before reads trimming:</summary>
+
+</details>
+
+- **Conclusion**: 
+
+
+## FastQC for reads after trimming
+
+<details>
+<summary>View per base quality for each sample after reads trimming:</summary>
+
+</details>
+
+- **Conclusion**: 
+
+
+## Absolute mutation rate
+
+<details>
+<summary>View absolute mutation rate for each sample:</summary>
+
+</details>
+
+- **Conclusion**: 
+
+
+## Reproducibility assessment
+
+<details>
+<summary>View reproducibility assessment for each group:</summary>
+
+</details>
+
+- **Conclusion**: 
+
+
+## Relative mutation rate
+
+<details>
+<summary>View absolute mutation rate for each sample:</summary>
+
+</details>
+
+- **Conclusion**: 
+
+
+## Conclusion
