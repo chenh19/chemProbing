@@ -508,13 +508,13 @@ acgaggGAG
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/b/8.differential_mutation/C12_50C_volcano.jpg" width="80%">
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/b/8.differential_mutation/C12_50C_DEseq2_padj.jpg" width="100%">
 
-- C30, 50°C:  
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/b/8.differential_mutation/C30_50C_volcano.jpg" width="80%">
-<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/b/8.differential_mutation/C30_50C_DEseq2_padj.jpg" width="100%">
-
 - C12, 60°C:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/b/8.differential_mutation/C12_60C_volcano.jpg" width="80%">
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/b/8.differential_mutation/C12_60C_DEseq2_padj.jpg" width="100%">
+
+- C30, 50°C:  
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/b/8.differential_mutation/C30_50C_volcano.jpg" width="80%">
+<img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/b/8.differential_mutation/C30_50C_DEseq2_padj.jpg" width="100%">
 
 - C30, 60°C:  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/b/8.differential_mutation/C30_60C_volcano.jpg" width="80%">
@@ -523,9 +523,9 @@ acgaggGAG
 - Trimmed Arc plot of SARS-CoV2-5UTR for reference (high resolution):  
 <img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/b/8.differential_mutation/merged_sars2_invivo.map_5cdf-trim.png" width="100%">
 
-### **Conclusion**
+#### **Conclusion**
 
 - When using Chi-square test to compare read counts difference between the groups with and without C34, there can be many extremely small p-values, some of them might be false positive.
-- I further tested using [DESeq2](https://doi.org/10.1186/s13059-014-0550-8) to compare read counts difference between the groups with and without C34. DESeq2 is originally intended for differential expression gene analysis, however, if assuming 1) the total reads of the amplicon is an analogy of the sequencing depth of a transcriptom, 2) each position of the amplicon is an analogy of a gene, and 3) the mutated read count at each position of the amplicon is an analogy of a gene expression level.
-- DESeq2 uses Wald test and can accomodate replicates in the analysis, which seemed to give fewer false positive signals comparing to [the plain Chi-square test I did](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.6.9/b/chi-square.pdf).
+- I further tested using [DESeq2](https://doi.org/10.1186/s13059-014-0550-8) to compare read counts difference between the groups with and without C34. DESeq2 is originally intended for differential expression gene analysis, however, if assuming 1) the total read count of the amplicon is an analogy of the sequencing depth of a transcriptome, 2) each position of the amplicon is an analogy of a gene, and 3) the mutated read count at each position of the amplicon is an analogy of a gene expression level.
+- DESeq2 uses Wald test and can accomodate replicates in the analysis, which seemed to give less extreme p-values and fewer false positive signals comparing to [the plain Chi-square test I did](https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/files/2025.6.9/b/chi-square.pdf).
 - C12 seemed to consistently detect C34's binding sites within the SL5 sequence. C30's signals seemed to be more noisy and less significant.
