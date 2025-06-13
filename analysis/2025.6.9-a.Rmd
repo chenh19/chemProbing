@@ -599,11 +599,12 @@ acgaggGAG
 
 </details>
 
-<div style="text-align:center;"><img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/8.temp_gradient/smooth_summary.jpg" width="80%"></div>
-
 - **Conclusion**: there is a temperature-dependent mutation rate change by eye.
 
 
 ## Conclusion
 
+<div style="text-align:center;"><img src="https://raw.githubusercontent.com/chenh19/chemProbing/refs/heads/main/images/2025.6.9/a/8.temp_gradient/smooth_summary.jpg" width="80%"></div>
+
+- **Conclusion**: there is a temperature-dependent mutation rate change for C12 and C30, which provides the temperature range for small molecule-binding RNA structural probing.
 

@@ -88,14 +88,14 @@
     "href": "2025.6.9-a.html#relative-mutation-rate",
     "title": "2025.6.9-a: Project-1 - C12/C15 Temperature gradient on live cells from 40°C to 80°C",
     "section": "Relative mutation rate",
-    "text": "Relative mutation rate\n\n\n\nView relative mutation rate for each group:\n\n\n01_live-cell_DMSO_40C-15min_Mn:\n\n02_live-cell_C12-5mM_40C-15min_Mn:\n\n03_live-cell_C30-5mM_40C-15min_Mn:\n\n04_live-cell_DMSO_50C-15min_Mn:\n\n05_live-cell_C12-5mM_50C-15min_Mn:\n\n06_live-cell_C30-5mM_50C-15min_Mn:\n\n07_live-cell_DMSO_60C-15min_Mn:\n\n08_live-cell_C12-5mM_60C-15min_Mn:\n\n09_live-cell_C30-5mM_60C-15min_Mn:\n\n10_live-cell_DMSO_70C-15min_Mn:\n\n11_live-cell_C12-5mM_70C-15min_Mn:\n\n12_live-cell_C30-5mM_70C-15min_Mn:\n\n13_live-cell_DMSO_80C-15min_Mn:\n\n14_live-cell_C12-5mM_80C-15min_Mn:\n\n15_live-cell_C30-5mM_80C-15min_Mn:\n\n\n\n\n\n\n\nConclusion: there is a temperature-dependent mutation rate change by eye."
+    "text": "Relative mutation rate\n\n\n\nView relative mutation rate for each group:\n\n\n01_live-cell_DMSO_40C-15min_Mn:\n\n02_live-cell_C12-5mM_40C-15min_Mn:\n\n03_live-cell_C30-5mM_40C-15min_Mn:\n\n04_live-cell_DMSO_50C-15min_Mn:\n\n05_live-cell_C12-5mM_50C-15min_Mn:\n\n06_live-cell_C30-5mM_50C-15min_Mn:\n\n07_live-cell_DMSO_60C-15min_Mn:\n\n08_live-cell_C12-5mM_60C-15min_Mn:\n\n09_live-cell_C30-5mM_60C-15min_Mn:\n\n10_live-cell_DMSO_70C-15min_Mn:\n\n11_live-cell_C12-5mM_70C-15min_Mn:\n\n12_live-cell_C30-5mM_70C-15min_Mn:\n\n13_live-cell_DMSO_80C-15min_Mn:\n\n14_live-cell_C12-5mM_80C-15min_Mn:\n\n15_live-cell_C30-5mM_80C-15min_Mn:\n\n\n\n\nConclusion: there is a temperature-dependent mutation rate change by eye."
   },
   {
     "objectID": "2025.6.9-a.html#conclusion",
     "href": "2025.6.9-a.html#conclusion",
     "title": "2025.6.9-a: Project-1 - C12/C15 Temperature gradient on live cells from 40°C to 80°C",
     "section": "Conclusion",
-    "text": "Conclusion"
+    "text": "Conclusion\n\n\n\n\nConclusion: there is a temperature-dependent mutation rate change for C12 and C30, which provides the temperature range for small molecule-binding RNA structural probing."
   },
   {
     "objectID": "2025.5.7.html",
